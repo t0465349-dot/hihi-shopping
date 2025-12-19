@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>圖片索引產生器</title>
+    <style>
+        body { font-family: sans-serif; padding: 50px; text-align: center; background: #f0f0f0; }
+        .box { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.1); max-width: 600px; margin: 0 auto; }
+        .btn { padding: 15px 30px; font-size: 20px; background: #00b894; color: white; border: none; border-radius: 10px; cursor: pointer; margin-top: 20px; }
+        .btn:disabled { background: #ccc; }
+        #status { margin-top: 20px; color: #666; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>📸 步驟 1：選擇圖片資料夾</h1>
+        <p>請點擊下方按鈕，選擇你的 <b>images</b> 資料夾<br>(裡面包含所有商品資料夾)</p>
+        
+        <input type="file" id="filePicker" webkitdirectory directory multiple style="display:none" onchange="scanFiles(this)">
+        <button class="btn" onclick="document.getElementById('filePicker').click()">📂 選擇 images 資料夾</button>
+        
+        <div id="status"></div>
+
+        <div id="step2" style="display:none; margin-top:30px; border-top:1px solid #eee; padding-top:20px;">
+            <h1>💾 步驟 2：下載索引檔</h1>
+            <p>掃描完成！請下載檔案並存到你的網頁資料夾中。</p>
+            <button class="btn" style="background:#0984e3" onclick="downloadFile()">⬇️ 下載 img_data.js</button>
+        </div>
+    </div>
+
+    <script>
+        let fileData = {};
+
+        function scanFiles(input) {
+            const status = document.getElementById('status');
+            status.innerText = "正在掃描中...請稍候";
+            fileData = {};
+            let count = 0;
+
+            const files = input.files;
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                // file.webkitRelativePath 範例: "images/1224結單-起源/商品名稱/圖片.jpg"
+                const pathParts = file.webkitRelativePath.split('/');
+                
+                // 只要路徑層級大於等於 2 (例如 1224結單-起源/圖片.jpg 或 images/1224結單-起源/商品名/圖片.jpg)
+                if (pathParts.length >= 2) {
+                    const fileName = pathParts[pathParts.length - 1]; // 取得最後一項：檔名
+                    const folderName = pathParts[pathParts.length - 2]; // 取得倒數第二項：檔案所在的資料夾名稱
+                    
+                    // 過濾掉非圖片檔案
+                    if(fileName.match(/\.(jpg|jpeg|png|gif|webp)$/i)) {
+                        if (!fileData[folderName]) {
+                            fileData[folderName] = [];
+                        }
+                        fileData[folderName].push(fileName);
+                        count++;
+                    }
+                }
+            }
+
+            status.innerText = `✅ 掃描完成！共找到 ${Object.keys(fileData).length} 個商品資料夾，${count} 張圖片。`;
+            document.getElementById('step2').style.display = 'block';
+        }
+
+        function downloadFile() {
+            // 產生 JS 檔案內容
+            const content = "const IMG_DB = " + JSON.stringify(fileData, null, 2) + ";";
+            
+            const blob = new Blob([content], { type: "text/javascript" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "img_data.js";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+</html>
