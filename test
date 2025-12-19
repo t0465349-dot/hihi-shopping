@@ -340,18 +340,8 @@
                 }
                 if (title && !isNaN(price)) {
                     let localImgs = [];
-                    // ★★★ 新增：將標題中的斜線替換為底線，以符合本地資料夾命名規則 ★★★
-                    let safeTitle = title.replace(/\//g, "_");
-
                     if (hasLocalImages) {
-                        // 優先使用替換後的 safeTitle 來尋找圖片
-                        let matchKey = IMG_DB[safeTitle] ? safeTitle : (IMG_DB[title] ? title : null);
-                        
-                        // 如果找不到，再嘗試模糊搜尋
-                        if (!matchKey) {
-                             matchKey = Object.keys(IMG_DB).find(k => k.includes(safeTitle) || safeTitle.includes(k) || k.includes(title) || title.includes(k));
-                        }
-
+                        let matchKey = IMG_DB[title] ? title : Object.keys(IMG_DB).find(k => k.includes(title) || title.includes(k));
                         if (matchKey && Array.isArray(IMG_DB[matchKey])) localImgs = IMG_DB[matchKey].map(f => `images/${matchKey}/${f}`);
                     }
                     result.push({ id: i, title, price, date: dateStr, dateObj, isSpot, images: localImgs, desc });
