@@ -404,7 +404,7 @@
             myOrders.push(orderData);
             localStorage.setItem(`orders_${currentPhone}`, JSON.stringify(myOrders));
             updateCartCount();
-            alert("✅ 下單成功！系統已同步資料。");
+            alert("✅ 下單成功！系統已同步資料<這裡下單Line記事本就不用在+1❗>。");
             closeAllModals();
             btn.disabled = false; btn.innerText = "確認訂購";
         }).catch(err => {
