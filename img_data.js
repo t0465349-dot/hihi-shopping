@@ -418,6 +418,12 @@ const IMG_DB = {
     "LINE_NOTE_251210_10.jpg",
     "LINE_NOTE_251210_2.jpg"
   ],
+  "鮮Q腸": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_6.jpg"
+  ],
   "髮絲的女王級呵護 💎Keratine qeen玻尿酸洗髮護髮禮盒(450ml洗髮精+ 450ml髮膜)": [
     "imgi_5_58229237-1o.jpg",
     "imgi_6_58229237-2o.jpg",
@@ -455,16 +461,6 @@ const IMG_DB = {
     "imgi_6_57278456-2o.jpg",
     "imgi_7_57278456-3o.jpg",
     "imgi_8_57278456-4o.jpg",
-    "imgi_9_57278456-5o.jpg",
-    "imgi_10_57278456-6o.jpg",
-    "imgi_11_57278456-7o.jpg",
-    "imgi_12_57278456-8o.jpg",
-    "imgi_13_57278456-9o.jpg",
-    "imgi_14_57278456-10o.jpg",
-    "imgi_5_57278456-1o.jpg",
-    "imgi_6_57278456-2o.jpg",
-    "imgi_7_57278456-3o.jpg",
-    "imgi_8_57278456-4o.jpg",
     "imgi_9_57278456-5o.jpg"
   ],
   "韓國merhent8種分子玻尿酸沐浴乳｜1523寶寶香1500ml": [
@@ -474,12 +470,6 @@ const IMG_DB = {
     "imgi_8_57278514-4o.jpg"
   ],
   "韓國GONGSKIN燈泡級提亮霜10ml(單支)": [
-    "imgi_10_58229796-6o.jpg",
-    "imgi_5_58229796-1o.jpg",
-    "imgi_6_58229796-2o.jpg",
-    "imgi_7_58229796-3o.jpg",
-    "imgi_8_58229796-4o.jpg",
-    "imgi_9_58229796-5o.jpg",
     "imgi_10_58229796-6o.jpg",
     "imgi_5_58229796-1o.jpg",
     "imgi_6_58229796-2o.jpg",
@@ -663,6 +653,20 @@ const IMG_DB = {
     "imgi_7_44772417-11o.jpg",
     "imgi_8_44772417-12o.jpg"
   ],
+  "超人氣汕頭火鍋湯底": [
+    "3FED7BDA-311A-4CCB-8097-B51F41ECE977.jpg",
+    "9F3941CF-C0EC-466C-B584-0C875EC0EB0C.jpg",
+    "AA54EC77-0967-40FA-92FB-9BF66792EF99.jpg",
+    "BDD72A0F-3C0C-4BCE-AF85-198AF3FF5945.jpg",
+    "FA30A70B-19A0-470C-8CEF-E281BF167412.jpg"
+  ],
+  "超人氣四大招牌捲": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_4.jpg",
+    "LINE_NOTE_251216_7.jpg"
+  ],
   "豬鬃長柄浴背刷": [
     "LINE_NOTE_251210_1.jpg",
     "LINE_NOTE_251210_2.jpg",
@@ -683,6 +687,14 @@ const IMG_DB = {
     "LINE_NOTE_251210_8.jpg",
     "LINE_NOTE_251210_9.jpg"
   ],
+  "藥燉排骨": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_4.jpg",
+    "LINE_NOTE_251216_5.jpg",
+    "LINE_NOTE_251216_6.jpg"
+  ],
   "蔬果餐具清洗劑 800g《一組2件》": [
     "imgi_10_58252512-6o.jpg",
     "imgi_5_58252512-2o.jpg",
@@ -690,6 +702,13 @@ const IMG_DB = {
     "imgi_7_58252512-3o.jpg",
     "imgi_8_58252512-4o.jpg",
     "imgi_9_58252512-5o.jpg"
+  ],
+  "蒜頭雞湯": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_4.jpg",
+    "LINE_NOTE_251216_5.jpg"
   ],
   "菱角酥(12入_包)《一組二包》": [
     "imgi_5_58230242-1o.jpg",
@@ -738,6 +757,44 @@ const IMG_DB = {
   "老四川 螺螄風味粉 106g《一組5碗》": [
     "imgi_5_41752111-1o.jpg",
     "imgi_6_41752111-2o.jpg"
+  ],
+  "老上海脆皮蔥抓餅": [
+    "A1BE278C-62B7-43C9-95B2-41B8A92C1216.jpg",
+    "D100B076-5395-4552-A260-8360A00BCA7C.jpg",
+    "ED2F4101-F4BC-40EF-A10E-99E25A685052.jpg",
+    "FFF745F5-DFA3-459F-8F16-781DEAFFD5D3.jpg"
+  ],
+  "義大利大公雞多功能油污清潔 600ml": [
+    "imgi_10_57967761-6o.jpg",
+    "imgi_11_57967761-7o.jpg",
+    "imgi_12_57967761-8o.jpg",
+    "imgi_13_57967761-9o.jpg",
+    "imgi_14_57967761-10o.jpg",
+    "imgi_5_57967761-1o.jpg",
+    "imgi_6_57967761-2o.jpg",
+    "imgi_7_57967761-3o.jpg",
+    "imgi_8_57967761-4o.jpg",
+    "imgi_9_57967761-5o.jpg"
+  ],
+  "數量預購-VS03-日本5D膠原蛋白眼膜60枚入(30對)-12_24號中午12點結單": [
+    "imgi_5_57237935-1o.jpg",
+    "imgi_6_57237935-2o.jpg",
+    "imgi_7_57237935-3o.jpg",
+    "imgi_8_57237935-4o.jpg",
+    "imgi_9_57237935-5o.jpg"
+  ],
+  "美式五花培根": [
+    "16C2F093-159E-40E0-85C1-FF7F3521B579.jpg",
+    "5754402C-7982-420D-87C5-7FB9649BE23A.jpg",
+    "AE86B1E1-2F5E-4E76-BB12-00C2AAE21CEA.jpg"
+  ],
+  "美國牛肉片1kg": [
+    "photo_2025-12-20_14-54-49.jpg",
+    "S__175284346_0.jpg"
+  ],
+  "美國牛五花 1kg": [
+    "1.jpg",
+    "2.jpg"
   ],
   "繁體版特大鏤空花環春節喜氣掛件《一組2件》": [
     "imgi_5_58261050-1o.jpg"
@@ -889,6 +946,9 @@ const IMG_DB = {
     "LINE_NOTE_251210_3.jpg",
     "LINE_NOTE_251210_5.jpg"
   ],
+  "澳洲羊肉片1kg": [
+    "S__173768842_0.jpg"
+  ],
   "澳洲Thera lady 黃金潔顏大金皂 80g": [
     "imgi_7_38167818-3o.jpg"
   ],
@@ -922,6 +982,13 @@ const IMG_DB = {
     "imgi_7_58253026-3o.jpg",
     "imgi_8_58253026-4o.jpg",
     "imgi_9_58253026-5o.jpg"
+  ],
+  "清香白菜獅子頭": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_4.jpg",
+    "LINE_NOTE_251216_7.jpg"
   ],
   "清潔助手❤️增豔淨白酵素 800g(買一送一)": [
     "imgi_5_46545019-1o.jpg",
@@ -1212,6 +1279,12 @@ const IMG_DB = {
     "imgi_7_45155184-2o.jpg",
     "imgi_8_45155184-3o.jpg"
   ],
+  "彩虹蛋糕": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_4.jpg"
+  ],
   "廚師小熊保鮮膜&保鮮袋 4件組": [
     "imgi_10_58252992-6o.jpg",
     "imgi_11_58252992-7o.jpg",
@@ -1243,6 +1316,20 @@ const IMG_DB = {
     "imgi_7_58282807-2o.jpg",
     "imgi_8_58282807-3o.jpg",
     "imgi_9_58282807-4o.jpg"
+  ],
+  "家鄉味老兵蔥抓餅": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_5.jpg"
+  ],
+  "宜蘭人懷念的滋味・西魯肉": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_4.jpg",
+    "LINE_NOTE_251216_5.jpg",
+    "LINE_NOTE_251216_6.jpg"
   ],
   "嬡瑪絲Aimas 財神報福奔富雙派禮盒組(贈新年ㄧ桶金御守)": [
     "imgi_10_58287311-6o.jpg",
@@ -1298,6 +1385,12 @@ const IMG_DB = {
     "LINE_NOTE_251210_5.jpg",
     "LINE_NOTE_251210_6.jpg"
   ],
+  "外銷等級・船凍野生金線魚": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_5.jpg"
+  ],
   "嚴選頂級法國法芙娜巧克力｜可可幸福禮盒": [
     "imgi_5_58213583-3o.jpg",
     "imgi_6_58213583-2o.jpg"
@@ -1307,6 +1400,13 @@ const IMG_DB = {
     "imgi_6_57386555-2o.jpg",
     "imgi_7_57386555-3o.jpg",
     "imgi_8_57386555-4o.jpg"
+  ],
+  "唐門老爹燒餅煎系列": [
+    "LINE_NOTE_251004_1.jpg",
+    "LINE_NOTE_251004_2.jpg",
+    "LINE_NOTE_251004_3.jpg",
+    "LINE_NOTE_251004_4.jpg",
+    "LINE_NOTE_251004_5.jpg"
   ],
   "味覺百撰 真薯脆脆系列 68G《一組4包》": [
     "imgi_5_58275741-1o.jpg"
@@ -1331,6 +1431,17 @@ const IMG_DB = {
     "imgi_7_53328035-9o.jpg",
     "imgi_8_53328035-10o.jpg",
     "imgi_9_53328035-11o.jpg"
+  ],
+  "台灣豬肉片1kg": [
+    "S__173768841_0.jpg"
+  ],
+  "台灣豬梅花1kg": [
+    "S__173768835_0.jpg",
+    "S__173768837_0.jpg"
+  ],
+  "台灣豬五花 1kg": [
+    "S__173768838_0.jpg",
+    "S__173768839_0.jpg"
   ],
   "台灣製🇹🇼GIAT 骨盤校正✪醫美級九分塑整正位褲": [
     "imgi_10_57148329-6o.jpg",
@@ -1370,8 +1481,42 @@ const IMG_DB = {
   "參天製藥 抗疲勞眼 藥水 5ml_單罐": [
     "imgi_5_58274004-1o.jpg"
   ],
+  "去皮豬五花肉條": [
+    "06EB3383-DEA5-4179-9463-B31807031D4A.jpg",
+    "24800160-4A38-497F-BB6B-F22DC9C506E9.jpg",
+    "6FB38137-EB70-4D53-A8C3-0379010C774D.jpg",
+    "E2BF19AD-932D-42FA-80DE-7F3AC05AB569.jpg",
+    "F58B509A-A683-4A19-9D55-D83591C7CF31.jpg"
+  ],
   "原烤紙皮核桃-草本味 250g": [
     "imgi_5_53375041-1o.jpg"
+  ],
+  "卜蜂起司雞柳條1": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_4.jpg"
+  ],
+  "卜蜂起司雞柳條": [
+    "S__59465911.jpg"
+  ],
+  "卜蜂蟹肉炒飯": [
+    "668A06E4-9C32-4A2E-9211-BE33E8D6B716.jpg",
+    "80524287-A580-4368-957F-6AC501987C35.jpg",
+    "9D7B6C0C-38E0-4139-B142-8EC5E5A31262.jpg",
+    "CF4D9814-9B6C-4B38-B7E2-54F6251F52DA.jpg"
+  ],
+  "卜蜂天香炸雞": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_4.jpg"
+  ],
+  "卜蜂墨西哥香烤半春雞": [
+    "LINE_NOTE_251216_1.jpg",
+    "LINE_NOTE_251216_2.jpg",
+    "LINE_NOTE_251216_3.jpg",
+    "LINE_NOTE_251216_5.jpg"
   ],
   "冠軍甕窯三節翅": [
     "LINE_NOTE_251210_1.jpg",
@@ -1747,25 +1892,6 @@ const IMG_DB = {
     "imgi_7_58288895-3o.jpg",
     "imgi_8_58288895-4o.jpg",
     "imgi_9_58288895-5o.jpg"
-  ],
-  "義大利大公雞多功能油污清潔 600ml": [
-    "imgi_10_57967761-6o.jpg",
-    "imgi_11_57967761-7o.jpg",
-    "imgi_12_57967761-8o.jpg",
-    "imgi_13_57967761-9o.jpg",
-    "imgi_14_57967761-10o.jpg",
-    "imgi_5_57967761-1o.jpg",
-    "imgi_6_57967761-2o.jpg",
-    "imgi_7_57967761-3o.jpg",
-    "imgi_8_57967761-4o.jpg",
-    "imgi_9_57967761-5o.jpg"
-  ],
-  "數量預購-VS03-日本5D膠原蛋白眼膜60枚入(30對)-12_24號中午12點結單": [
-    "imgi_5_57237935-1o.jpg",
-    "imgi_6_57237935-2o.jpg",
-    "imgi_7_57237935-3o.jpg",
-    "imgi_8_57237935-4o.jpg",
-    "imgi_9_57237935-5o.jpg"
   ],
   "100% 台灣製造 2L多功能節能燜燒鍋": [
     "imgi_5_57693869-1o.jpg",
