@@ -423,6 +423,13 @@ const IMG_DB = {
     "imgi_6_58218799-2o.jpg",
     "imgi_7_58218799-4o.jpg"
   ],
+  "麻油／麻辣猴頭菇": [
+    "imgi_40_6bab8668463d7a6493c2fe309dd7dbf1.jpg",
+    "imgi_41_0ed846ddfe0104c6d5049532b6adbd99.jpg",
+    "imgi_42_53bc510bb19000d02027131c4a6b8e97.jpg",
+    "imgi_43_debfd14bf0b97d24eb25c376503dd1a0.jpg",
+    "imgi_44_80bfa403160b1220967a497059f784fb.jpg"
+  ],
   "麥當當同款橢圓薯餅": [
     "04C873EA-D85B-4B79-A472-D23D73C28987.jpg",
     "352C515D-BBD2-44B3-A308-E9B2A4AEFABC.jpg",
@@ -472,6 +479,12 @@ const IMG_DB = {
     "LINE_NOTE_251210_2.jpg",
     "LINE_NOTE_251210_3.jpg",
     "LINE_NOTE_251210_8.jpg"
+  ],
+  "頂級鮭魚菲力（單包100g–150g）": [
+    "LINE_NOTE_251220_1.jpg",
+    "LINE_NOTE_251220_2.jpg",
+    "LINE_NOTE_251220_3.jpg",
+    "LINE_NOTE_251220_9.jpg"
   ],
   "頂級乾燥TOPDRY 火焰燒肉乾系列 160g": [
     "imgi_10_44577965-16o.jpg",
@@ -559,6 +572,13 @@ const IMG_DB = {
     "LINE_NOTE_251210_1.jpg",
     "LINE_NOTE_251210_2.jpg",
     "LINE_NOTE_251210_6.jpg"
+  ],
+  "霸王薑母鴨雙寶鍋": [
+    "imgi_48_ee9f4b6262a9c34214ba123037388353.jpg",
+    "imgi_49_409609aef08a44a027ccf002cca5a381.jpg",
+    "imgi_50_41b5d1c83ae89b51d428c24b40e666c6.jpg",
+    "imgi_51_7478260c382049203df26a4bbdfa16dd.jpg",
+    "imgi_52_987e79332fff9555f1a87a66084da66f.jpg"
   ],
   "雅詩蘭黛ESTEE LAUDER 特潤超導醒膚潔顏蜜 30ml《一組2條》": [
     "imgi_5_52001613-3o.jpg",
@@ -657,6 +677,18 @@ const IMG_DB = {
     "imgi_7_55482507-3o.jpg",
     "imgi_8_55482507-4o.jpg",
     "imgi_9_55482507-5o.jpg"
+  ],
+  "連鎖早餐店專用 優質漢堡肉丸（1000g盒）": [
+    "imgi_44_a2b0657481bb277f566b3b35017d7da2.jpg",
+    "imgi_45_34b13a0a2e72dac9233ca4a881c92a2a.jpg",
+    "imgi_46_d5bd2259c48d4b82d43725e3cd150e49.jpg",
+    "imgi_47_d10076c632cbb5b1f3a963171aebc7f9.jpg"
+  ],
+  "速食店專用薯餅（10入）": [
+    "imgi_37_3d794047dccd049cd54db3c41126c07d.jpg",
+    "imgi_38_9745e20f5d9d5502902aff821390d095.jpg",
+    "imgi_39_4ae25ecc6ebd04ce0e74367cc8b88a69.jpg",
+    "imgi_40_df5d93e2d7e2c4eb0eaf83c931fe7750.jpg"
   ],
   "迪士尼 光禾手提保溫袋": [
     "imgi_5_58270863-1o.jpg",
@@ -917,6 +949,18 @@ const IMG_DB = {
     "LINE_NOTE_251210_4.jpg",
     "LINE_NOTE_251210_9.jpg"
   ],
+  "紅龍特製人氣棒棒腿（10支包）": [
+    "imgi_49_300ffd81bd434f05c209dac153c668b4.jpg",
+    "imgi_50_49c30da2de8b130a26536d7c91305aec.jpg",
+    "imgi_51_94af7e43f9294e61cffd11286af1f18f.jpg",
+    "imgi_52_23620741756bee5147fe10c09da15a53.jpg"
+  ],
+  "紅龍日式牛丼🌈": [
+    "imgi_40_49a238f86f08d1eb9e0aabba3b7addc2.jpg",
+    "imgi_41_179d377dd66856983858387f1c754611.jpg",
+    "imgi_42_eac7697bd23eecfe95a24c27ba9b752e.jpg",
+    "imgi_43_71080bb2407be7a294b4d5aca87e174f.jpg"
+  ],
   "紅龍優質米漢堡": [
     "LINE_NOTE_251220_1.jpg",
     "LINE_NOTE_251220_2.jpg",
@@ -1033,6 +1077,12 @@ const IMG_DB = {
     "imgi_7_52294272-7o.jpg",
     "imgi_8_52294272-8o.jpg",
     "imgi_9_52294272-10o.jpg"
+  ],
+  "現撈野生烏魚殼": [
+    "imgi_43_1e37b9afd33b20dc45874465df6b28b1.jpg",
+    "imgi_44_b657046aee5c3166e5b70a483e5766c9.jpg",
+    "imgi_45_80563e2ab98a00e028da7804a20fb0d6.jpg",
+    "imgi_46_cd781a7e9532e60999a80b07a2a02d71.jpg"
   ],
   "獨家推出 二品木 龜苓膏風味軟糖 300g": [
     "imgi_5_41509959-2o.jpg",
@@ -1804,6 +1854,19 @@ const IMG_DB = {
     "imgi_8_55599844-2o.jpg",
     "imgi_9_55599844-3o.jpg"
   ],
+  "三層培根": [
+    "imgi_37_9d07cf8af66b6b291df504e403a14dac.jpg",
+    "imgi_38_51c3da551058b5f33785cee19247ea3f.jpg",
+    "imgi_39_5439f4d7b2fc679256552c1363f3dc06.jpg",
+    "imgi_40_9e46e5d09e87baae9c5e301485bbcef7.jpg",
+    "imgi_41_8a553af2a086ff8c47f999e63376978c.jpg"
+  ],
+  "三兄弟青蔥芝麻蛋餅皮（一包10片）": [
+    "imgi_41_afede3fb7dd8cdecdd9f5531fbb6d5cd.jpg",
+    "imgi_42_c2f5f40c304cae0ff5cac87f2414d75f.jpg",
+    "imgi_43_fa9c30ee898a8e49a985e4f7c20aaf2a.jpg",
+    "imgi_44_86afaf810ea4f3086d25a818e9989f41.jpg"
+  ],
   "七連霸冠軍👑一口烏魚子120g(附盒裝)": [
     "imgi_10_38791613-6o.jpg",
     "imgi_5_38791613-1o.jpg",
@@ -2115,6 +2178,12 @@ const IMG_DB = {
     "imgi_7_57743164-3o.jpg",
     "imgi_8_57743164-4o.jpg",
     "imgi_9_57743164-5o.jpg"
+  ],
+  "7S 生食級干貝（家庭號）": [
+    "imgi_40_61e11e84bf3e544b259ee7b65e92bfd9.jpg",
+    "imgi_41_badc12f8c565709dfaa4898eddea6295.jpg",
+    "imgi_42_03eae59fe43835000532bd990ec7583d.jpg",
+    "imgi_43_c37decf15bae3129ccd23e888ce70cf3.jpg"
   ],
   "77系列超值綜合包300g": [
     "imgi_5_58217290-1o.jpg",
