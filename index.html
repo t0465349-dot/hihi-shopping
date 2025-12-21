@@ -50,17 +50,16 @@
         .card-body { padding: 10px; }
         .card-title { font-size: 14px; height: 38px; overflow: hidden; font-weight: bold; margin-bottom: 5px; line-height: 1.3; }
         
-        /* ★★★ 修改這裡：價格樣式與動畫 ★★★ */
         @keyframes price-beat {
             0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.08); } /* 稍微放大一點點 */
+            50% { transform: scale(1.08); } 
         }
         .card-price { 
             color: #d63031; 
             font-weight: 900; 
-            font-size: 16px; /* 字體稍微調小一點以容納文字 */
-            display: inline-block; /* 讓動畫生效 */
-            animation: price-beat 1.5s infinite ease-in-out; /* 動畫設定：1.5秒循環一次 */
+            font-size: 16px; 
+            display: inline-block; 
+            animation: price-beat 1.5s infinite ease-in-out; 
         }
         
         #status-area { text-align: center; padding: 20px; margin-top: 20px; }
@@ -78,7 +77,7 @@
         .gallery-hint { text-align: center; font-size: 12px; color: #888; margin-bottom: 10px; }
         .desc-box { background: #fdfdfd; padding: 15px; border-radius: 8px; font-size: 15px; line-height: 1.6; color: #333; margin-bottom: 15px; border: 2px dashed #ddd; white-space: pre-wrap; word-wrap: break-word; }
 
-        /* ★★★ 新增：確認下單與備註彈窗 ★★★ */
+        /* 確認下單與備註彈窗 */
         #confirm-modal {
             position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
             width: 90%; max-width: 400px;
@@ -313,13 +312,20 @@
             batch.forEach(p => {
                 let thumb = (p.images.length > 0) ? encodeURI(p.images[0]) : FALLBACK_IMG;
                 let badge = p.isSpot ? "⚡ 現貨" : `⏳ ${p.date} 結單`; let style = p.isSpot ? "background:#ff4757" : "background:#000";
+                
+                // ★★★ 這裡產生 0~20 的隨機數字 ★★★
+                let soldNum = Math.floor(Math.random() * 20); 
+
                 let div = document.createElement('div'); div.className = 'card'; div.onclick = () => showModal(p.id);
-                // ★★★ 修改這裡：加入「🔥團購價」文字 ★★★
+                // ★★★ 修改下方 innerHTML 加入隨機售出數 ★★★
                 div.innerHTML = `<span class="date-badge" style="${style}">${badge}</span>
                     <img src="${thumb}" class="card-img" loading="lazy" onerror="this.src='${FALLBACK_IMG}'">
                     <div class="card-body">
                         <div class="card-title">${p.title}</div>
-                        <div class="card-price">🔥團購價 $${p.price}</div>
+                        <div class="card-price">
+                            🔥團購價 $${p.price}
+                            <span style="font-size:12px; color:#999; font-weight:normal; margin-left:5px;">已售出${soldNum}</span>
+                        </div>
                     </div>`;
                 list.appendChild(div);
             });
@@ -361,7 +367,7 @@
                     if (hasLocalImages) {
                         let matchKey = IMG_DB[safeTitle] ? safeTitle : (IMG_DB[title] ? title : null);
                         if (!matchKey) {
-                             matchKey = Object.keys(IMG_DB).find(k => k.includes(safeTitle) || safeTitle.includes(k) || k.includes(title) || title.includes(k));
+                            matchKey = Object.keys(IMG_DB).find(k => k.includes(safeTitle) || safeTitle.includes(k) || k.includes(title) || title.includes(k));
                         }
                         if (matchKey && Array.isArray(IMG_DB[matchKey])) localImgs = IMG_DB[matchKey].map(f => `images/${matchKey}/${f}`);
                     }
@@ -375,7 +381,6 @@
     function showModal(id) {
         currentItem = allProducts.find(p => p.id == id); qty = 1;
         document.getElementById('mTitle').innerText = currentItem.title;
-        // ★★★ 修改這裡：彈窗也加上團購價文字 ★★★
         document.getElementById('mPrice').innerText = "🔥團購價 $" + currentItem.price;
         const dBox = document.getElementById('mDesc'); if (currentItem.desc) { dBox.innerText = currentItem.desc; dBox.style.display = 'block'; } else { dBox.style.display = 'none'; }
         const gal = document.getElementById('gallery'); gal.innerHTML = "";
