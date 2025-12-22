@@ -90,7 +90,7 @@
         .btn-load-more { background: #333; color: #fff; border: none; padding: 10px 30px; border-radius: 30px; font-size: 14px; cursor: pointer; font-weight: bold; }
         .no-result { text-align: center; padding: 40px 20px; color: #888; font-weight: bold; display: none; line-height: 1.6; }
 
-        /* ★★★ 這裡開始修改：商品詳情彈窗 CSS ★★★ */
+        /* 商品詳情彈窗 CSS */
         #modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 90; display: none; }
         
         #modal-box { 
@@ -98,13 +98,11 @@
             width: 100%; max-width: 480px; 
             background: #fff; border-top: 3px solid #000; 
             border-top-left-radius: 20px; border-top-right-radius: 20px; 
-            /* 移除原本的 padding，交給子元素控制 */
             padding: 0; 
             z-index: 100; 
-            display: none; /* 初始隱藏，JS會改成 flex */
-            height: 85vh; /* 給定高度 */
+            display: none; 
+            height: 85vh; 
             max-height: 90vh; 
-            /* 改用 Flex 佈局 */
             flex-direction: column;
             overflow: hidden; 
         }
@@ -127,13 +125,15 @@
         .modal-footer {
             padding: 15px 20px;
             background: #fff;
-            border-top: 1px solid #eee; /* 分隔線 */
+            border-top: 1px solid #eee; 
             flex-shrink: 0;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.05); /* 微微陰影 */
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
         }
 
+        /* 恢復原本的圖片高度 450px */
         .gallery-container { width: 100%; height: auto; max-height: 450px; overflow-x: auto; overflow-y: hidden; white-space: nowrap; background: #fff; border: 2px solid #eee; border-radius: 8px; margin-bottom: 10px; scroll-snap-type: x mandatory; }
         .gallery-img { width: 100%; height: auto; max-height: 450px; object-fit: contain; display: inline-block; scroll-snap-align: center; }
+        
         .gallery-hint { text-align: center; font-size: 12px; color: #888; margin-bottom: 10px; }
         .desc-box { background: #fdfdfd; padding: 15px; border-radius: 8px; font-size: 15px; line-height: 1.6; color: #333; margin-bottom: 15px; border: 2px dashed #ddd; white-space: pre-wrap; word-wrap: break-word; }
 
@@ -226,7 +226,7 @@
         </div>
 
         <div class="modal-footer">
-            <button class="btn-big" onclick="openConfirmStep()">確認下單</button>
+            <button class="btn-big" onclick="openConfirmStep()">立即喊單+1</button>
         </div>
     </div>
 
@@ -473,6 +473,7 @@
         return result;
     }
 
+    /* ★★★ 修改：確保彈窗打開時強制捲動到頂部 (加入 setTimeout 確保執行) ★★★ */
     function showModal(id) {
         currentItem = allProducts.find(p => p.id == id); qty = 1;
         document.getElementById('mTitle').innerText = currentItem.title;
@@ -481,10 +482,16 @@
         const gal = document.getElementById('gallery'); gal.innerHTML = "";
         (currentItem.images.length ? currentItem.images : [FALLBACK_IMG]).forEach(img => gal.innerHTML += `<img src="${encodeURI(img)}" class="gallery-img" onerror="this.src='${FALLBACK_IMG}'">`);
         
+        // 1. 先顯示彈窗
         document.getElementById('modal-overlay').style.display = 'block'; 
-        // ★★★ 修改：這裡要用 flex 才能啟動上中下佈局 ★★★
         document.getElementById('modal-box').style.display = 'flex'; 
         document.body.style.overflow = 'hidden';
+
+        // 2. 延遲 10ms 後再強制歸零，確保元素已顯示，捲軸屬性才有效
+        setTimeout(() => {
+            const scrollBox = document.querySelector('.modal-scroll-content');
+            if (scrollBox) scrollBox.scrollTop = 0;
+        }, 10);
     }
 
     function closeAllModals() {
@@ -528,7 +535,7 @@
             myOrders.push(orderData);
             localStorage.setItem(`orders_${currentPhone}`, JSON.stringify(myOrders));
             updateCartCount();
-            alert("✅ 下單成功！系統已同步資料<這裡下單Line記事本就不用在+1❗>。");
+            alert("✅ 下單成功！📢📢這裡下單Line記事本就不用在+1囉❗。");
             closeAllModals();
             btn.disabled = false; btn.innerText = "確認訂購";
         }).catch(err => {
