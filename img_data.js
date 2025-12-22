@@ -2353,6 +2353,13 @@ const IMG_DB = {
     "imgi_43_fa9c30ee898a8e49a985e4f7c20aaf2a.jpg",
     "imgi_44_86afaf810ea4f3086d25a818e9989f41.jpg"
   ],
+  "三代祖傳蠶豆之家👨‍👧‍👦獨家配方手工炒作蠶豆酥 360g": [
+    "imageye___-_imgi_5_40483969-4o.jpg",
+    "imageye___-_imgi_6_40483969-5o.jpg",
+    "imageye___-_imgi_7_40483969-6o.jpg",
+    "imageye___-_imgi_8_40483969-7o.jpg",
+    "imageye___-_imgi_9_40483969-8o.jpg"
+  ],
   "七連霸冠軍👑一口烏魚子120g(附盒裝)": [
     "imgi_10_38791613-6o.jpg",
     "imgi_5_38791613-1o.jpg",
