@@ -33,33 +33,12 @@
         .cart-count { position: absolute; top: -5px; right: -5px; background: #ff4757; color: #fff; border-radius: 50%; padding: 1px 6px; font-size: 11px; font-weight: bold; line-height: 1; border: 2px solid #ffda00; min-width: 20px; text-align: center; }
         .search-input { width: 100%; padding: 10px 15px; border-radius: 20px; border: 2px solid #333; font-size: 14px; outline: none; }
 
-        /* 分類導覽列 (Grid 九宮格排版) */
-        .category-bar { 
-            display: grid; 
-            grid-template-columns: repeat(3, 1fr); 
-            padding: 10px 15px; 
-            background: #fff; 
-            border-bottom: 1px solid #eee; 
-            gap: 10px; 
-        }
-        
-        .cat-btn { 
-            width: 100%; 
-            padding: 8px 5px; 
-            border-radius: 20px; 
-            border: 1px solid #ddd; 
-            background: #f9f9f9; 
-            font-size: 14px; 
-            color: #555; 
-            cursor: pointer; 
-            transition: 0.2s; 
-            display: flex;             
-            align-items: center;       
-            justify-content: center;   
-            text-align: center;
-            min-height: 42px; 
-        }
-        
+        /* 分類導覽列 */
+        .category-bar { display: flex; overflow-x: auto; white-space: nowrap; padding: 10px 15px; background: #fff; border-bottom: 1px solid #eee; gap: 10px; cursor: grab; -webkit-user-select: none; user-select: none; }
+        .category-bar:active { cursor: grabbing; }
+        .category-bar::-webkit-scrollbar { display: none; } 
+        .cat-btn { flex-shrink: 0; padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd; background: #f9f9f9; font-size: 14px; color: #555; cursor: pointer; transition: 0.2s; pointer-events: auto; }
+        .category-bar.is-dragging .cat-btn { pointer-events: none; } 
         .cat-btn.active { background: #ff4757; color: #fff; border-color: #ff4757; font-weight: bold; box-shadow: 0 2px 5px rgba(255, 71, 87, 0.4); }
 
         /* 商品列表 */
@@ -90,48 +69,9 @@
         .btn-load-more { background: #333; color: #fff; border: none; padding: 10px 30px; border-radius: 30px; font-size: 14px; cursor: pointer; font-weight: bold; }
         .no-result { text-align: center; padding: 40px 20px; color: #888; font-weight: bold; display: none; line-height: 1.6; }
 
-        /* ★★★ 這裡開始修改：商品詳情彈窗 CSS ★★★ */
+        /* 商品詳情彈窗 */
         #modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 90; display: none; }
-        
-        #modal-box { 
-            position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); 
-            width: 100%; max-width: 480px; 
-            background: #fff; border-top: 3px solid #000; 
-            border-top-left-radius: 20px; border-top-right-radius: 20px; 
-            /* 移除原本的 padding，交給子元素控制 */
-            padding: 0; 
-            z-index: 100; 
-            display: none; /* 初始隱藏，JS會改成 flex */
-            height: 85vh; /* 給定高度 */
-            max-height: 90vh; 
-            /* 改用 Flex 佈局 */
-            flex-direction: column;
-            overflow: hidden; 
-        }
-
-        /* 彈窗：頂部關閉按鈕區 */
-        .modal-header {
-            padding: 15px 20px 5px;
-            text-align: right;
-            flex-shrink: 0;
-        }
-
-        /* 彈窗：中間可捲動區 (圖片+說明) */
-        .modal-scroll-content {
-            flex: 1; /* 自動填滿剩餘空間 */
-            overflow-y: auto; /* 只有這塊會捲動 */
-            padding: 0 20px 20px;
-        }
-
-        /* 彈窗：底部固定按鈕區 */
-        .modal-footer {
-            padding: 15px 20px;
-            background: #fff;
-            border-top: 1px solid #eee; /* 分隔線 */
-            flex-shrink: 0;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.05); /* 微微陰影 */
-        }
-
+        #modal-box { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; background: #fff; border-top: 3px solid #000; border-top-left-radius: 20px; border-top-right-radius: 20px; padding: 20px; z-index: 100; display: none; max-height: 90vh; overflow-y: auto; }
         .gallery-container { width: 100%; height: auto; max-height: 450px; overflow-x: auto; overflow-y: hidden; white-space: nowrap; background: #fff; border: 2px solid #eee; border-radius: 8px; margin-bottom: 10px; scroll-snap-type: x mandatory; }
         .gallery-img { width: 100%; height: auto; max-height: 450px; object-fit: contain; display: inline-block; scroll-snap-align: center; }
         .gallery-hint { text-align: center; font-size: 12px; color: #888; margin-bottom: 10px; }
@@ -211,23 +151,15 @@
     <div id="modal-overlay" onclick="closeAllModals()"></div>
 
     <div id="modal-box">
-        <div class="modal-header">
-            <button onclick="closeAllModals()" style="font-size:24px; background:none; border:none; cursor:pointer;">✖</button>
+        <div style="text-align:right; margin-bottom:5px;"><button onclick="closeAllModals()" style="font-size:24px; background:none; border:none; cursor:pointer;">✖</button></div>
+        <div id="gallery" class="gallery-container"></div>
+        <div class="gallery-hint">⇦ 左右滑動查看圖片 ⇨</div>
+        <div>
+            <div id="mTitle" style="font-weight:bold; margin-bottom:5px; font-size:18px;"></div>
+            <div id="mPrice" style="color:#d63031; font-size:24px; font-weight:900;"></div>
         </div>
-        
-        <div class="modal-scroll-content">
-            <div id="gallery" class="gallery-container"></div>
-            <div class="gallery-hint">⇦ 左右滑動查看圖片 ⇨</div>
-            <div>
-                <div id="mTitle" style="font-weight:bold; margin-bottom:5px; font-size:18px;"></div>
-                <div id="mPrice" style="color:#d63031; font-size:24px; font-weight:900;"></div>
-            </div>
-            <div id="mDesc" class="desc-box"></div>
-        </div>
-
-        <div class="modal-footer">
-            <button class="btn-big" onclick="openConfirmStep()">確認下單</button>
-        </div>
+        <div id="mDesc" class="desc-box"></div>
+        <button class="btn-big" onclick="openConfirmStep()">確認下單</button>
     </div>
 
     <div id="confirm-modal">
@@ -273,13 +205,22 @@
     const FALLBACK_IMG = "https://placehold.co/300x300/eee/999?text=No+Image";
     const GAS_URL = "https://script.google.com/macros/s/AKfycbykBlVZ63m9zY45MCYXh1xMpeDdNQsRflmw-llrp8s_k9nb3Mvia7cgDKprfn_OmnA/exec";
 
-    let allProducts = [], currentList = [], displayedCount = 0, currentItem = null, qty = 1, categorySet = new Set();
+    let allProducts = [], currentList = [], displayedCount = 0, currentItem = null, qty = 1, weekGroups = new Set();
     let myOrders = [], currentPhone = "";
     const BATCH_SIZE = 20;
     const hasLocalImages = (typeof IMG_DB !== 'undefined');
     if(!hasLocalImages) window.IMG_DB = {}; 
 
     function log(msg) { document.getElementById('debug-msg').innerText = msg; }
+
+    function initCategoryDrag() {
+        const slider = document.getElementById('categoryBar');
+        let isDown = false; let startX; let scrollLeft;
+        slider.addEventListener('mousedown', (e) => { isDown = true; slider.classList.add('active'); startX = e.pageX - slider.offsetLeft; scrollLeft = slider.scrollLeft; });
+        slider.addEventListener('mouseleave', () => { isDown = false; slider.classList.remove('active'); slider.classList.remove('is-dragging'); });
+        slider.addEventListener('mouseup', () => { isDown = false; slider.classList.remove('active'); setTimeout(() => slider.classList.remove('is-dragging'), 50); });
+        slider.addEventListener('mousemove', (e) => { if (!isDown) return; e.preventDefault(); const x = e.pageX - slider.offsetLeft; const walk = (x - startX) * 2; if(Math.abs(walk) > 5) slider.classList.add('is-dragging'); slider.scrollLeft = scrollLeft - walk; });
+    }
 
     function updateCartCount() { const c = document.getElementById('cartCount'); if (myOrders.length > 0) { c.innerText = myOrders.length; c.style.display = 'block'; } else { c.style.display = 'none'; } }
 
@@ -294,7 +235,7 @@
             document.getElementById('view-login').style.display = 'none';
             document.getElementById('view-shop').style.display = 'block';
             document.getElementById('navPhone').innerText = "👤 " + currentPhone;
-            updateCartCount(); tryFetchData(); 
+            updateCartCount(); tryFetchData(); initCategoryDrag();
         }, 500);
     }
 
@@ -316,66 +257,31 @@
         document.getElementById('loading-txt').style.display = 'none';
         allProducts = parseCSV(csvText);
         if(allProducts.length === 0) { document.getElementById('error-txt').innerText = "⚠️ 無符合條件商品"; document.getElementById('error-txt').style.display = 'block'; }
-        else { generateCategories(); currentList = allProducts; sortProducts(currentList); renderNextBatch(); window.addEventListener('scroll', handleScroll); }
+        else { generateWeekCategories(); currentList = allProducts; sortProducts(currentList); renderNextBatch(); window.addEventListener('scroll', handleScroll); }
     }
 
-    // ★★★ 修改：依照指定順序排列分類，並加上符號 ★★★
-    function generateCategories() {
-        const bar = document.getElementById('categoryBar');
-        categorySet.clear();
-        
-        allProducts.forEach(p => { 
-            if(p.category && p.category !== "") {
-                categorySet.add(p.category); 
-            }
-        });
+    function getWeekRange(dateObj) {
+        const d = new Date(dateObj); const day = d.getDay(); const diff = d.getDate() - day + (day === 0 ? -6 : 1);
+        const mon = new Date(d.setDate(diff)); const sun = new Date(mon); sun.setDate(mon.getDate() + 6);
+        return `${(mon.getMonth()+1)}/${mon.getDate()}~${(sun.getMonth()+1)}/${sun.getDate()}`;
+    }
 
+    function generateWeekCategories() {
+        const bar = document.getElementById('categoryBar'); weekGroups.clear(); let hasSpot = false;
+        allProducts.forEach(p => { if(p.isSpot) hasSpot = true; else if(p.dateObj) weekGroups.add(getWeekRange(p.dateObj)); });
         let html = '<button class="cat-btn active" onclick="filterCategory(\'all\', this)">全部商品</button>';
-        
-        // 定義排序與顯示名稱 (關鍵字對應)
-        const catConfig = [
-            { key: "現貨不用等", display: "⭐現貨不用等" },
-            { key: "限時快閃",   display: "⚡限時快閃" },
-            { key: "生活百貨",   display: "🎀生活百貨" },
-            { key: "冷凍生鮮",   display: "❄冷凍生鮮" },
-            { key: "保健食品",   display: "💪保健食品" },
-            { key: "美食專區",   display: "🍔美食專區" },
-            { key: "美妝/保養", display: "💄美妝/保養" }
-        ];
-
-        // 取得分類的排序權重與顯示名稱
-        function getCatInfo(rawName) {
-            const idx = catConfig.findIndex(c => rawName.includes(c.key));
-            if (idx !== -1) {
-                return { order: idx, name: catConfig[idx].display };
-            }
-            return { order: 999, name: rawName };
-        }
-
-        Array.from(categorySet).sort((a, b) => {
-            return getCatInfo(a).order - getCatInfo(b).order;
-        }).forEach(cat => {
-            const info = getCatInfo(cat);
-            html += `<button class="cat-btn" onclick="filterCategory('${cat}', this)">${info.name}</button>`;
-        });
-        
+        if(hasSpot) html += `<button class="cat-btn" onclick="filterCategory('spot', this)">⚡ 現貨專區</button>`;
+        Array.from(weekGroups).sort().forEach(r => html += `<button class="cat-btn" onclick="filterCategory('${r}', this)">📅 ${r} 結單</button>`);
         bar.innerHTML = html;
     }
 
     function filterCategory(type, btn) {
         document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
         if(btn) btn.classList.add('active'); else document.querySelector('.cat-btn').classList.add('active');
-        
-        document.getElementById('searchInput').value = ""; 
-        document.getElementById('noResult').style.display = 'none'; 
-        document.getElementById('shopList').innerHTML = ""; 
-        displayedCount = 0;
-
-        if(type === 'all') {
-            currentList = allProducts;
-        } else {
-            currentList = allProducts.filter(p => p.category === type);
-        }
+        document.getElementById('searchInput').value = ""; document.getElementById('noResult').style.display = 'none'; document.getElementById('shopList').innerHTML = ""; displayedCount = 0;
+        if(type === 'all') currentList = allProducts;
+        else if (type === 'spot') currentList = allProducts.filter(p => p.isSpot);
+        else currentList = allProducts.filter(p => getWeekRange(p.dateObj) === type);
         renderNextBatch();
     }
 
@@ -407,18 +313,18 @@
                 let thumb = (p.images.length > 0) ? encodeURI(p.images[0]) : FALLBACK_IMG;
                 let badge = p.isSpot ? "⚡ 現貨" : `⏳ ${p.date} 結單`; let style = p.isSpot ? "background:#ff4757" : "background:#000";
                 
-                // 0~20 的隨機數字
-                let soldNum = Math.floor(Math.random() * 21); 
-                let soldText = (soldNum > 0) ? `<span style="font-size:12px; color:#999; font-weight:normal; margin-left:5px;">已售出${soldNum}</span>` : "";
+                // ★★★ 這裡產生 0~20 的隨機數字 ★★★
+                let soldNum = Math.floor(Math.random() * 20); 
 
                 let div = document.createElement('div'); div.className = 'card'; div.onclick = () => showModal(p.id);
+                // ★★★ 修改下方 innerHTML 加入隨機售出數 ★★★
                 div.innerHTML = `<span class="date-badge" style="${style}">${badge}</span>
                     <img src="${thumb}" class="card-img" loading="lazy" onerror="this.src='${FALLBACK_IMG}'">
                     <div class="card-body">
                         <div class="card-title">${p.title}</div>
                         <div class="card-price">
                             🔥團購價 $${p.price}
-                            ${soldText}
+                            <span style="font-size:12px; color:#999; font-weight:normal; margin-left:5px;">已售出${soldNum}</span>
                         </div>
                     </div>`;
                 list.appendChild(div);
@@ -443,8 +349,6 @@
             const cols = rows[i];
             if(cols.length > 5) {
                 let dateStr = cols[1]?.trim() || "", title = cols[3]?.trim() || "", priceRaw = cols[5]?.trim() || "", desc = cols[12] || "";
-                let category = cols[13]?.trim() || "精選商品"; 
-
                 let price = parseInt(priceRaw.replace(/[^0-9]/g, ''));
                 let isSpot = dateStr.includes("現貨"), dateObj = null;
                 if (!dateStr) continue;
@@ -459,6 +363,7 @@
                 if (title && !isNaN(price)) {
                     let localImgs = [];
                     let safeTitle = title.replace(/\//g, "_");
+
                     if (hasLocalImages) {
                         let matchKey = IMG_DB[safeTitle] ? safeTitle : (IMG_DB[title] ? title : null);
                         if (!matchKey) {
@@ -466,7 +371,7 @@
                         }
                         if (matchKey && Array.isArray(IMG_DB[matchKey])) localImgs = IMG_DB[matchKey].map(f => `images/${matchKey}/${f}`);
                     }
-                    result.push({ id: i, title, price, date: dateStr, dateObj, isSpot, images: localImgs, desc, category: category });
+                    result.push({ id: i, title, price, date: dateStr, dateObj, isSpot, images: localImgs, desc });
                 }
             }
         }
@@ -480,11 +385,7 @@
         const dBox = document.getElementById('mDesc'); if (currentItem.desc) { dBox.innerText = currentItem.desc; dBox.style.display = 'block'; } else { dBox.style.display = 'none'; }
         const gal = document.getElementById('gallery'); gal.innerHTML = "";
         (currentItem.images.length ? currentItem.images : [FALLBACK_IMG]).forEach(img => gal.innerHTML += `<img src="${encodeURI(img)}" class="gallery-img" onerror="this.src='${FALLBACK_IMG}'">`);
-        
-        document.getElementById('modal-overlay').style.display = 'block'; 
-        // ★★★ 修改：這裡要用 flex 才能啟動上中下佈局 ★★★
-        document.getElementById('modal-box').style.display = 'flex'; 
-        document.body.style.overflow = 'hidden';
+        document.getElementById('modal-overlay').style.display = 'block'; document.getElementById('modal-box').style.display = 'block'; document.body.style.overflow = 'hidden';
     }
 
     function closeAllModals() {
@@ -498,13 +399,15 @@
     function add(n) { qty += n; if(qty < 1) qty = 1; updateCalc(); }
     function updateCalc() { 
         document.getElementById('mQty').innerText = qty; 
-        document.getElementById('mTotalConfirm').innerText = "$" + (qty * currentItem.price); 
+        document.getElementById('mTotalConfirm').innerText = "$" + (qty * currentItem.price); // 更新確認視窗的總金額
     }
 
+    /* ★★★ 確認彈窗邏輯 (含備註) ★★★ */
     function openConfirmStep() {
+        // 將商品資訊填入確認彈窗
         document.getElementById('orderSummaryName').innerText = currentItem.title;
-        updateCalc();
-        document.getElementById('orderNote').value = ""; 
+        updateCalc(); // 確保數量和金額是最新的
+        document.getElementById('orderNote').value = ""; // 清空備註
         document.getElementById('confirm-modal').style.display = 'block';
     }
 
