@@ -480,6 +480,14 @@ const IMG_DB = {
     "LINE_NOTE_251210_3.jpg",
     "LINE_NOTE_251210_8.jpg"
   ],
+  "香腸世家珍珠香腸系列": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg",
+    "LINE_NOTE_251222_5.jpg",
+    "LINE_NOTE_251222_6.jpg"
+  ],
   "頂級鮭魚菲力（單包100g–150g）": [
     "LINE_NOTE_251220_1.jpg",
     "LINE_NOTE_251220_2.jpg",
@@ -518,6 +526,18 @@ const IMG_DB = {
     "imgi_6_57278514-2o.jpg",
     "imgi_7_57278514-3o.jpg",
     "imgi_8_57278514-4o.jpg"
+  ],
+  "韓國Lock&Lock 樂扣樂扣 輕量好握方形冷水壺 1.4L 顏色隨機": [
+    "imgi_10_58353785-5o.jpg",
+    "imgi_11_58353785-6o.jpg",
+    "imgi_12_58353785-7o.jpg",
+    "imgi_13_58353785-8o.jpg",
+    "imgi_14_58353785-9o.jpg",
+    "imgi_15_58353785-10o.jpg",
+    "imgi_6_58353785-1o.jpg",
+    "imgi_7_58353785-2o.jpg",
+    "imgi_8_58353785-3o.jpg",
+    "imgi_9_58353785-4o.jpg"
   ],
   "韓國GONGSKIN燈泡級提亮霜10ml(單支)": [
     "imgi_10_58229796-6o.jpg",
@@ -579,6 +599,15 @@ const IMG_DB = {
     "imgi_50_41b5d1c83ae89b51d428c24b40e666c6.jpg",
     "imgi_51_7478260c382049203df26a4bbdfa16dd.jpg",
     "imgi_52_987e79332fff9555f1a87a66084da66f.jpg"
+  ],
+  "雲感蓬暖高克重牛奶絨 三層鎖溫床墊 (2色)": [
+    "imgi_10_58368743-5o.jpg",
+    "imgi_11_58368743-6o.jpg",
+    "imgi_12_58368743-7o.jpg",
+    "imgi_6_58368743-1o.jpg",
+    "imgi_7_58368743-2o.jpg",
+    "imgi_8_58368743-3o.jpg",
+    "imgi_9_58368743-4o.jpg"
   ],
   "雅詩蘭黛ESTEE LAUDER 特潤超導醒膚潔顏蜜 30ml《一組2條》": [
     "imgi_5_52001613-3o.jpg",
@@ -671,6 +700,13 @@ const IMG_DB = {
     "LINE_NOTE_251220_3.jpg",
     "LINE_NOTE_251220_4.jpg"
   ],
+  "邏輯思維猜瓶子對對碰": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg",
+    "LINE_NOTE_251222_8.jpg"
+  ],
   "達醫健 專利魚油膠囊（30顆／袋）": [
     "imgi_5_55482507-1o.jpg",
     "imgi_6_55482507-2o.jpg",
@@ -689,6 +725,14 @@ const IMG_DB = {
     "imgi_38_9745e20f5d9d5502902aff821390d095.jpg",
     "imgi_39_4ae25ecc6ebd04ce0e74367cc8b88a69.jpg",
     "imgi_40_df5d93e2d7e2c4eb0eaf83c931fe7750.jpg"
+  ],
+  "透明輕奢懸浮花影花瓶": [
+    "imgi_10_58368202-5o.jpg",
+    "imgi_11_58368202-6o.jpg",
+    "imgi_6_58368202-1o.jpg",
+    "imgi_7_58368202-2o.jpg",
+    "imgi_8_58368202-3o.jpg",
+    "imgi_9_58368202-4o.jpg"
   ],
   "迪士尼 光禾手提保溫袋": [
     "imgi_5_58270863-1o.jpg",
@@ -723,12 +767,29 @@ const IMG_DB = {
     "imgi_8_58227719-4o.jpg",
     "imgi_9_58227719-5o.jpg"
   ],
+  "輕奢高透大空間門後收納掛籃 1組2個": [
+    "imgi_10_58354094-5o.jpg",
+    "imgi_11_58354094-6o.jpg",
+    "imgi_12_58354094-7o.jpg",
+    "imgi_6_58354094-1o.jpg",
+    "imgi_7_58354094-2o.jpg",
+    "imgi_8_58354094-3o.jpg",
+    "imgi_9_58354094-4o.jpg"
+  ],
   "輕奢大面積衣物除毛順毛雙頭刮毛器2入": [
     "LINE_NOTE_251220_1.jpg",
     "LINE_NOTE_251220_2.jpg",
     "LINE_NOTE_251220_3.jpg",
     "LINE_NOTE_251220_4.jpg",
     "LINE_NOTE_251220_5.jpg"
+  ],
+  "輕奢加絨休閒 直筒長褲男女同款(2色6碼)": [
+    "imgi_10_58369026-5o.jpg",
+    "imgi_11_58369026-7o.jpg",
+    "imgi_6_58369026-10o.jpg",
+    "imgi_7_58369026-2o.jpg",
+    "imgi_8_58369026-3o.jpg",
+    "imgi_9_58369026-4o.jpg"
   ],
   "車主瘋搶🚗超細纖維擦車布(5入_包)": [
     "imgi_5_58271875-4o.jpg",
@@ -741,6 +802,14 @@ const IMG_DB = {
     "LINE_NOTE_251210_2.jpg",
     "LINE_NOTE_251210_3.jpg",
     "LINE_NOTE_251210_6.jpg"
+  ],
+  "超級美味小龍蝦": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg",
+    "LINE_NOTE_251222_5.jpg",
+    "LINE_NOTE_251222_6.jpg"
   ],
   "超歡樂能量禮物包 OPP袋裝": [
     "imgi_10_58214212-6o.jpg",
@@ -840,6 +909,12 @@ const IMG_DB = {
     "LINE_NOTE_251216_4.jpg",
     "LINE_NOTE_251216_5.jpg"
   ],
+  "萌萌動物瓶罐吸管加長深層清潔刷3入1包": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg"
+  ],
   "菱角酥(12入_包)《一組二包》": [
     "imgi_5_58230242-1o.jpg",
     "imgi_6_58230242-2o.jpg"
@@ -867,6 +942,26 @@ const IMG_DB = {
     "imgi_7_58218710-4o.jpg",
     "imgi_8_58218710-5o.jpg",
     "imgi_9_58218710-6o.jpg"
+  ],
+  "自由感氧形緞彩蜜桃臀美體褲子1組2入(2款3碼)": [
+    "imgi_10_58357468-5o.jpg",
+    "imgi_11_58357468-6o.jpg",
+    "imgi_12_58357468-7o.jpg",
+    "imgi_13_58357468-8o.jpg",
+    "imgi_14_58357468-9o.jpg",
+    "imgi_6_58357468-1o.jpg",
+    "imgi_7_58357468-2o.jpg",
+    "imgi_8_58357468-3o.jpg",
+    "imgi_9_58357468-4o.jpg"
+  ],
+  "自由剪裁條紋除塵耐髒地墊 (3色)": [
+    "imgi_10_58354458-5o.jpg",
+    "imgi_11_58354458-6o.jpg",
+    "imgi_12_58354458-7o.jpg",
+    "imgi_6_58354458-1o.jpg",
+    "imgi_7_58354458-2o.jpg",
+    "imgi_8_58354458-3o.jpg",
+    "imgi_9_58354458-4o.jpg"
   ],
   "胡同 元氣黑金芝麻糕 100g": [
     "imgi_10_47670150-10o.jpg",
@@ -918,14 +1013,6 @@ const IMG_DB = {
     "5754402C-7982-420D-87C5-7FB9649BE23A.jpg",
     "AE86B1E1-2F5E-4E76-BB12-00C2AAE21CEA.jpg"
   ],
-  "美國牛肉片1kg": [
-    "photo_2025-12-20_14-54-49.jpg",
-    "S__175284346_0.jpg"
-  ],
-  "美國牛五花 1kg": [
-    "1.jpg",
-    "2.jpg"
-  ],
   "繁體版特大鏤空花環春節喜氣掛件《一組2件》": [
     "imgi_5_58261050-1o.jpg"
   ],
@@ -948,6 +1035,13 @@ const IMG_DB = {
     "LINE_NOTE_251210_3.jpg",
     "LINE_NOTE_251210_4.jpg",
     "LINE_NOTE_251210_9.jpg"
+  ],
+  "紅龍鮮甜玉米粒（340克罐）": [
+    "1D922406-89B5-4DDD-89FA-D143245AF891_0.jpg",
+    "35C79F50-75C3-4F35-906B-3067B38E46DF_0.jpg",
+    "62095C71-0C04-4ABA-B683-EB7837CB8320_0.jpg",
+    "6259756E-0425-40F8-A4B8-757790E53E08_0.jpg",
+    "755D7894-BF79-4ECC-9CB7-0F065483CA18_0.jpg"
   ],
   "紅龍特製人氣棒棒腿（10支包）": [
     "imgi_49_300ffd81bd434f05c209dac153c668b4.jpg",
@@ -987,6 +1081,21 @@ const IMG_DB = {
     "imgi_7_58214126-3o.jpg",
     "imgi_8_58214126-4o.jpg",
     "imgi_9_58214126-5o.jpg"
+  ],
+  "簡約美學儲物床頭櫃": [
+    "imgi_10_58352955-5o.jpg",
+    "imgi_11_58352955-6o.jpg",
+    "imgi_12_58352955-7o.jpg",
+    "imgi_6_58352955-1o.jpg",
+    "imgi_7_58352955-2o.jpg",
+    "imgi_8_58352955-3o.jpg",
+    "imgi_9_58352955-4o.jpg"
+  ],
+  "秋冬暖粉大地系加絨加厚防寒保暖中筒襪(5雙)": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg"
   ],
   "秋冬奶咖復古紋路髮圈": [
     "LINE_NOTE_251210_1.jpg",
@@ -1066,6 +1175,15 @@ const IMG_DB = {
     "LINE_NOTE_251210_3.jpg",
     "LINE_NOTE_251210_4.jpg"
   ],
+  "甜心泡芙絨絨萌物家居套裝 (2色)": [
+    "imgi_10_58353665-6o.jpg",
+    "imgi_11_58353665-7o.jpg",
+    "imgi_12_58353665-8o.jpg",
+    "imgi_6_58353665-1o.jpg",
+    "imgi_7_58353665-3o.jpg",
+    "imgi_8_58353665-4o.jpg",
+    "imgi_9_58353665-5o.jpg"
+  ],
   "瑞奇RICHY 韓式醬味蜂蜜米果 168g《一組兩包》": [
     "imgi_10_52294272-11o.jpg",
     "imgi_11_52294272-9o.jpg",
@@ -1077,6 +1195,12 @@ const IMG_DB = {
     "imgi_7_52294272-7o.jpg",
     "imgi_8_52294272-8o.jpg",
     "imgi_9_52294272-10o.jpg"
+  ],
+  "琥珀焦糖泡芙餅乾": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_5.jpg"
   ],
   "現貨-麥x勞紅龍雞塊✨1000克包": [
     "LINE_NOTE_250426_1.jpg",
@@ -1111,6 +1235,10 @@ const IMG_DB = {
     "LINE_NOTE_251221_3.jpg",
     "LINE_NOTE_251221_5.jpg"
   ],
+  "現貨-開元戀職人鮮奶936ml": [
+    "75602729_2510402052347383_1148021642706812928_n.jpg",
+    "戀職人鮮奶最新單張EDM.jpg"
+  ],
   "現貨-衣物滲透劑": [
     "LINE_NOTE_251221_1.jpg",
     "LINE_NOTE_251221_2.jpg",
@@ -1130,6 +1258,14 @@ const IMG_DB = {
     "LINE_NOTE_251221_3.jpg",
     "LINE_NOTE_251221_8.jpg"
   ],
+  "現貨-美國牛肉片1kg": [
+    "photo_2025-12-20_14-54-49.jpg",
+    "S__175284346_0.jpg"
+  ],
+  "現貨-美國牛五花 1kg": [
+    "1.jpg",
+    "2.jpg"
+  ],
   "現貨-紅龍起司捲": [
     "S__93241768_0.jpg",
     "S__93241770_0.jpg",
@@ -1137,6 +1273,9 @@ const IMG_DB = {
     "S__93241772_0.jpg",
     "S__93241773_0.jpg",
     "S__93241774_0.jpg"
+  ],
+  "現貨-澳洲羊肉片1kg": [
+    "S__173768842_0.jpg"
   ],
   "現貨-活凍艾迪大白蝦600g2030": [
     "LINE_NOTE_250728_1.jpg",
@@ -1192,6 +1331,17 @@ const IMG_DB = {
     "LINE_NOTE_251221_3.jpg",
     "LINE_NOTE_251221_4.jpg",
     "LINE_NOTE_251221_5.jpg"
+  ],
+  "現貨-台灣豬肉片1kg": [
+    "S__173768841_0.jpg"
+  ],
+  "現貨-台灣豬梅花1kg": [
+    "S__173768835_0.jpg",
+    "S__173768837_0.jpg"
+  ],
+  "現貨-台灣豬五花 1kg": [
+    "S__173768838_0.jpg",
+    "S__173768839_0.jpg"
   ],
   "現貨-三合一多功能杯蓋刷 1組2個": [
     "LINE_NOTE_251221_1.jpg",
@@ -1280,9 +1430,6 @@ const IMG_DB = {
     "LINE_NOTE_251210_2.jpg",
     "LINE_NOTE_251210_3.jpg",
     "LINE_NOTE_251210_5.jpg"
-  ],
-  "澳洲羊肉片1kg": [
-    "S__173768842_0.jpg"
   ],
   "澳洲Thera lady 黃金潔顏大金皂 80g": [
     "imgi_7_38167818-3o.jpg"
@@ -1473,6 +1620,26 @@ const IMG_DB = {
     "imgi_8_58258565-4o.jpg",
     "imgi_9_58258565-5o.jpg"
   ],
+  "智利鮭魚切片": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_5.jpg"
+  ],
+  "時尚新潮 仿羊羔絨連帽外套(2色5碼)": [
+    "imgi_10_58369159-4o.jpg",
+    "imgi_11_58369159-6o.jpg",
+    "imgi_6_58369159-1o.jpg",
+    "imgi_7_58369159-5o.jpg",
+    "imgi_8_58369159-2o.jpg",
+    "imgi_9_58369159-3o.jpg"
+  ],
+  "早安香雞堡10片裝": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_7.jpg"
+  ],
   "日系簡約可收納雙桿落地掛衣架": [
     "LINE_NOTE_251220_1.jpg",
     "LINE_NOTE_251220_2.jpg",
@@ -1525,6 +1692,17 @@ const IMG_DB = {
     "imgi_6_52652919-1o.jpg",
     "imgi_7_52652919-2o.jpg",
     "imgi_8_52652919-3o.jpg"
+  ],
+  "日本小羊絨發熱打底褲襪": [
+    "imgi_10_58345057-5o.jpg",
+    "imgi_11_58345057-6o.jpg",
+    "imgi_12_58345057-7o.jpg",
+    "imgi_13_58345057-8o.jpg",
+    "imgi_14_58345057-9o.jpg",
+    "imgi_6_58345057-1o.jpg",
+    "imgi_7_58345057-2o.jpg",
+    "imgi_8_58345057-3o.jpg",
+    "imgi_9_58345057-4o.jpg"
   ],
   "日本大麥若葉青汁粉末(3g_48包_盒)": [
     "imgi_5_42012882-4o.jpg",
@@ -1592,6 +1770,12 @@ const IMG_DB = {
   "日本 河合製藥 兒童魚肝油AD鈣 300粒": [
     "imgi_5_37698082-2o.jpg"
   ],
+  "日本 LEC 排水口濾籃 抑菌消臭球2入": [
+    "imgi_6_46731437-1o.jpg",
+    "imgi_7_46731437-2o.jpg",
+    "imgi_8_46731437-3o.jpg",
+    "imgi_9_46731437-4o.jpg"
+  ],
   "日光栗香地瓜500g": [
     "LINE_NOTE_251220_1.jpg",
     "LINE_NOTE_251220_2.jpg",
@@ -1606,12 +1790,38 @@ const IMG_DB = {
     "LINE_NOTE_251210_5.jpg",
     "LINE_NOTE_251210_7.jpg"
   ],
+  "挪威鮮切鮭魚肚條300g買一送一": [
+    "1.jpg",
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg"
+  ],
+  "招牌鹹酥雞 🍃": [
+    "S__4784241_0.jpg",
+    "S__4784243_0.jpg",
+    "S__4784244_0.jpg",
+    "S__4784245_0.jpg"
+  ],
+  "手工鮮蝦腸粉": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg"
+  ],
   "手切梅花豬醃肉": [
     "LINE_NOTE_251210_1.jpg",
     "LINE_NOTE_251210_2.jpg",
     "LINE_NOTE_251210_3.jpg",
     "LINE_NOTE_251210_4.jpg",
     "LINE_NOTE_251210_5.jpg"
+  ],
+  "慵懶風V領大襯衫(3色3碼)": [
+    "imgi_10_58340793-5o.jpg",
+    "imgi_6_58340793-1o.jpg",
+    "imgi_7_58340793-2o.jpg",
+    "imgi_8_58340793-3o.jpg",
+    "imgi_9_58340793-4o.jpg"
   ],
   "德國雙心Doppelherz薰衣草睡眠舒緩片(30入_盒)": [
     "imgi_5_43196775-4o.jpg",
@@ -1664,6 +1874,15 @@ const IMG_DB = {
     "LINE_NOTE_251220_8.jpg",
     "LINE_NOTE_251220_9.jpg"
   ],
+  "廚房下水槽置物架可伸縮鍋具收納架(2色)": [
+    "imgi_10_58352862-4o.jpg",
+    "imgi_11_58352862-5o.jpg",
+    "imgi_12_58352862-6o.jpg",
+    "imgi_6_58352862-1o.jpg",
+    "imgi_7_58352862-3o.jpg",
+    "imgi_8_58352862-7o.jpg",
+    "imgi_9_58352862-2o.jpg"
+  ],
   "廚師小熊保鮮膜&保鮮袋 4件組": [
     "imgi_10_58252992-6o.jpg",
     "imgi_11_58252992-7o.jpg",
@@ -1696,6 +1915,16 @@ const IMG_DB = {
     "imgi_8_58282807-3o.jpg",
     "imgi_9_58282807-4o.jpg"
   ],
+  "小方塊磁吸 旋轉機械倒數計時器(2色) 【收單日12_23】58VAK1741217-預計01月下旬到貨": [
+    "imgi_10_58367543-5o.jpg",
+    "imgi_11_58367543-10o.jpg",
+    "imgi_12_58367543-11o.jpg",
+    "imgi_13_58367543-12o.jpg",
+    "imgi_6_58367543-1o.jpg",
+    "imgi_7_58367543-2o.jpg",
+    "imgi_8_58367543-3o.jpg",
+    "imgi_9_58367543-4o.jpg"
+  ],
   "家鄉味老兵蔥抓餅": [
     "LINE_NOTE_251216_1.jpg",
     "LINE_NOTE_251216_2.jpg",
@@ -1719,6 +1948,19 @@ const IMG_DB = {
     "imgi_8_58287311-4o.jpg",
     "imgi_9_58287311-5o.jpg"
   ],
+  "奶油多巴胺 孩童靠背小椅凳 (2色)": [
+    "imgi_10_58353268-5o.jpg",
+    "imgi_11_58353268-6o.jpg",
+    "imgi_12_58353268-7o.jpg",
+    "imgi_13_58353268-8o.jpg",
+    "imgi_14_58353268-9o.jpg",
+    "imgi_15_58353268-10o.jpg",
+    "imgi_6_58353268-11o.jpg",
+    "imgi_6_58353268-1o.jpg",
+    "imgi_7_58353268-3o.jpg",
+    "imgi_8_58353268-4o.jpg",
+    "imgi_9_58353268-2o.jpg"
+  ],
   "天然粗製的食尚飲食 醋葡萄乾 210g": [
     "imgi_10_41793126-6o.jpg",
     "imgi_11_41793126-7o.jpg",
@@ -1737,6 +1979,17 @@ const IMG_DB = {
   ],
   "大正製藥 百保能黃金A微粒 44包": [
     "imgi_5_37880794-1o.jpg"
+  ],
+  "大容量百變旅行包 (5色)": [
+    "imgi_10_58369666-5o.jpg",
+    "imgi_11_58369666-6o.jpg",
+    "imgi_12_58369666-7o.jpg",
+    "imgi_13_58369666-8o.jpg",
+    "imgi_14_58369666-9o.jpg",
+    "imgi_6_58369666-1o.jpg",
+    "imgi_7_58369666-2o.jpg",
+    "imgi_8_58369666-3o.jpg",
+    "imgi_9_58369666-4o.jpg"
   ],
   "夢幻派對禮物包 OPP袋裝": [
     "imgi_10_58214175-6o.jpg",
@@ -1800,6 +2053,13 @@ const IMG_DB = {
     "LINE_NOTE_251004_4.jpg",
     "LINE_NOTE_251004_5.jpg"
   ],
+  "唐揚魷魚鬚🦑": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg",
+    "LINE_NOTE_251222_5.jpg"
+  ],
   "味覺百撰 真薯脆脆系列 68G《一組4包》": [
     "imgi_5_58275741-1o.jpg"
   ],
@@ -1823,17 +2083,6 @@ const IMG_DB = {
     "imgi_7_53328035-9o.jpg",
     "imgi_8_53328035-10o.jpg",
     "imgi_9_53328035-11o.jpg"
-  ],
-  "台灣豬肉片1kg": [
-    "S__173768841_0.jpg"
-  ],
-  "台灣豬梅花1kg": [
-    "S__173768835_0.jpg",
-    "S__173768837_0.jpg"
-  ],
-  "台灣豬五花 1kg": [
-    "S__173768838_0.jpg",
-    "S__173768839_0.jpg"
   ],
   "台灣製🇹🇼GIAT 骨盤校正✪醫美級九分塑整正位褲": [
     "imgi_10_57148329-6o.jpg",
@@ -1859,11 +2108,26 @@ const IMG_DB = {
     "imgi_8_58188766-4o.jpg",
     "imgi_9_58188766-5o.jpg"
   ],
+  "台南在地最強滷肉": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg",
+    "LINE_NOTE_251222_6.jpg"
+  ],
   "台中大里｜香滷大腸": [
     "LINE_NOTE_251220_1.jpg",
     "LINE_NOTE_251220_2.jpg",
     "LINE_NOTE_251220_3.jpg",
     "LINE_NOTE_251220_4.jpg"
+  ],
+  "可調節去皮切片彈簧一體刀 顏色隨機": [
+    "imgi_10_58369539-5o.jpg",
+    "imgi_11_58369539-6o.jpg",
+    "imgi_6_58369539-1o.jpg",
+    "imgi_7_58369539-2o.jpg",
+    "imgi_8_58369539-3o.jpg",
+    "imgi_9_58369539-4o.jpg"
   ],
   "可折疊收納小板凳": [
     "LINE_NOTE_251210_1.jpg",
@@ -1882,12 +2146,36 @@ const IMG_DB = {
     "imgi_38_9700d7b1291e8515c95edfa47b8bd654.jpg",
     "imgi_39_766eb62d62aa78c9732b67932efcc1a3.jpg"
   ],
+  "可夾可掛奶油色 雙頭兩用掛勾夾 1包10入(3色)": [
+    "imgi_10_58368340-5o.jpg",
+    "imgi_11_58368340-6o.jpg",
+    "imgi_12_58368340-7o.jpg",
+    "imgi_6_58368340-1o.jpg",
+    "imgi_7_58368340-2o.jpg",
+    "imgi_8_58368340-3o.jpg",
+    "imgi_9_58368340-4o.jpg"
+  ],
   "可可愛愛印花手提垃圾袋": [
     "imgi_34_23e34188be54a613fa86d9c4971a4c30.jpg",
     "imgi_35_7dcc1c91abc24d7c82b9e07a1c46b091.jpg",
     "imgi_36_25696c68bc570c23f1ec236b09a2d8bf.jpg",
     "imgi_37_9d7253ac8eed6449a1b407836fbd512e.jpg",
     "imgi_38_19ef21f9ba67cee369d13e1b60fba1cc.jpg"
+  ],
+  "可伸縮加長可彎除塵撣子": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg",
+    "LINE_NOTE_251222_5.jpg",
+    "LINE_NOTE_251222_6.jpg",
+    "LINE_NOTE_251222_7.jpg"
+  ],
+  "古早味香菇赤肉羹": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg"
   ],
   "參天製藥 抗疲勞眼 藥水 5ml_單罐": [
     "imgi_5_58274004-1o.jpg"
@@ -1901,6 +2189,21 @@ const IMG_DB = {
   ],
   "原烤紙皮核桃-草本味 250g": [
     "imgi_5_53375041-1o.jpg"
+  ],
+  "印花毛衣可愛滑鼠墊": [
+    "imgi_10_58369417-5o.jpg",
+    "imgi_11_58369417-6o.jpg",
+    "imgi_12_58369417-7o.jpg",
+    "imgi_13_58369417-8o.jpg",
+    "imgi_6_58369417-1o.jpg",
+    "imgi_7_58369417-2o.jpg",
+    "imgi_8_58369417-3o.jpg",
+    "imgi_9_58369417-4o.jpg"
+  ],
+  "印尼火山豬肋排": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_4.jpg"
   ],
   "卡貝樂無鹽奶油200g": [
     "imgi_39_a1e11449abf099c4c395f787cb297f2d.jpg",
@@ -1947,6 +2250,11 @@ const IMG_DB = {
     "LINE_NOTE_251216_3.jpg",
     "LINE_NOTE_251216_5.jpg"
   ],
+  "北海道薄鹽花魚一夜干": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_5.jpg"
+  ],
   "冠軍甕窯三節翅": [
     "LINE_NOTE_251210_1.jpg",
     "LINE_NOTE_251210_2.jpg",
@@ -1964,6 +2272,12 @@ const IMG_DB = {
     "imgi_8_58287239-4o.jpg",
     "imgi_9_58287239-5o.jpg"
   ],
+  "免釘雙掛門掛式毛巾抹布手套收納掛桿2入1組": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_5.jpg"
+  ],
   "億品鄉 隱藏版極品甘宋梅 300g": [
     "imgi_10_40881681-6o.jpg",
     "imgi_5_40881681-1o.jpg",
@@ -1979,6 +2293,23 @@ const IMG_DB = {
     "LINE_NOTE_251210_3.jpg",
     "LINE_NOTE_251210_4.jpg"
   ],
+  "伸縮自如好調節旋轉衣架 1組5支": [
+    "imgi_6_58356004-1o.jpg",
+    "imgi_7_58356004-2o.jpg",
+    "imgi_8_58356004-3o.jpg",
+    "imgi_9_58356004-4o.jpg"
+  ],
+  "休閒百搭加厚 羊羔絨拉鍊開衫外套(5色4碼)": [
+    "imgi_10_58367919-5o.jpg",
+    "imgi_11_58367919-6o.jpg",
+    "imgi_12_58367919-7o.jpg",
+    "imgi_13_58367919-8o.jpg",
+    "imgi_14_58367919-9o.jpg",
+    "imgi_6_58367919-1o.jpg",
+    "imgi_7_58367919-2o.jpg",
+    "imgi_8_58367919-3o.jpg",
+    "imgi_9_58367919-4o.jpg"
+  ],
   "京立奇 雙尺寸 救急透氣OK繃｜100枚入《一組二盒》": [
     "imgi_5_58269013-1o.jpg"
   ],
@@ -1989,6 +2320,18 @@ const IMG_DB = {
     "LINE_NOTE_251210_4.jpg",
     "LINE_NOTE_251210_5.jpg",
     "LINE_NOTE_251210_6.jpg"
+  ],
+  "不銹鋼波浪肥皂正反瀝水架": [
+    "imgi_10_58355540-5o.jpg",
+    "imgi_11_58355540-6o.jpg",
+    "imgi_12_58355540-7o.jpg",
+    "imgi_13_58355540-8o.jpg",
+    "imgi_14_58355540-9o.jpg",
+    "imgi_15_58355540-10o.jpg",
+    "imgi_6_58355540-1o.jpg",
+    "imgi_7_58355540-2o.jpg",
+    "imgi_8_58355540-3o.jpg",
+    "imgi_9_58355540-4o.jpg"
   ],
   "三新立潔 增豔淨白素1公斤(抗菌成份）罐裝": [
     "imgi_5_55599844-5o.jpg",
@@ -2066,6 +2409,11 @@ const IMG_DB = {
     "imgi_7_52636777-3o.jpg",
     "imgi_8_52636777-4o.jpg"
   ],
+  "【NG 惜福版】#超濃郁純蜂蜜蛋糕🍯": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_7.jpg"
+  ],
   "【LE COUVENT】凡爾賽鏡廳香氛蠟燭190g#焚香與杜松": [
     "imgi_5_58259622-1o.jpg",
     "imgi_6_58259622-2o.jpg",
@@ -2099,6 +2447,14 @@ const IMG_DB = {
     "imgi_7_41609903-3o.jpg",
     "imgi_8_41609903-4o.jpg",
     "imgi_9_41609903-5o.jpg"
+  ],
+  "《藏蟹三兄弟》頂級日式火鍋料": [
+    "LINE_NOTE_251222_1.jpg",
+    "LINE_NOTE_251222_2.jpg",
+    "LINE_NOTE_251222_3.jpg",
+    "LINE_NOTE_251222_4.jpg",
+    "LINE_NOTE_251222_5.jpg",
+    "LINE_NOTE_251222_6.jpg"
   ],
   "⭐奶油風陶瓷醬料碟⭐《一組五個》": [
     "imgi_10_58199892-16o.jpg",
@@ -2218,6 +2574,18 @@ const IMG_DB = {
     "imgi_8_47971317-4o.jpg",
     "imgi_9_47971317-5o.jpg"
   ],
+  "VICTONINA SWEET UCOMFORT 舒芙蕾雲朵裸感內褲8入盒(2碼)": [
+    "imgi_10_58357226-5o.jpg",
+    "imgi_11_58357226-6o.jpg",
+    "imgi_12_58357226-7o.jpg",
+    "imgi_13_58357226-8o.jpg",
+    "imgi_14_58357226-9o.jpg",
+    "imgi_15_58357226-10o.jpg",
+    "imgi_6_58357226-1o.jpg",
+    "imgi_7_58357226-2o.jpg",
+    "imgi_8_58357226-3o.jpg",
+    "imgi_9_58357226-4o.jpg"
+  ],
   "SAVIRA 檀香精油護手霜 30g《一組3條》": [
     "imgi_5_58260584-3o.jpg",
     "imgi_6_58260584-1o.jpg",
@@ -2262,6 +2630,29 @@ const IMG_DB = {
     "imgi_6_58231023-1o.jpg",
     "imgi_7_58231023-2o.jpg",
     "imgi_8_58231023-3o.jpg"
+  ],
+  "CP-酥皮熟鍋貼🥟": [
+    "LINE_NOTE_251220_1.jpg",
+    "LINE_NOTE_251220_2.jpg",
+    "LINE_NOTE_251220_3.jpg",
+    "LINE_NOTE_251220_4.jpg"
+  ],
+  "CP-蓋世達人龍蝦🦞沙拉（500克）": [
+    "LINE_NOTE_251220_1.jpg",
+    "LINE_NOTE_251220_2.jpg",
+    "LINE_NOTE_251220_3.jpg",
+    "LINE_NOTE_251220_4.jpg",
+    "LINE_NOTE_251220_5.jpg",
+    "LINE_NOTE_251220_6.jpg",
+    "LINE_NOTE_251220_7.jpg",
+    "LINE_NOTE_251220_8.jpg"
+  ],
+  "CP-無敵肉多多牛肉爐": [
+    "LINE_NOTE_251220_1.jpg",
+    "LINE_NOTE_251220_2.jpg",
+    "LINE_NOTE_251220_3.jpg",
+    "LINE_NOTE_251220_4.jpg",
+    "LINE_NOTE_251220_5.jpg"
   ],
   "COCO 壹番屋 高湯系列 750G": [
     "imgi_5_58294695-1o.jpg"
