@@ -2046,7 +2046,7 @@ const IMG_DB = {
     "LINE_NOTE_251221_8.jpg",
     "LINE_NOTE_251221_9.jpg"
   ],
-  "現貨-360°#全防護涼感防曬帽": [
+  "現貨-360°全防護涼感防曬帽": [
     "LINE_NOTE_251221_1.jpg",
     "LINE_NOTE_251221_2.jpg",
     "LINE_NOTE_251221_3.jpg",
