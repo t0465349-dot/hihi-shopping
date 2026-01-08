@@ -53,9 +53,9 @@
             color: #555; 
             cursor: pointer; 
             transition: 0.2s; 
-            display: flex;             
-            align-items: center;       
-            justify-content: center;   
+            display: flex;              
+            align-items: center;        
+            justify-content: center;    
             text-align: center;
             min-height: 42px; 
         }
@@ -319,20 +319,24 @@
         else { generateCategories(); currentList = allProducts; sortProducts(currentList); renderNextBatch(); window.addEventListener('scroll', handleScroll); }
     }
 
-    // ★★★ 修改：依照指定順序排列分類，並加上符號 ★★★
     function generateCategories() {
         const bar = document.getElementById('categoryBar');
         categorySet.clear();
         
+        // --- 新增：用來統計各分類數量的物件 ---
+        const counts = {}; 
+
         allProducts.forEach(p => { 
             if(p.category && p.category !== "") {
                 categorySet.add(p.category); 
+                // 這裡在累加數量
+                counts[p.category] = (counts[p.category] || 0) + 1;
             }
         });
 
-        let html = '<button class="cat-btn active" onclick="filterCategory(\'all\', this)">全部商品</button>';
+        // --- 修改：全部商品後面加上總數量 (${allProducts.length}) ---
+        let html = `<button class="cat-btn active" onclick="filterCategory('all', this)">全部商品(${allProducts.length})</button>`;
         
-        // 定義排序與顯示名稱 (關鍵字對應)
         const catConfig = [
             { key: "現貨不用等", display: "⭐現貨不用等" },
             { key: "限時快閃",   display: "⚡限時快閃" },
@@ -341,10 +345,10 @@
             { key: "保健食品",   display: "💪保健食品" },
             { key: "美食專區",   display: "🍔美食專區" },
             { key: "美妝/保養", display: "💄美妝/保養" },
-            { key: "美妝/保養", display: "🍗火鍋肉片" }
+            // 注意：您的原代碼這裡 key 重複了，若是"火鍋肉片"分類，建議將 key 改為 "火鍋肉片"
+            { key: "美妝/保養", display: "🍗火鍋肉片" } 
         ];
 
-        // 取得分類的排序權重與顯示名稱
         function getCatInfo(rawName) {
             const idx = catConfig.findIndex(c => rawName.includes(c.key));
             if (idx !== -1) {
@@ -357,7 +361,9 @@
             return getCatInfo(a).order - getCatInfo(b).order;
         }).forEach(cat => {
             const info = getCatInfo(cat);
-            html += `<button class="cat-btn" onclick="filterCategory('${cat}', this)">${info.name}</button>`;
+            // --- 修改：取出該分類的數量並顯示 ---
+            const count = counts[cat] || 0;
+            html += `<button class="cat-btn" onclick="filterCategory('${cat}', this)">${info.name}(${count})</button>`;
         });
         
         bar.innerHTML = html;
@@ -408,7 +414,6 @@
                 let thumb = (p.images.length > 0) ? encodeURI(p.images[0]) : FALLBACK_IMG;
                 let badge = p.isSpot ? "⚡ 現貨" : `⏳ ${p.date} 結單`; let style = p.isSpot ? "background:#ff4757" : "background:#000";
                 
-                // 0~20 的隨機數字
                 let soldNum = Math.floor(Math.random() * 21); 
                 let soldText = (soldNum > 0) ? `<span style="font-size:12px; color:#999; font-weight:normal; margin-left:5px;">已售出${soldNum}</span>` : "";
 
@@ -430,6 +435,38 @@
         }, 100);
     }
 
+    /* --- 新增：相似度比對演算法 (Levenshtein Distance) --- */
+    function getSimilarity(s1, s2) {
+        let longer = s1;
+        let shorter = s2;
+        if (s1.length < s2.length) { longer = s2; shorter = s1; }
+        let longerLength = longer.length;
+        if (longerLength === 0) return 1.0;
+        return (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength);
+    }
+
+    function editDistance(s1, s2) {
+        s1 = s1.toLowerCase(); s2 = s2.toLowerCase();
+        let costs = new Array();
+        for (let i = 0; i <= s1.length; i++) {
+            let lastValue = i;
+            for (let j = 0; j <= s2.length; j++) {
+                if (i == 0) costs[j] = j;
+                else {
+                    if (j > 0) {
+                        let newValue = costs[j - 1];
+                        if (s1.charAt(i - 1) != s2.charAt(j - 1)) newValue = Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
+                        costs[j - 1] = lastValue;
+                        lastValue = newValue;
+                    }
+                }
+            }
+            if (i > 0) costs[s2.length] = lastValue;
+        }
+        return costs[s2.length];
+    }
+    /* --- 演算法結束 --- */
+
     function parseCSV(text) {
         const rows = []; let row = []; let col = ""; let inQuote = false;
         for (let i = 0; i < text.length; i++) {
@@ -440,6 +477,10 @@
         }
         if (col || row.length > 0) { row.push(col); rows.push(row); }
         const result = []; const today = new Date(); today.setHours(0, 0, 0, 0);
+        
+        // 取得所有圖片的 Keys
+        const dbKeys = hasLocalImages ? Object.keys(IMG_DB) : [];
+
         for(let i = 4; i < rows.length; i++) {
             const cols = rows[i];
             if(cols.length > 5) {
@@ -459,13 +500,35 @@
                 }
                 if (title && !isNaN(price)) {
                     let localImgs = [];
-                    let safeTitle = title.replace(/\//g, "_");
+                    
                     if (hasLocalImages) {
-                        let matchKey = IMG_DB[safeTitle] ? safeTitle : (IMG_DB[title] ? title : null);
-                        if (!matchKey) {
-                            matchKey = Object.keys(IMG_DB).find(k => k.includes(safeTitle) || safeTitle.includes(k) || k.includes(title) || title.includes(k));
+                        let matchKey = null;
+
+                        // 1. 先試試完全匹配
+                        if (IMG_DB[title]) {
+                            matchKey = title;
+                        } 
+                        // 2. 如果沒有，進行模糊比對 (門檻 0.7)
+                        else {
+                            let bestKey = null;
+                            let maxScore = 0;
+                            
+                            for (let k of dbKeys) {
+                                let score = getSimilarity(title, k);
+                                if (score > maxScore) {
+                                    maxScore = score;
+                                    bestKey = k;
+                                }
+                            }
+                            // 如果相似度超過 50%，就認定匹配成功
+                            if (maxScore >= 0.5) {
+                                matchKey = bestKey;
+                            }
                         }
-                        if (matchKey && Array.isArray(IMG_DB[matchKey])) localImgs = IMG_DB[matchKey].map(f => `images/${matchKey}/${f}`);
+
+                        if (matchKey && IMG_DB[matchKey]) {
+                            localImgs = IMG_DB[matchKey].map(f => `images/${matchKey}/${f}`);
+                        }
                     }
                     result.push({ id: i, title, price, date: dateStr, dateObj, isSpot, images: localImgs, desc, category: category });
                 }
@@ -474,7 +537,6 @@
         return result;
     }
 
-    /* ★★★ 修改：確保彈窗打開時強制捲動到頂部 (加入 setTimeout 確保執行) ★★★ */
     function showModal(id) {
         currentItem = allProducts.find(p => p.id == id); qty = 1;
         document.getElementById('mTitle').innerText = currentItem.title;
@@ -483,12 +545,10 @@
         const gal = document.getElementById('gallery'); gal.innerHTML = "";
         (currentItem.images.length ? currentItem.images : [FALLBACK_IMG]).forEach(img => gal.innerHTML += `<img src="${encodeURI(img)}" class="gallery-img" onerror="this.src='${FALLBACK_IMG}'">`);
         
-        // 1. 先顯示彈窗
         document.getElementById('modal-overlay').style.display = 'block'; 
         document.getElementById('modal-box').style.display = 'flex'; 
         document.body.style.overflow = 'hidden';
 
-        // 2. 延遲 10ms 後再強制歸零，確保元素已顯示，捲軸屬性才有效
         setTimeout(() => {
             const scrollBox = document.querySelector('.modal-scroll-content');
             if (scrollBox) scrollBox.scrollTop = 0;
