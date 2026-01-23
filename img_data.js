@@ -764,6 +764,13 @@ const IMG_DB = {
     "imgi_8_57203605-4o.jpg",
     "imgi_9_57203605-5o.jpg"
   ],
+  "🇰🇷 韓國製造｜醫美級 OMELLA粉紅水微晶 Snail 美白精華噴霧 100ml - 複製": [
+    "imgi_5_58604345-1o.jpg",
+    "imgi_6_58604345-2o.jpg",
+    "imgi_7_58604345-3o.jpg",
+    "imgi_8_58604345-4o.jpg",
+    "imgi_9_58604345-5o.jpg"
+  ],
   "🇰🇷 韓國製造｜醫美級 OMELLA粉紅水微晶 Snail 美白精華噴霧 100ml": [
     "imgi_5_58604345-1o.jpg",
     "imgi_6_58604345-2o.jpg",
