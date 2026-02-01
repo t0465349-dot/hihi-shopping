@@ -1,16 +1,4 @@
 const IMG_DB = {
-  "images": [
-    "54118635-10o.jpg",
-    "54118635-11o.jpg",
-    "54118635-12o.jpg",
-    "54118635-13o.jpg",
-    "54118635-15o.jpg",
-    "54118635-16o.jpg",
-    "54118635-8o.jpg",
-    "54118635-9.jpg",
-    "54118635-9o.jpg",
-    "7-11.jpg"
-  ],
   "｜🇰🇷江南醫美機構限定｜OMELLA 鉑金膠原333 極光煥白超導噴霧100ml": [
     "imgi_5_58805152-1o.jpg",
     "imgi_6_58805152-2o.jpg",
@@ -676,6 +664,7 @@ const IMG_DB = {
     "imgi_9_58783803-5o.jpg"
   ],
   "韓國ZIGBEE 大容量預防牙周病檸檬柑橘精油牙線棒369支_包": [
+    "58915367-1o.jpg",
     "imgi_11_58915367-6o.jpg",
     "imgi_12_58915367-7o.jpg",
     "imgi_13_58915367-8o.jpg"
@@ -1131,6 +1120,16 @@ const IMG_DB = {
     "imgi_47_66acff29ca3a44cb7a37406a1e345836.jpg",
     "imgi_48_c0ee88d0a3cb70df5e1f8f761f6e0ed5.jpg"
   ],
+  "肉骨茶燉湯麵(純素)390g": [
+    "LINE_NOTE_260201_1.jpg",
+    "LINE_NOTE_260201_2.jpg",
+    "LINE_NOTE_260201_3.jpg",
+    "LINE_NOTE_260201_4.jpg",
+    "LINE_NOTE_260201_5.jpg",
+    "LINE_NOTE_260201_6.jpg",
+    "LINE_NOTE_260201_7.jpg",
+    "LINE_NOTE_260201_8.jpg"
+  ],
   "老兵蔥抓餅(厚）": [
     "imgi_36_8c7711df8f96e406dddb5c516674ac0c.jpg",
     "imgi_37_e44caba66b6aa30097884f889aa8ff38.jpg",
@@ -1181,6 +1180,16 @@ const IMG_DB = {
     "imgi_37_e3ce0ed5b11dea09fb01e67716cb5190.jpg",
     "imgi_38_27c9e1a2129633fefc3853849e51d859.jpg",
     "imgi_39_301ff6fa5a4bd914b2a4ab26f7499221.jpg"
+  ],
+  "純老字號太陽堂餅鋪": [
+    "LINE_NOTE_260201_1.jpg",
+    "LINE_NOTE_260201_2.jpg",
+    "LINE_NOTE_260201_3.jpg",
+    "LINE_NOTE_260201_4.jpg",
+    "LINE_NOTE_260201_5.jpg",
+    "LINE_NOTE_260201_6.jpg",
+    "LINE_NOTE_260201_7.jpg",
+    "LINE_NOTE_260201_8.jpg"
   ],
   "紐西蘭BGO 兒童精油護鼻膏 3.5g": [
     "imgi_5_58783285-1o.jpg",
@@ -1591,6 +1600,15 @@ const IMG_DB = {
     "imgi_39_71a1fd22d807f3162f021d86abb8a4a7.jpg",
     "imgi_40_7b6f8703c67067a765765b23bd652a11.jpg"
   ],
+  "熱浪島-熱浪南洋叻沙麵": [
+    "LINE_NOTE_260201_1.jpg",
+    "LINE_NOTE_260201_2.jpg",
+    "LINE_NOTE_260201_3.jpg",
+    "LINE_NOTE_260201_4.jpg",
+    "LINE_NOTE_260201_5.jpg",
+    "LINE_NOTE_260201_6.jpg",
+    "LINE_NOTE_260201_7.jpg"
+  ],
   "熊熊防水防塵特大衣物收納袋": [
     "imgi_27_88e6c0a6b07d8c641967512b9910e3a8.jpg",
     "imgi_28_631786ba7cf376f3fc7bed19796301e5.jpg",
@@ -1826,11 +1844,24 @@ const IMG_DB = {
     "imgi_8_58864631-3o.jpg",
     "imgi_9_58864631-4o.jpg"
   ],
+  "正宗東南亞風味泡麵": [
+    "LINE_NOTE_260201_1.jpg",
+    "LINE_NOTE_260201_2.jpg",
+    "LINE_NOTE_260201_3.jpg",
+    "LINE_NOTE_260201_4.jpg",
+    "LINE_NOTE_260201_6.jpg"
+  ],
   "歐莉滋-限定奶油蘇打餅系列《一組4包》": [
     "imgi_5_56627351-5o.jpg",
     "imgi_6_56627351-6o.jpg",
     "imgi_7_56627351-7o.jpg",
     "imgi_8_56627351-8o.jpg"
+  ],
+  "檳城益福白咖哩拉麵": [
+    "LINE_NOTE_260201_1.jpg",
+    "LINE_NOTE_260201_2.jpg",
+    "LINE_NOTE_260201_3.jpg",
+    "LINE_NOTE_260201_4.jpg"
   ],
   "極魷料日式章魚球（300g±10%／包）": [
     "imgi_44_68402e98198ec7ad16c02ae1bf0b07da.jpg",
@@ -2492,6 +2523,16 @@ const IMG_DB = {
     "imgi_8_58864315-3o.jpg",
     "imgi_9_58864315-4o.jpg"
   ],
+  "大瑪螺螄粉(全素碗裝) 234g": [
+    "LINE_NOTE_260201_1.jpg",
+    "LINE_NOTE_260201_2.jpg",
+    "LINE_NOTE_260201_3.jpg",
+    "LINE_NOTE_260201_4.jpg",
+    "LINE_NOTE_260201_5.jpg",
+    "LINE_NOTE_260201_6.jpg",
+    "LINE_NOTE_260201_7.jpg",
+    "LINE_NOTE_260201_9.jpg"
+  ],
   "大容量 泰國 五塔標行軍散 25g": [
     "imgi_5_42820923-1o.jpg"
   ],
@@ -2592,6 +2633,13 @@ const IMG_DB = {
     "imgi_39_084691a0c8dd257a00e8308eacc040c1.jpg",
     "imgi_40_8019c94bc7a9f6f3b6120e26365b8ba1.jpg",
     "imgi_41_581120c457e995bf88dd09e32f10e560.jpg"
+  ],
+  "台灣風情 Taiwan 旺來土鳳梨酥（盒裝）245G": [
+    "LINE_NOTE_260201_1.jpg",
+    "LINE_NOTE_260201_2.jpg",
+    "LINE_NOTE_260201_3.jpg",
+    "LINE_NOTE_260201_4.jpg",
+    "LINE_NOTE_260201_9.jpg"
   ],
   "台灣製鋅+石墨烯極暖超彈發熱衣": [
     "imgi_10_57632332-6o.jpg",
@@ -3396,6 +3444,13 @@ const IMG_DB = {
     "imgi_7_50313261-3o.jpg",
     "imgi_8_50313261-4o.jpg",
     "imgi_9_50313261-5o.jpg"
+  ],
+  "Always饗吃乾拌麵": [
+    "LINE_NOTE_260201_1.jpg",
+    "LINE_NOTE_260201_2.jpg",
+    "LINE_NOTE_260201_3.jpg",
+    "LINE_NOTE_260201_4.jpg",
+    "LINE_NOTE_260201_5.jpg"
   ],
   "AKWATEK第二代 升級款節能輕量炒鍋 34cm(AK-1005)": [
     "imgi_5_44177041-11o.jpg",
