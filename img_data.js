@@ -955,6 +955,12 @@ const IMG_DB = {
     "imgi_8_58915610-2o.jpg",
     "imgi_9_58915610-3o.jpg"
   ],
+  "鐵板燒等級紅鑽鮭魚": [
+    "imgi_38_5b0143563ecf82fd50c623db703fa56d.jpg",
+    "imgi_39_7364d9830e4ce39d595ac3920f87248a.jpg",
+    "imgi_40_468aa2e68ab6b82b44b3c747fe0e579e.jpg",
+    "imgi_41_60d3f347517864c41a4221c264e6aae8.jpg"
+  ],
   "醃漬活力里肌豬肉片1000g": [
     "imgi_36_05177122f6c6025663fc51700ce68d29.jpg",
     "imgi_37_295304e2c86aed3abde119af188cfebd.jpg",
@@ -1216,6 +1222,12 @@ const IMG_DB = {
     "imgi_36_c7bf6f5388e99e3d837645a7b43ac764.jpg",
     "imgi_37_782882d1527f72104994f07919c824cd.jpg"
   ],
+  "秘製醃製雞皮": [
+    "imgi_41_4f6513e238e1f344c06107c6335d7c17.jpg",
+    "imgi_42_551a33c05730069a517995f92ef38d00.jpg",
+    "imgi_43_c5f9c28a9ad3d8e2edc2b19107362e58.jpg",
+    "imgi_44_dfd22fd2d695e55c85838f9200d7f9f2.jpg"
+  ],
   "禾家香灌湯鮮肉湯包（一包20顆）": [
     "imgi_41_19640bd961fee98857a1d85e79c5df72.jpg",
     "imgi_42_eceff9122bfb93bc8ff97cf942e4c12d.jpg",
@@ -1289,6 +1301,12 @@ const IMG_DB = {
     "imgi_36_247d9ef4152e086178a0e413db70d32a.jpg",
     "imgi_37_bae8e71314aa2d26485cb3a1ee42c1be.jpg",
     "imgi_38_e3f49044cead3539cab8c44faebb5868.jpg"
+  ],
+  "百變基底蛋炒飯": [
+    "imgi_45_22838492194d882ebb368d4b473845bf.jpg",
+    "imgi_46_621a0c38c40a7d0906902fe8014bcc46.jpg",
+    "imgi_47_57f0514bd93a5465f92d24de3c5374ff.jpg",
+    "imgi_48_5273ca4226f2a8385dd47edb36d50612.jpg"
   ],
   "百年漢方生津潤喉百草蜂梨糖350g❤️": [
     "imgi_33_94a068f89166ba60b857df9ed3267a52.jpg",
@@ -1717,6 +1735,13 @@ const IMG_DB = {
     "imgi_41_db672e95ce06b1eea912e61a193bd774.jpg",
     "imgi_42_d668aa3a912b6655b9e01f5fc6307575.jpg"
   ],
+  "港式茶餐廳愛用糕": [
+    "imgi_38_e482ddcb5f684c40e8b333e304113acc.jpg",
+    "imgi_39_8ef2a1ab9714571e96ce41ca5ac65365.jpg",
+    "imgi_40_65136c9c123e26f911ca283dbabfb593.jpg",
+    "imgi_41_2d4ea8a04e89c7864d53ba6e010172d8.jpg",
+    "imgi_42_33a7a0fa1d6c945bc819ca8bcc4b2500.jpg"
+  ],
   "港式咖哩魚蛋 200g": [
     "imgi_6_58899161-1o.jpg",
     "imgi_7_58899161-2o.jpg",
@@ -1944,6 +1969,12 @@ const IMG_DB = {
     "imgi_37_2d92fc9c189934b1568ece78d80c3bf1.jpg",
     "imgi_38_eb4b798c84333e74876c52bc019159a8.jpg",
     "imgi_39_309f974d47c8f6f7dfff7dc484ce58d1.jpg"
+  ],
+  "東港糯米腸（6條_包）": [
+    "imgi_33_163f217de9df60eb9fe0c9ef863cb0e7.jpg",
+    "imgi_34_620e928a658e59028792f0108836b9d6.jpg",
+    "imgi_35_6c2d0dc62cab23bea59b9f5a676ccf26.jpg",
+    "imgi_36_b70e3acfec6ca57ddd98ea52baa8166e.jpg"
   ],
   "東城韓式炸雞（無骨雞腿肉）": [
     "imgi_36_0aced5ecf9712c18fac4b1e2f9689644.jpg",
@@ -2287,6 +2318,12 @@ const IMG_DB = {
     "imgi_46_5ac58b21768f54c39636282835ca6470.jpg",
     "imgi_47_babd28b1f0bd9be1f3f4ae3df696389b.jpg"
   ],
+  "手工香菜貢丸": [
+    "imgi_37_7ed2832b3d6707dc497ac4bf7d292c44.jpg",
+    "imgi_38_1839a7de8784dc6c5d8c50d677e8752c.jpg",
+    "imgi_39_0b64dbd68c6b7047d2ffe73f868b1cd0.jpg",
+    "imgi_40_cda056819dc8e4c2cb563020bb4c804e.jpg"
+  ],
   "戶外便攜折疊坐墊 (3色)": [
     "imgi_10_58915199-5o.jpg",
     "imgi_11_58915199-6o.jpg",
@@ -2297,6 +2334,12 @@ const IMG_DB = {
     "imgi_7_58915199-2o.jpg",
     "imgi_8_58915199-3o.jpg",
     "imgi_9_58915199-4o.jpg"
+  ],
+  "慶尚北道 韓式泡菜（600g_罐）": [
+    "imgi_35_f18e16ed55763920f5b0faed9fd03743.jpg",
+    "imgi_36_cf128616eb96c13e5e77dae6a2c580cb.jpg",
+    "imgi_37_07d2a6dd944829635b45912e55e4cb2a.jpg",
+    "imgi_38_3726f636bd31db76557adf8e19de96e2.jpg"
   ],
   "性感冰絲吊帶睡裙 (4色3碼)": [
     "imgi_10_58897004-5o.jpg",
@@ -2654,6 +2697,12 @@ const IMG_DB = {
     "imgi_6_45819687-2o.jpg",
     "imgi_7_45819687-3o.jpg"
   ],
+  "台南柳營牧場鮮奶饅頭系列": [
+    "imgi_37_1cf3d7d556b413138232229302ebdc83.jpg",
+    "imgi_38_e5da823273284b2a6f9577dcb20f0490.jpg",
+    "imgi_39_643087a04053becdf11c8ffdc72c2332.jpg",
+    "imgi_40_b3a21d6bbd6bf68a69736954e95437bb.jpg"
+  ],
   "可拆卸防水防油擦手巾圍裙": [
     "imgi_32_7fecfd5aae718cd7e46ba718a0c51fa3.jpg",
     "imgi_33_5e1ed03875893a2e8691d877846a97f8.jpg",
@@ -2938,6 +2987,12 @@ const IMG_DB = {
     "imgi_7_49175684-9o.jpg",
     "imgi_8_49175684-10o.jpg",
     "imgi_9_49175684-6o.jpg"
+  ],
+  "【愛麵族｜讚岐烏龍丸 vs 蔬穀烏龍丸】🍜": [
+    "imgi_40_2407e8eeee8344d94a86475dce57c894.jpg",
+    "imgi_41_b564d6f7d363056571c35d901b6d716d.jpg",
+    "imgi_42_63c3b3eb98d258064af02862dbc7ad3d.jpg",
+    "imgi_43_dcc94feac9649d997ec8489ee66c29cd.jpg"
   ],
   "【PH JAPAN】女性私處護理清潔露 150ml": [
     "imgi_5_58817239-1o.jpg",
@@ -3505,6 +3560,13 @@ const IMG_DB = {
     "imgi_7_58764723-2o.jpg",
     "imgi_8_58764723-3o.jpg",
     "imgi_9_58764723-6o.jpg"
+  ],
+  "3D仿真磁吸青蛙2個1組": [
+    "imgi_35_1dfab6e7eee2d40e914a6b5f5c87ead7.jpg",
+    "imgi_36_e488e91d2ed76faf0c3f0ea9a9fae9c7.jpg",
+    "imgi_37_d3275e5e6bfeff1cd2e65cb9b017ed7a.jpg",
+    "imgi_38_c8f6c83faa79c9eec45dff6b7ea4415b.jpg",
+    "imgi_39_5075acdcd0a6fef566afd548c48b024d.jpg"
   ],
   "304不鏽鋼可手提木紋便當盒＋湯勺組(3色)": [
     "imgi_10_58875359-5o.jpg",
