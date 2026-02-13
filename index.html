@@ -15,11 +15,33 @@
         #view-login { display: block; padding: 40px 30px; text-align: center; background-color: #ffda00; min-height: 100vh; }
         .login-card { background: #fff; border: 3px solid #000; border-radius: 20px; padding: 30px 20px; margin-top: 60px; box-shadow: 6px 6px 0 #000; }
         .logo-text { display: inline-block; background: #fff; border: 3px solid #000; padding: 10px 25px; font-size: 28px; font-weight: 900; transform: rotate(-3deg); margin-bottom: 25px; box-shadow: 4px 4px 0 #000; }
-        .inp-phone { width: 100%; height: 50px; font-size: 20px; text-align: center; border: 3px solid #ccc; border-radius: 10px; margin: 20px 0; background: #f9f9f9; font-weight: bold; outline: none; }
-        .btn-big { width: 100%; height: 55px; background: #ff4757; color: #fff; font-size: 22px; font-weight: 900; border: 3px solid #000; border-radius: 10px; box-shadow: 4px 4px 0 #000; cursor: pointer; transition: 0.1s; }
+        
+        /* 手機輸入框動畫 */
+        .inp-phone { width: 100%; height: 50px; font-size: 20px; text-align: center; border: 3px solid #ccc; border-radius: 10px; margin: 20px 0; background: #f9f9f9; font-weight: bold; outline: none; transition: all 0.3s; }
+        .inp-phone.auto-filled { border-color: #2ecc71; background-color: #e8f8f5; color: #27ae60; box-shadow: 0 0 10px rgba(46, 204, 113, 0.3); }
+
+        .btn-big { width: 100%; height: 55px; background: #ff4757; color: #fff; font-size: 22px; font-weight: 900; border: 3px solid #000; border-radius: 10px; box-shadow: 4px 4px 0 #000; cursor: pointer; transition: 0.3s; }
         .btn-big:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 #000; }
-        .btn-big:disabled { background: #ccc; cursor: not-allowed; box-shadow: none; transform: none; }
+        .btn-big:disabled { cursor: not-allowed; box-shadow: none; transform: none; }
+        
+        /* 自動登入時的按鈕樣式 */
+        .btn-big.welcome-back { background: #2ecc71 !important; border-color: #27ae60 !important; }
+
         .status-log { font-size: 13px; color: #555; margin-top: 15px; font-weight: bold; }
+
+        /* 新增：登入頁公告文字樣式 */
+        .login-notice {
+            margin-top: 25px;
+            font-size: 15px;
+            color: #333;
+            line-height: 1.8;
+            text-align: left;
+            font-weight: bold;
+            background: #fff8e1;    /* 淡黃色背景 */
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px dashed #ffda00; /* 黃色虛線框 */
+        }
 
         /* 商店頁 */
         #view-shop { display: none; padding-bottom: 100px; }
@@ -28,12 +50,30 @@
         .header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
         .shop-title { font-weight: 900; font-size: 20px; }
         .header-nav { display: flex; align-items: center; gap: 15px; }
+        
         .cart-icon { cursor: pointer; position: relative; font-size: 24px; transition: transform 0.1s; }
         .cart-icon:active { transform: scale(0.9); }
+        /* 購物車彈跳動畫 */
+        @keyframes cart-bump { 0% { transform: scale(1); } 50% { transform: scale(1.5); } 100% { transform: scale(1); } }
+        .bump-effect { animation: cart-bump 0.3s ease-out; }
+
         .cart-count { position: absolute; top: -5px; right: -5px; background: #ff4757; color: #fff; border-radius: 50%; padding: 1px 6px; font-size: 11px; font-weight: bold; line-height: 1; border: 2px solid #ffda00; min-width: 20px; text-align: center; }
         .search-input { width: 100%; padding: 10px 15px; border-radius: 20px; border: 2px solid #333; font-size: 14px; outline: none; }
 
-        /* 分類導覽列 (Grid 九宮格排版) */
+        /* 飛行小球樣式 */
+        .flying-ball {
+            position: fixed;
+            z-index: 9999;
+            width: 20px;
+            height: 20px;
+            background: #ff4757;
+            border-radius: 50%;
+            pointer-events: none;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1); /* 貝茲曲線讓速度感更自然 */
+        }
+
+        /* 分類導覽列 */
         .category-bar { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
@@ -130,7 +170,6 @@
             box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
         }
 
-        /* 恢復原本的圖片高度 450px */
         .gallery-container { width: 100%; height: auto; max-height: 450px; overflow-x: auto; overflow-y: hidden; white-space: nowrap; background: #fff; border: 2px solid #eee; border-radius: 8px; margin-bottom: 10px; scroll-snap-type: x mandatory; }
         .gallery-img { width: 100%; height: auto; max-height: 450px; object-fit: contain; display: inline-block; scroll-snap-align: center; }
         
@@ -175,6 +214,20 @@
             <input type="tel" id="userPhone" class="inp-phone" placeholder="09xxxxxxxx" maxlength="10">
             <button id="btn-login" class="btn-big" onclick="startLogin()">GO! 立即逛逛</button>
             <div id="debug-msg" class="status-log"></div>
+
+            <div class="login-notice" style="border: 2px dashed #ffd700; background-color: #fffbe6; padding: 15px; border-radius: 10px; font-size: 14px; line-height: 1.8;">
+                📢 這裡下單群組記事本就不用在 +1 囉 ❗️<br>
+                🔺 還沒綁定過官方 Line 請先系統綁定<br>
+                &nbsp;&nbsp;&nbsp;└ ID: @744qmnbg &nbsp;&nbsp; (已綁定可忽略)<br>
+                <div style="margin-top: 5px;">
+                    &nbsp;&nbsp;&nbsp;└
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/64px-LINE_logo.svg.png" 
+                         style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <a href="https://lin.ee/codD8V2" target="_blank" style="color: #00b900; font-weight: bold; text-decoration: underline; vertical-align: middle;">
+                        點我加入/聯繫我們https://lin.ee/codD8V2
+                    </a>
+                </div>
+            </div> 
         </div>
     </div>
 
@@ -255,7 +308,7 @@
 
     <div id="cart-modal">
         <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:3px solid #ffda00; padding-bottom:10px;">
-            <h3 style="margin:0;">🛒 本次訂單明細</h3>
+            <h3 style="margin:0;">🛒 歷史訂購明細</h3>
             <button onclick="closeAllModals()" style="font-size:24px; background:none; border:none; cursor:pointer;">✖</button>
         </div>
         <div id="cartList" style="margin-top:15px;"></div>
@@ -279,23 +332,55 @@
     const hasLocalImages = (typeof IMG_DB !== 'undefined');
     if(!hasLocalImages) window.IMG_DB = {}; 
 
+    // --- 網頁載入時檢查是否有儲存的電話 ---
+    window.onload = function() {
+        const savedPhone = localStorage.getItem('hihi_user_phone');
+        if (savedPhone) {
+            const input = document.getElementById('userPhone');
+            input.value = savedPhone;
+            // 讓輸入框有個「被選中」的視覺效果 (綠色邊框)
+            input.classList.add('auto-filled'); 
+            
+            // 執行自動登入，帶有延遲
+            startLogin(true); 
+        }
+    };
+
     function log(msg) { document.getElementById('debug-msg').innerText = msg; }
 
     function updateCartCount() { const c = document.getElementById('cartCount'); if (myOrders.length > 0) { c.innerText = myOrders.length; c.style.display = 'block'; } else { c.style.display = 'none'; } }
 
-    function startLogin() {
+    // --- 登入函式修改 ---
+    function startLogin(isAuto = false) {
         const val = document.getElementById('userPhone').value.replace(/[^0-9]/g, '');
         if(val.length !== 10 || !val.startsWith('09')) { log("❌ 手機號碼格式錯誤"); return; }
+        
         currentPhone = val;
+        localStorage.setItem('hihi_user_phone', currentPhone);
+
         fetch(GAS_URL, { method: "POST", body: JSON.stringify({ action: "login", phone: currentPhone }), mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" } }).catch(e => console.error(e));
         try { const saved = localStorage.getItem(`orders_${currentPhone}`); if (saved) myOrders = JSON.parse(saved); } catch(e) {}
-        document.getElementById('btn-login').disabled = true; document.getElementById('btn-login').innerText = "處理中...";
+        
+        const btn = document.getElementById('btn-login');
+        btn.disabled = true; 
+        
+        if (isAuto) {
+            // 1. 自動登入時，讓按鈕變綠色，並顯示歡迎回來 + 手機號
+            btn.classList.add('welcome-back');
+            btn.innerHTML = `👋 歡迎回來😍已為您自動登入...`;
+        } else {
+            // 手動登入一般狀態
+            btn.innerText = "處理中...";
+        }
+
+        // 2. 這裡設定延遲時間：自動登入 2000毫秒 (2秒)，手動 1000毫秒
+        // 這樣客人就有足夠的時間看到「歡迎回來」的字樣
         setTimeout(() => {
             document.getElementById('view-login').style.display = 'none';
             document.getElementById('view-shop').style.display = 'block';
             document.getElementById('navPhone').innerText = "👤 " + currentPhone;
             updateCartCount(); tryFetchData(); 
-        }, 500);
+        }, isAuto ? 2000 : 1000); 
     }
 
     function tryFetchData() {
@@ -323,18 +408,14 @@
         const bar = document.getElementById('categoryBar');
         categorySet.clear();
         
-        // --- 新增：用來統計各分類數量的物件 ---
         const counts = {}; 
-
         allProducts.forEach(p => { 
             if(p.category && p.category !== "") {
                 categorySet.add(p.category); 
-                // 這裡在累加數量
                 counts[p.category] = (counts[p.category] || 0) + 1;
             }
         });
 
-        // --- 修改：全部商品後面加上總數量 (${allProducts.length}) ---
         let html = `<button class="cat-btn active" onclick="filterCategory('all', this)">全部商品(${allProducts.length})</button>`;
         
         const catConfig = [
@@ -345,8 +426,7 @@
             { key: "保健食品",   display: "💪保健食品" },
             { key: "美食專區",   display: "🍔美食專區" },
             { key: "美妝/保養", display: "💄美妝/保養" },
-            // 注意：您的原代碼這裡 key 重複了，若是"火鍋肉片"分類，建議將 key 改為 "火鍋肉片"
-            { key: "美妝/保養", display: "🍗火鍋肉片" } 
+            { key: "火鍋肉片", display: "🍗火鍋肉片" } 
         ];
 
         function getCatInfo(rawName) {
@@ -361,7 +441,6 @@
             return getCatInfo(a).order - getCatInfo(b).order;
         }).forEach(cat => {
             const info = getCatInfo(cat);
-            // --- 修改：取出該分類的數量並顯示 ---
             const count = counts[cat] || 0;
             html += `<button class="cat-btn" onclick="filterCategory('${cat}', this)">${info.name}(${count})</button>`;
         });
@@ -405,6 +484,7 @@
 
     function handleScroll() { if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) { if (!isLoadingMore && displayedCount < currentList.length) renderNextBatch(); } }
 
+    let isLoadingMore = false;
     function renderNextBatch() {
         isLoadingMore = true; const list = document.getElementById('shopList'); const btn = document.getElementById('btnLoadMore');
         btn.style.display = (displayedCount < currentList.length) ? 'inline-block' : 'none';
@@ -435,10 +515,8 @@
         }, 100);
     }
 
-    /* --- 新增：相似度比對演算法 (Levenshtein Distance) --- */
     function getSimilarity(s1, s2) {
-        let longer = s1;
-        let shorter = s2;
+        let longer = s1; let shorter = s2;
         if (s1.length < s2.length) { longer = s2; shorter = s1; }
         let longerLength = longer.length;
         if (longerLength === 0) return 1.0;
@@ -465,7 +543,6 @@
         }
         return costs[s2.length];
     }
-    /* --- 演算法結束 --- */
 
     function parseCSV(text) {
         const rows = []; let row = []; let col = ""; let inQuote = false;
@@ -478,7 +555,6 @@
         if (col || row.length > 0) { row.push(col); rows.push(row); }
         const result = []; const today = new Date(); today.setHours(0, 0, 0, 0);
         
-        // 取得所有圖片的 Keys
         const dbKeys = hasLocalImages ? Object.keys(IMG_DB) : [];
 
         for(let i = 4; i < rows.length; i++) {
@@ -503,32 +579,16 @@
                     
                     if (hasLocalImages) {
                         let matchKey = null;
-
-                        // 1. 先試試完全匹配
-                        if (IMG_DB[title]) {
-                            matchKey = title;
-                        } 
-                        // 2. 如果沒有，進行模糊比對 (門檻 0.7)
+                        if (IMG_DB[title]) { matchKey = title; } 
                         else {
-                            let bestKey = null;
-                            let maxScore = 0;
-                            
+                            let bestKey = null; let maxScore = 0;
                             for (let k of dbKeys) {
                                 let score = getSimilarity(title, k);
-                                if (score > maxScore) {
-                                    maxScore = score;
-                                    bestKey = k;
-                                }
+                                if (score > maxScore) { maxScore = score; bestKey = k; }
                             }
-                            // 如果相似度超過 50%，就認定匹配成功
-                            if (maxScore >= 0.5) {
-                                matchKey = bestKey;
-                            }
+                            if (maxScore >= 0.5) { matchKey = bestKey; }
                         }
-
-                        if (matchKey && IMG_DB[matchKey]) {
-                            localImgs = IMG_DB[matchKey].map(f => `images/${matchKey}/${f}`);
-                        }
+                        if (matchKey && IMG_DB[matchKey]) { localImgs = IMG_DB[matchKey].map(f => `images/${matchKey}/${f}`); }
                     }
                     result.push({ id: i, title, price, date: dateStr, dateObj, isSpot, images: localImgs, desc, category: category });
                 }
@@ -584,7 +644,10 @@
         const note = document.getElementById('orderNote').value.trim();
         const totalAmount = qty * currentItem.price;
         const btn = document.getElementById('btn-final-checkout');
-        btn.disabled = true; btn.innerText = "⏳ 傳送中...";
+        const startBtn = btn; // 紀錄按鈕位置
+        const targetIcon = document.getElementById('cartIcon'); // 購物車圖示
+
+        btn.disabled = true; btn.innerText = "⏳ 處理中...";
 
         const orderData = {
             orderDate: new Date().toLocaleString('zh-TW', { hour12: false }),
@@ -595,14 +658,61 @@
             orderData.date = new Date().toLocaleString('zh-TW', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
             myOrders.push(orderData);
             localStorage.setItem(`orders_${currentPhone}`, JSON.stringify(myOrders));
-            updateCartCount();
-            alert("✅ 下單成功🧡\n📢這裡下單群組記事本就不用在+1囉❗\n🔺還沒綁定過官方Line請先系統綁定\n     └ ID:@744qmnbg    (已綁定可忽略此訊息)");
-            closeAllModals();
-            btn.disabled = false; btn.innerText = "確認訂購";
+            
+            // --- 這裡開始動畫邏輯 ---
+            closeAllModals(); // 1. 先關閉彈窗，讓使用者看到主畫面的購物車
+            
+            // 2. 執行飛入動畫，動畫結束後才更新數字與跳出 Alert
+            runAddToCartAnimation(startBtn, targetIcon, () => {
+                updateCartCount(); // 更新數字
+                
+                // 購物車圖示晃動一下
+                targetIcon.classList.add('bump-effect');
+                setTimeout(()=> targetIcon.classList.remove('bump-effect'), 300);                
+                btn.disabled = false; btn.innerText = "確認訂購";
+            });
+
         }).catch(err => {
             console.error(err); alert("⚠️ 網路錯誤，請重試");
             btn.disabled = false; btn.innerText = "確認訂購";
         });
+    }
+
+    /* --- 新增：購物車飛入動畫函式 --- */
+    function runAddToCartAnimation(startElem, targetElem, callback) {
+        // 取得按鈕當時的座標 (因為 Modal 關掉了，我們用之前的參考點，或者強制在螢幕中央生成)
+        // 由於關閉 Modal 後按鈕會消失，我們直接假設從「螢幕中央」飛過去比較視覺穩定
+        // 或者是從點擊當下的滑鼠位置 (但手機沒有滑鼠)，所以「螢幕正中央」是最保險的起點
+        
+        const startX = window.innerWidth / 2;
+        const startY = window.innerHeight / 2;
+
+        const targetRect = targetElem.getBoundingClientRect();
+        const targetX = targetRect.left + (targetRect.width / 2);
+        const targetY = targetRect.top + (targetRect.height / 2);
+
+        // 建立紅色小球
+        const ball = document.createElement('div');
+        ball.className = 'flying-ball';
+        ball.style.left = (startX - 10) + 'px'; // -10 是為了置中 (寬度20的一半)
+        ball.style.top = (startY - 10) + 'px';
+        ball.style.transform = 'scale(1)';
+        document.body.appendChild(ball);
+
+        // 強制瀏覽器重繪，確保初始位置被套用
+        void ball.offsetWidth; 
+
+        // 設定結束位置
+        ball.style.left = (targetX - 10) + 'px';
+        ball.style.top = (targetY - 10) + 'px';
+        ball.style.transform = 'scale(0.2)'; // 飛進去時變小
+        ball.style.opacity = '0.8';
+
+        // 動畫時間結束後清理
+        setTimeout(() => {
+            ball.remove();
+            if(callback) callback();
+        }, 600); // 這裡的時間要跟 CSS transition 一致 (0.6s)
     }
 
     function showCart() {
