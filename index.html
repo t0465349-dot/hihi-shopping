@@ -246,7 +246,7 @@
                 <input type="text" id="searchInput" class="search-input" placeholder="🔍搜尋商品" oninput="doSearch()">
             </div>
             <div id="categoryBar" class="category-bar">
-                <button class="cat-btn active" onclick="filterCategory('all', this)">全部商品</button>
+                <button class="cat-btn active" onclick="filterCategory('all', this)">💯全部商品</button>
             </div>
         </div>
         
@@ -416,13 +416,13 @@
             }
         });
 
-        let html = `<button class="cat-btn active" onclick="filterCategory('all', this)">全部商品(${allProducts.length})</button>`;
+        let html = `<button class="cat-btn active" onclick="filterCategory('all', this)">💯全部商品(${allProducts.length})</button>`;
         
         const catConfig = [
             { key: "現貨不用等", display: "⭐現貨不用等" },
+            { key: "冷凍生鮮",   display: "❄冷凍生鮮" },
             { key: "限時快閃",   display: "⚡限時快閃" },
             { key: "生活百貨",   display: "🎀生活百貨" },
-            { key: "冷凍生鮮",   display: "❄冷凍生鮮" },
             { key: "保健食品",   display: "💪保健食品" },
             { key: "美食專區",   display: "🍔美食專區" },
             { key: "美妝/保養", display: "💄美妝/保養" },
@@ -467,8 +467,15 @@
 
     function sortProducts(list) {
         list.sort((a, b) => {
-            if (a.isSpot && !b.isSpot) return -1; if (!a.isSpot && b.isSpot) return 1;
-            if (a.dateObj && b.dateObj) return a.dateObj - b.dateObj; return 0;
+            const weightA = (a.isSpot || a.category === "火鍋肉片") ? 1 : 0;
+            const weightB = (b.isSpot || b.category === "火鍋肉片") ? 1 : 0;
+
+            if (weightA !== weightB) {
+                return weightA - weightB;
+            }
+            
+            if (a.dateObj && b.dateObj) return a.dateObj - b.dateObj;
+            return 0;
         });
     }
 
