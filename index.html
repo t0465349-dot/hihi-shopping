@@ -10,7 +10,7 @@
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { margin: 0; padding: 0; font-family: "Microsoft JhengHei", "Apple Color Emoji", "Segoe UI Emoji", sans-serif; background: #eee; }
         .app-box { max-width: 480px; margin: 0 auto; background: #fff; min-height: 100vh; position: relative; padding-bottom: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
-       
+        
         /* 登入頁 */
         #view-login { display: block; padding: 40px 30px; text-align: center; background-color: #ffda00; min-height: 100vh; }
         .login-card { background: #fff; border: 3px solid #000; border-radius: 20px; padding: 30px 20px; margin-top: 40px; box-shadow: 6px 6px 0 #000; }
@@ -48,16 +48,18 @@
         /* 商店頁 */
         #view-shop { display: none; padding-bottom: 100px; }
         .sticky-top-area { position: sticky; top: 0; z-index: 50; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .top-header { background: #ffda00; padding: 15px; border-bottom: 3px solid #000; }
-        .header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        
+        /* 修改此處 Padding 保持黃色區塊總高度不變 */
+        .top-header { background: #ffda00; padding: 10px 15px; border-bottom: 3px solid #000; }
+        .header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
         .shop-title { font-weight: 900; font-size: 20px; }
         .header-nav { display: flex; align-items: center; gap: 10px; }
         
         /* 商店頁頂部的 Line 客服按鈕樣式 */
         .header-line-btn {
-            display: flex; align-items: center; background: #fff; color: #00b900; padding: 5px 10px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 900; box-shadow: 1px 1px 2px rgba(0,0,0,0.1); border: 2px solid #000; border-color: #00b900; transition: transform 0.1s;
+            display: flex; align-items: center; background: #fff; color: #00b900; border-radius: 20px; text-decoration: none; font-weight: 900; box-shadow: 1px 1px 2px rgba(0,0,0,0.1); border: 2px solid #00b900; transition: transform 0.1s;
         }
-        .header-line-btn img { width: 18px; height: 18px; margin-right: 4px; }
+        .header-line-btn img { width: 14px; height: 14px; margin-right: 4px; }
         .header-line-btn:active { transform: scale(0.95); background: #f0fff4; }
         .btn-logout {
             font-size: 11px; color: #666; background: #eee; border: 1px solid #ccc; padding: 2px 6px; border-radius: 10px; margin-top: 2px; cursor: pointer; text-decoration: none; display: inline-block;
@@ -74,7 +76,7 @@
 
         .flying-ball {
             position: fixed; z-index: 9999; width: 20px; height: 20px; background: #ff4757; border-radius: 50%; pointer-events: none;
-            box-shadow: 0 0 5px rgba(0,0,0,0.3); transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+            box-shadow: 0 0 5px rgba(0,0,0,0.3); transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
         }
 
         .category-bar { display: grid; grid-template-columns: repeat(3, 1fr); padding: 10px 15px; background: #fff; border-bottom: 1px solid #eee; gap: 10px; }
@@ -167,10 +169,13 @@
                 <div class="header-row">
                     <div class="shop-title">嗨嗨團購趣GO!</div>
                     <div class="header-nav">
-                        <a href="https://lin.ee/codD8V2" target="_blank" class="header-line-btn">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/64px-LINE_logo.svg.png">
-                            聯繫我們
-                        </a>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <a href="https://lin.ee/codD8V2" target="_blank" class="header-line-btn" style="padding: 2px 8px; font-size: 12px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/64px-LINE_logo.svg.png">
+                                聯繫我們
+                            </a>
+                            <div id="bindStatus" style="font-size: 10px; font-weight: 900; margin-top: 3px; white-space: nowrap; transform: scale(0.95); transform-origin: top;"></div>
+                        </div>
 
                         <div id="cartIcon" class="cart-icon" onclick="showCart()">
                             🛒 <span id="cartCount" class="cart-count" style="display:none;">0</span>
@@ -254,6 +259,8 @@
 
 <script>
     const GOOGLE_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTBgzqTVaRUHHiTvigFRKCLJN7wPAya9Ys1QKuhUMG4NYoCXmzBK3_EGLO7_SRdH3-UoCDrCU9x2zhn/pub?gid=2041711282&single=true&output=csv";
+    /* 新增 客戶資料庫的網址 (gid=1623781281) */
+    const CUSTOMER_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTBgzqTVaRUHHiTvigFRKCLJN7wPAya9Ys1QKuhUMG4NYoCXmzBK3_EGLO7_SRdH3-UoCDrCU9x2zhn/pub?gid=1623781281&single=true&output=csv";
     const PROXY_1 = "https://api.allorigins.win/get?url=" + encodeURIComponent(GOOGLE_CSV);
     const PROXY_2 = "https://corsproxy.io/?" + encodeURIComponent(GOOGLE_CSV);
     const FALLBACK_IMG = "https://placehold.co/300x300/eee/999?text=No+Image";
@@ -304,10 +311,97 @@
             document.getElementById('view-shop').style.display = 'block';
             document.getElementById('navPhone').innerText = "👤 " + currentPhone;
             updateCartCount(); tryFetchData(); 
+            checkUserBinding(); // 登入後呼叫檢查綁定狀態
         }, isAuto ? 2000 : 1000); 
     }
 
-    /* [新增] 登出/切換帳號功能 */
+    /* 檢查使用者綁定狀態功能 (加強防呆與記憶機制) */
+    function checkUserBinding() {
+        const bindElem = document.getElementById('bindStatus');
+        bindElem.innerText = "查詢會員綁定狀態...";
+        
+        const cleanPhone = currentPhone.replace(/^0+/, '');
+        const timestamp = new Date().getTime();
+        const freshCsvUrl = CUSTOMER_CSV + "&t=" + timestamp;
+
+        // 1. 先去手機記憶裡找找看，是不是剛剛才成功驗證過？
+        const savedName = localStorage.getItem('hihi_bind_name_' + cleanPhone);
+
+        fetch(freshCsvUrl)
+            .then(r => {
+                if (!r.ok) throw new Error('網路錯誤');
+                return r.text();
+            })
+            .then(csv => {
+                // 防呆：如果 Google 拒絕連線給了網頁原始碼(包含<!doctype html> 或 <html) 而不是名單，視為讀取失敗
+                if (!csv || csv.trim() === "" || csv.toLowerCase().includes("<html")) {
+                    throw new Error('讀取到無效的錯誤網頁');
+                }
+                processCustomerCsv(csv, cleanPhone);
+            })
+            .catch(() => {
+                // 使用備用線路
+                fetch("https://api.allorigins.win/get?url=" + encodeURIComponent(freshCsvUrl))
+                    .then(r => r.json())
+                    .then(d => {
+                        if (d.contents && !d.contents.toLowerCase().includes("<html")) {
+                            processCustomerCsv(d.contents, cleanPhone);
+                        } else {
+                            throw new Error('備用線路也無效');
+                        }
+                    })
+                    .catch(() => {
+                        // 2. 如果連線真的被 Google 擋下，但手機記得他綁定過，就直接顯示歡迎回來！
+                        if (savedName) {
+                            bindElem.innerHTML = `<span style="color:#333333;">${savedName}，歡迎回來😍</span>`;
+                        } else {
+                            bindElem.innerHTML = `<span style="color:#888;">⚠️ 狀態讀取中，請稍後重整</span>`;
+                        }
+                    });
+            });
+    }
+
+    /* 處理綁定資料 (結合記憶機制) */
+    function processCustomerCsv(text, cleanPhone) {
+        const rows = parseGenericCSV(text);
+        let foundName = null;
+        
+        for (let i = 2; i < rows.length; i++) {
+            const cols = rows[i];
+            if (cols.length > 3) {
+                const cellPhone = (cols[3] || "").replace(/[^0-9]/g, '').replace(/^0+/, '');
+                if (cellPhone === cleanPhone && cellPhone !== "") {
+                    foundName = cols[1] ? cols[1].trim() : "用戶";
+                    break;
+                }
+            }
+        }
+        
+        const bindElem = document.getElementById('bindStatus');
+        if (foundName) {
+            // 查到有綁定，立刻把名字記在客人的手機裡
+            localStorage.setItem('hihi_bind_name_' + cleanPhone, foundName);
+            bindElem.innerHTML = `<span style="color:#333333">${foundName}，歡迎回來😍</span>`;
+        } else {
+            // 確實沒綁定，清除舊記憶
+            localStorage.removeItem('hihi_bind_name_' + cleanPhone);
+            bindElem.innerHTML = `<span style="color:#d63031;">您尚未系統綁定，請盡速綁定</span>`;
+        }
+    }
+
+    /* 通用的 CSV 解析器 (專供客戶資料使用) */
+    function parseGenericCSV(text) {
+         const rows = []; let row = []; let col = ""; let inQuote = false;
+         for (let i = 0; i < text.length; i++) {
+             let c = text[i]; let next = text[i+1];
+             if (c === '"') { if (inQuote && next === '"') { col += '"'; i++; } else { inQuote = !inQuote; } }
+             else if (c === ',' && !inQuote) { row.push(col); col = ""; }
+             else if ((c === '\r' || c === '\n') && !inQuote) { if (col || row.length > 0) row.push(col); if (row.length > 0) rows.push(row); row = []; col = ""; if (c === '\r' && next === '\n') i++; } else { col += c; }
+         }
+         if (col || row.length > 0) { row.push(col); rows.push(row); }
+         return rows;
+    }
+
     function logout() {
         if(confirm("確定要切換手機號碼嗎？")) {
             localStorage.removeItem('hihi_user_phone');
@@ -565,27 +659,54 @@
 
     function closeConfirmStep() { document.getElementById('confirm-modal').style.display = 'none'; }
 
-    function checkout() {
+   function checkout() {
         const note = document.getElementById('orderNote').value.trim();
         const totalAmount = qty * currentItem.price;
         const btn = document.getElementById('btn-final-checkout');
         const startBtn = btn; 
         const targetIcon = document.getElementById('cartIcon'); 
-        btn.disabled = true; btn.innerText = "⏳ 處理中...";
-        const orderData = { orderDate: new Date().toLocaleString('zh-TW', { hour12: false }), phone: currentPhone, title: currentItem.title, qty: qty, price: currentItem.price, total: totalAmount, note: note || "無備註" };
+        
+        btn.disabled = true; 
+        btn.innerText = "⏳ 處理中...";
+        
+        const orderData = { 
+            orderDate: new Date().toLocaleString('zh-TW', { hour12: false }), 
+            phone: currentPhone, 
+            title: currentItem.title, 
+            qty: qty, 
+            price: currentItem.price, 
+            total: totalAmount, 
+            note: note || "無備註" 
+        };
 
-        fetch(GAS_URL, { method: "POST", body: JSON.stringify(orderData), mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" } }).then(() => {
-            orderData.date = new Date().toLocaleString('zh-TW', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
-            myOrders.push(orderData);
-            localStorage.setItem(`orders_${currentPhone}`, JSON.stringify(myOrders));
-            closeAllModals(); 
-            runAddToCartAnimation(startBtn, targetIcon, () => {
-                updateCartCount(); 
-                targetIcon.classList.add('bump-effect');
-                setTimeout(()=> targetIcon.classList.remove('bump-effect'), 300);                
-                btn.disabled = false; btn.innerText = "確認訂購";
-            });
-        }).catch(err => { console.error(err); alert("⚠️ 網路錯誤，請重試"); btn.disabled = false; btn.innerText = "確認訂購"; });
+        // 1. 【背景傳送】向 Google 發送資料，但不等它處理完 (丟後不理)
+        fetch(GAS_URL, { 
+            method: "POST", 
+            body: JSON.stringify(orderData), 
+            mode: "no-cors", 
+            headers: { "Content-Type": "text/plain;charset=utf-8" } 
+        }).catch(err => {
+            console.error("背景傳送錯誤:", err);
+            // 由於是背景傳送，就算網路稍微不穩，通常也會在背景重試或稍後傳出
+        });
+
+        // 2. 【樂觀更新 UI】不等 Google 回報，立刻讓客人看到訂購成功的畫面
+        orderData.date = new Date().toLocaleString('zh-TW', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+        myOrders.push(orderData);
+        localStorage.setItem(`orders_${currentPhone}`, JSON.stringify(myOrders));
+        
+        // 瞬間關閉視窗
+        closeAllModals(); 
+        
+        // 立刻播放飛入購物車的動畫
+        runAddToCartAnimation(startBtn, targetIcon, () => {
+            updateCartCount(); 
+            targetIcon.classList.add('bump-effect');
+            setTimeout(()=> targetIcon.classList.remove('bump-effect'), 300);                
+            // 動畫播完後，偷偷把結帳按鈕恢復原狀，以防客人下次又點開這項商品
+            btn.disabled = false; 
+            btn.innerText = "確認下單";
+        });
     }
 
     function runAddToCartAnimation(startElem, targetElem, callback) {
@@ -605,7 +726,7 @@
         ball.style.top = (targetY - 10) + 'px';
         ball.style.transform = 'scale(0.2)'; 
         ball.style.opacity = '0.8';
-        setTimeout(() => { ball.remove(); if(callback) callback(); }, 600); 
+        setTimeout(() => { ball.remove(); if(callback) callback(); }, 1200); 
     }
 
     function showCart() {
