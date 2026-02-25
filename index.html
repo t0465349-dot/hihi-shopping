@@ -353,7 +353,7 @@
                     .catch(() => {
                         // 2. 如果連線真的被 Google 擋下，但手機記得他綁定過，就直接顯示歡迎回來！
                         if (savedName) {
-                            bindElem.innerHTML = `<span style="color:#333333;">${savedName}-歡迎回來😍</span>`;
+                            bindElem.innerHTML = `<span style="color:#333333;">${savedName}-歡迎回來👋</span>`;
                         } else {
                             bindElem.innerHTML = `<span style="color:#888;">⚠️ 狀態讀取中，請稍後重整</span>`;
                         }
@@ -381,7 +381,7 @@
         if (foundName) {
             // 查到有綁定，立刻把名字記在客人的手機裡
             localStorage.setItem('hihi_bind_name_' + cleanPhone, foundName);
-            bindElem.innerHTML = `<span style="color:#333333">${foundName}-歡迎回來😍</span>`;
+            bindElem.innerHTML = `<span style="color:#333333">${foundName}-歡迎回來👋</span>`;
         } else {
             // 確實沒綁定，清除舊記憶
             localStorage.removeItem('hihi_bind_name_' + cleanPhone);
