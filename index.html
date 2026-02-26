@@ -190,8 +190,7 @@
                 <input type="text" id="searchInput" class="search-input" placeholder="🔍搜尋商品" oninput="doSearch()">
             </div>
             <div id="categoryBar" class="category-bar">
-                <button class="cat-btn active" onclick="filterCategory('all', this)">💯全部商品</button>
-            </div>
+                </div>
         </div>
         
         <div id="status-area">
@@ -427,7 +426,14 @@
         document.getElementById('loading-txt').style.display = 'none';
         allProducts = parseCSV(csvText);
         if(allProducts.length === 0) { document.getElementById('error-txt').innerText = "⚠️ 無符合條件商品"; document.getElementById('error-txt').style.display = 'block'; }
-        else { generateCategories(); currentList = allProducts; sortProducts(currentList); renderNextBatch(); window.addEventListener('scroll', handleScroll); }
+        else { 
+            generateCategories(); 
+            // 修正：使用淺拷貝 [...] 避免排序改變了最原始讀取到的陣列順序
+            currentList = [...allProducts]; 
+            sortProducts(currentList); 
+            renderNextBatch(); 
+            window.addEventListener('scroll', handleScroll); 
+        }
     }
 
     function generateCategories() {
@@ -442,10 +448,11 @@
         });
 
         let html = `<button class="cat-btn active" onclick="filterCategory('all', this)">💯全部商品(${allProducts.length})</button>`;
+        html += `<button class="cat-btn" onclick="filterCategory('latest', this)">📌最新上架(${allProducts.length})</button>`;
+
         const catConfig = [
             { key: "現貨免等", display: "⭐現貨免等" },
             { key: "冷凍生鮮",   display: "❄冷凍生鮮" },
-            { key: "限時快閃",   display: "⚡限時快閃" },
             { key: "生活百貨",   display: "🎀生活百貨" },
             { key: "保健食品",   display: "💪保健食品" },
             { key: "美食專區",   display: "🍔美食專區" },
@@ -464,6 +471,9 @@
         Array.from(categorySet).sort((a, b) => {
             return getCatInfo(a).order - getCatInfo(b).order;
         }).forEach(cat => {
+            // 過濾掉原本有的限時快閃(如果表單裡還殘留這個分類的話，也不會顯示)
+            if(cat.includes("限時快閃")) return;
+            
             const info = getCatInfo(cat);
             const count = counts[cat] || 0;
             html += `<button class="cat-btn" onclick="filterCategory('${cat}', this)">${info.name}(${count})</button>`;
@@ -478,7 +488,17 @@
         document.getElementById('noResult').style.display = 'none'; 
         document.getElementById('shopList').innerHTML = ""; 
         displayedCount = 0;
-        if(type === 'all') { currentList = allProducts; } else { currentList = allProducts.filter(p => p.category === type); }
+        
+        if(type === 'all') { 
+            currentList = [...allProducts]; 
+            sortProducts(currentList);
+        } else if(type === 'latest') {
+            // 最新上架：將原始讀取資料(從上到下)直接反轉，變成由最下面往上排列，不套用原本排序
+            currentList = [...allProducts].reverse(); 
+        } else { 
+            currentList = allProducts.filter(p => p.category === type); 
+            sortProducts(currentList);
+        }
         renderNextBatch();
     }
 
@@ -497,8 +517,17 @@
         const list = document.getElementById('shopList'); const no = document.getElementById('noResult');
         document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
         list.innerHTML = ""; displayedCount = 0;
-        if (!kw) { document.querySelector('.cat-btn').classList.add('active'); currentList = allProducts; no.style.display = 'none'; }
-        else { currentList = allProducts.filter(p => p.title.toLowerCase().includes(kw)); no.style.display = currentList.length ? 'none' : 'block'; }
+        if (!kw) { 
+            document.querySelector('.cat-btn').classList.add('active'); 
+            currentList = [...allProducts]; 
+            sortProducts(currentList);
+            no.style.display = 'none'; 
+        }
+        else { 
+            currentList = allProducts.filter(p => p.title.toLowerCase().includes(kw)); 
+            sortProducts(currentList);
+            no.style.display = currentList.length ? 'none' : 'block'; 
+        }
         renderNextBatch();
     }
 
@@ -529,7 +558,7 @@
                 }
                 
                 let soldNum = Math.floor(Math.random() * 21); 
-                let soldText = (soldNum > 0) ? `<span style="font-size:12px; color:#999; font-weight:normal; margin-left:5px;">已售出${soldNum}</span>` : "";
+                let soldText = (soldNum > 5) ? `<span style="font-size:12px; color:#999; font-weight:normal; margin-left:5px;">已下單${soldNum}件</span>` : "";
 
                 let div = document.createElement('div'); div.className = 'card'; div.onclick = () => showModal(p.id);
                 div.innerHTML = `<span class="${badgeClass}" style="${badgeStyle}">${badgeText}</span>
