@@ -79,6 +79,12 @@ const IMG_DB = {
     "imgi_8_59070233-4o.jpg",
     "imgi_9_59070233-5o.jpg"
   ],
+  "🦐「蝦B乾」🦐": [
+    "imgi_36_13b84a5a9599741850bea44cb29bdbf5.jpg",
+    "imgi_37_dc785b111dd4dcfb1fd49a7ae71eb8c0.jpg",
+    "imgi_38_038af9613539ab7c5287eee137b81725.jpg",
+    "imgi_39_f1ef627438a2ec56c9f356113346c772.jpg"
+  ],
   "🦐RICHY瑞奇 海老風味餅乾 192g🦐《一組兩包》": [
     "imgi_5_58977718-3o.jpg",
     "imgi_6_58977718-1o.jpg",
@@ -376,6 +382,12 @@ const IMG_DB = {
     "imgi_7_59080296-3o.jpg",
     "imgi_8_59080296-4o.jpg",
     "imgi_9_59080296-5o.jpg"
+  ],
+  "🍘 梅香金蔥蜜餅 🍘": [
+    "imgi_28_45171c5505439e9cb6d00adfd31e575c.jpg",
+    "imgi_29_32e7ad9be671c231e64944439965d78b.jpg",
+    "imgi_30_f2cb6659891d6318baab8baafe368624.jpg",
+    "imgi_31_d85f47916c22c27052761f634200fd3f.jpg"
   ],
   "🍓大木製藥 兒童5種複合維生素軟糖（草莓口味）120粒": [
     "imgi_5_57400028-1o.jpg"
@@ -734,6 +746,12 @@ const IMG_DB = {
     "imgi_34_14ea4dc9e5129d4daef016a5c0190e79.jpg",
     "imgi_35_b5df104a1b5ce05431414bfaa5a843f6.jpg",
     "imgi_36_f8c1ff4ce9894e04b30d8ded4694e25a.jpg"
+  ],
+  "高鈣起司(cheese)牛奶鍋": [
+    "imgi_42_889a1a1e44253968179c8541391f589e.jpg",
+    "imgi_43_a273bb8695a2d508cb2faa6d5cc8b030.jpg",
+    "imgi_44_4783531b48efafc352efaac45355456a.jpg",
+    "imgi_45_bb44411227d76987a8692464fca75ae4.jpg"
   ],
   "高濃縮普羅旺斯玫瑰精萃手膜一雙12ml": [
     "imgi_10_59090935-2o.jpg",
@@ -1803,6 +1821,12 @@ const IMG_DB = {
     "imgi_8_59130782-3o.jpg",
     "imgi_9_59130782-4o.jpg"
   ],
+  "蔥多多小籠包": [
+    "imgi_54_4b3a51d2f0498726498b659fcd529dfb.jpg",
+    "imgi_55_f5b544e2b1aafc98d70e26b88873e962.jpg",
+    "imgi_56_4a67b66dff489524ffe5bdd9c8e8239b.jpg",
+    "imgi_57_97c80d6e9e84d4bc62fcb97d75904c7c.jpg"
+  ],
   "蓋世達人龍蝦🦞沙拉（500克）✨": [
     "imgi_42_e57e3f5aba62753325eb615fd1fab5df.jpg",
     "imgi_43_eeffe944cde270ab31682643345dd80e.jpg",
@@ -2058,6 +2082,11 @@ const IMG_DB = {
     "imgi_5_59006594-2o.jpg",
     "imgi_6_59006594-1o.jpg"
   ],
+  "紅龍系列《大贏家雞塊》業務包來囉～～～": [
+    "imgi_37_141dea5065d4683540eccf92eebc0d91.jpg",
+    "imgi_38_07e4e475d5cccc0c23edde49af5c0056.jpg",
+    "imgi_39_0d359ce1813a4d622b0328f423ba9519.jpg"
+  ],
   "紅龍牛肉湯💖": [
     "imgi_36_131aebca48877a537b23948f92c2fb9e.jpg",
     "imgi_37_ddbdf2751f26f928837a46d6fc148faa.jpg",
@@ -2074,6 +2103,12 @@ const IMG_DB = {
     "imgi_36_71080bb2407be7a294b4d5aca87e174f.jpg",
     "imgi_37_179d377dd66856983858387f1c754611.jpg",
     "imgi_38_eac7697bd23eecfe95a24c27ba9b752e.jpg"
+  ],
+  "紅龍商品強棒出擊‼️": [
+    "imgi_40_83c300db74c93f49d982d84783262777.jpg",
+    "imgi_41_f2c3dbae68b06eb3c479e2768bdb4f75.jpg",
+    "imgi_42_7de6a0bc56e392d2d1deed5bcf7ad215.jpg",
+    "imgi_43_1fb8c362c59ddd1120ed4b0f659e0267.jpg"
   ],
   "紅龍厚切豬排130克(10片入)": [
     "imgi_40_bd32551a6a8b9f4ddbe1110164bb37c6.jpg",
@@ -2162,6 +2197,13 @@ const IMG_DB = {
     "imgi_8_59094746-4o.jpg",
     "imgi_9_59094746-5o.jpg"
   ],
+  "秘製醃製雞皮（500G 大包裝）": [
+    "imgi_39_1dd1007fafee18e366fd3b40a974e2a4.jpg",
+    "imgi_40_dc87f5e4f1551a95e3033186618fc9a8.jpg",
+    "imgi_41_17ef4968c5fc9654335cdda1bd537441.jpg",
+    "imgi_42_508580efb6235f412e42de53fc49ed12.jpg",
+    "imgi_43_dd2c825d9341e0bbcfbd3eaafe4124b1.jpg"
+  ],
   "硫酸軟骨素20mg 涼感舒緩貼15入《一組兩包》": [
     "imgi_5_56674797-1o.jpg",
     "imgi_6_56674797-2o.jpg",
@@ -2182,6 +2224,19 @@ const IMG_DB = {
     "imgi_6_59068708-2o.jpg",
     "imgi_7_59068708-3o.jpg",
     "imgi_8_59068708-4o.jpg"
+  ],
+  "知名早餐連鎖店御用甜不辣": [
+    "imgi_37_5fc1f4c96ed2cf4847ddcde0a52feb2d.jpg",
+    "imgi_38_a4ad675bf7b4ffe261e815e0c3b20eb8.jpg",
+    "imgi_39_1155b9df4c0b28b08552ab9a72c758d7.jpg",
+    "imgi_40_2ff0ebd040c73910b8c2bd935a890993.jpg"
+  ],
+  "眷村媽媽滷鴨翅🐣": [
+    "imgi_33_f5471a5f9bd29548050c8875b1ea0942.jpg",
+    "imgi_34_090b9cbe2dad78dca23363abdf8bf9ab.jpg",
+    "imgi_35_1fd3e23c01e43266fdc3a1a2fc72e2ba.jpg",
+    "imgi_36_3834abe43cf693523528e9ae5789966b.jpg",
+    "imgi_37_ee2f977f463d8ca6d0ab7d8d8baa0adb.jpg"
   ],
   "百搭小香風菱格鏈條水桶包 (3色)": [
     "imgi_10_49845595-5o.jpg",
@@ -2623,6 +2678,13 @@ const IMG_DB = {
     "imgi_8_48414426-4o.jpg",
     "imgi_9_48414426-5o.jpg"
   ],
+  "溫泉溏心蛋": [
+    "imgi_32_bfa06939540d57a018d9b08979d37093.jpg",
+    "imgi_33_0238440231d92a1930d0369476b3995b.jpg",
+    "imgi_34_3064adf4488b27082b470af32b1c57d2.jpg",
+    "imgi_35_9087b82a088020fc881479788a29b6e9.jpg",
+    "imgi_36_8eb68bfdfaff656cb8c0a524363808fa.jpg"
+  ],
   "湧永製藥 WAKUNAGA ボンエナ Ca 微粒 60包入": [
     "imgi_5_59074267-1o.jpg"
   ],
@@ -2733,6 +2795,12 @@ const IMG_DB = {
     "imgi_41_e3ee0c20a89aa658b8e260274e388bd1.jpg",
     "imgi_42_202e7904ff50ecbbbc5d4c0cbcfa0d4e.jpg",
     "imgi_43_9fd0896289dabec47a3bee086c6bef41.jpg"
+  ],
+  "海港煙燻鯊魚煙": [
+    "imgi_38_1934db7015819c9f5d414ed23012ca4c.jpg",
+    "imgi_39_63861abec1c7fa812cfd0922d34a8d6d.jpg",
+    "imgi_40_43d22007e6b9f346ff80b5b9ba9f47f5.jpg",
+    "imgi_41_6ef571ceff6dbe14d9f73a3a117a3edb.jpg"
   ],
   "洋車前子麩片 70g_包": [
     "imgi_35_3977cb8f6dd45180e1a0c17379fbd0e8.jpg",
@@ -2848,6 +2916,12 @@ const IMG_DB = {
     "imgi_5_38810501-3o.jpg",
     "imgi_6_38810501-4o.jpg"
   ],
+  "正宗南投信義鄉酵素梅🫒200g": [
+    "imgi_41_abc673dc275fbd3f4c8dba4fbcc7c2e2.jpg",
+    "imgi_42_81b36f69ec7342f1389e225c495445e6.jpg",
+    "imgi_43_e452981574f74b7c18e5229266b76735.jpg",
+    "imgi_44_cbec54a8cbb37b80f0c4ff9ab8928575.jpg"
+  ],
   "正好艾草薰香棒24cm增量版(30支）": [
     "imgi_5_59099841-3o.jpg",
     "imgi_6_59099841-1o.jpg",
@@ -2920,6 +2994,11 @@ const IMG_DB = {
     "imgi_8_59091710-2o.jpg",
     "imgi_9_59091710-4o.jpg"
   ],
+  "栗子首選~好吃到爆炸": [
+    "imgi_28_320f05bb9ed772a687ee8153cd74d174.jpg",
+    "imgi_29_75c9e543dc65c9fdb12290502c8bdc82.jpg",
+    "imgi_30_bb29be3c55e3bd874b35dd10fafb2d2f.jpg"
+  ],
   "果籽MIT高山茶包熱銷系列": [
     "imgi_42_128e63218f557eeec19dcb31407462b1.jpg",
     "imgi_43_2ef927b3aa7dd9e59b1cf96d4566afcb.jpg",
@@ -2962,6 +3041,13 @@ const IMG_DB = {
     "imgi_7_59074743-3o.jpg",
     "imgi_8_59074743-4o.jpg",
     "imgi_9_59074743-5o.jpg"
+  ],
+  "本港手釣白帶魚切塊": [
+    "imgi_38_72ee4bd0255c29f0d6e2742c9b5bafd0.jpg",
+    "imgi_39_1801f29a5247bc4f3ccda068c03e30c3.jpg",
+    "imgi_40_c08bc02091d35e3f55c160e3a0bf9d46.jpg",
+    "imgi_41_865040a371156acdd20f51c1d29bdbb5.jpg",
+    "imgi_42_014cad18ab25cdb73190d3623907c3ef.jpg"
   ],
   "最新效期✨岱瑪菈什錦軟糖✨1000g": [
     "imgi_5_58443388-3o.jpg",
@@ -3422,6 +3508,13 @@ const IMG_DB = {
     "imgi_37_2e33bffd5510ecb1a8714888ad074b5d.jpg",
     "imgi_38_81917ed3e88be6d2e412c1369449f36d.jpg"
   ],
+  "日式炸豬排 (8片裝) 500公克裝": [
+    "imgi_35_8a81f0ea228a104894cbb1668fe7c80e.jpg",
+    "imgi_36_b42548bbe609e2685f62d76afeca734a.jpg",
+    "imgi_37_ac95e937bca0b8d3bb77e06212cafc4c.jpg",
+    "imgi_38_cecd7d38e21ee148222ccfe27ef2163a.jpg",
+    "imgi_39_1e5af1418badcdfe03e214e3c27a3929.jpg"
+  ],
   "日夜守護-夜皇素晶亮凍20g_10包": [
     "imgi_10_48155873-19o.jpg",
     "imgi_11_48155873-20o.jpg",
@@ -3504,6 +3597,11 @@ const IMG_DB = {
     "imgi_7_59104309-2o.jpg",
     "imgi_8_59104309-3o.jpg"
   ],
+  "手工香菜水餃（80 顆／包） 🌿": [
+    "imgi_39_45dabce47a62ba0a995cf81511e1685c.jpg",
+    "imgi_40_d185a9a20505118d0910d7f152695cb6.jpg",
+    "imgi_41_5abf47894f08252c7c49c9e635f668ac.jpg"
+  ],
   "手作蔥醬": [
     "imgi_47_90e6665b89bf0b68debc45108723be68.jpg",
     "imgi_48_5ae04b6078ba37d4cb070dcc06f0c277.jpg",
@@ -3524,6 +3622,12 @@ const IMG_DB = {
     "imgi_31_e7b9768aaf4f4d6ea85fd03413ea7d12.jpg",
     "imgi_32_6d778a946268dcecadf2111e5f9ece7f.jpg",
     "imgi_33_a24cfef569d124463709ccb582a44b2a.jpg"
+  ],
+  "慶尚北道千張豆皮餛飩🌈": [
+    "imgi_40_f412d038c4eca99ce9364875be5d6d63.jpg",
+    "imgi_41_e61209b4986b5be9778f69f9429a5cbb.jpg",
+    "imgi_42_13a2337c311dba1f6fd841c351dd1c52.jpg",
+    "imgi_43_e23e947c45fce0ea975b6eefd6bcde28.jpg"
   ],
   "愛迪生二合一底座紫光誘蚊捕蚊拍": [
     "imgi_10_59100002-6o.jpg",
@@ -3625,6 +3729,12 @@ const IMG_DB = {
     "imgi_33_75ecec77c94f97d50ffac9b18fbe598e.jpg",
     "imgi_34_87f7a99a2fbc57ee41b20cec714ce402.jpg",
     "imgi_35_da929f5d43de60e6c267752873d47026.jpg"
+  ],
+  "強匠玉米布丁酥🥨🥨": [
+    "imgi_39_ac65a84df0cfa965a60df7d118b32231.jpg",
+    "imgi_40_129b5715bcd03740090e79a0861eb556.jpg",
+    "imgi_41_934822eb6e252bb13584f50865eb079e.jpg",
+    "imgi_42_c6bddcad9858471593db875ad8bb7234.jpg"
   ],
   "強力去污 一擦凈 魔法浴室清潔球": [
     "imgi_10_59074866-5o.jpg",
@@ -3866,6 +3976,11 @@ const IMG_DB = {
     "imgi_7_59016071-2o.jpg",
     "imgi_8_59016071-3o.jpg",
     "imgi_9_59016071-4o.jpg"
+  ],
+  "大成頂級優質雞塊1000g🐔": [
+    "imgi_29_33d9ca4618bf6c67e4f32ab4ec09e396.jpg",
+    "imgi_30_4ee1c21a0a6209f26efcc5b1a4ba3d96.jpg",
+    "imgi_31_d69f680eac4537820b227a2d7e461a26.jpg"
   ],
   "大容量 泰國 五塔標行 軍散 25g": [
     "imgi_5_42820923-1o.jpg"
@@ -4239,12 +4354,25 @@ const IMG_DB = {
     "imgi_41_c56ae0064f7e62d9eb18b27a5ef2ef31.jpg",
     "imgi_42_867ca40c84339ce1a036d61a2b20951c.jpg"
   ],
+  "古早味鐵路排骨🚞": [
+    "imgi_33_512aa9217f70ed7df4243e7bf9c20f02.jpg",
+    "imgi_34_80d45b224f90304e5ea2f888a817739a.jpg",
+    "imgi_35_ca36d2994cffabe3298b6fe8764d1b94.jpg",
+    "imgi_36_4f81ca69e9ca884a8e8803d89a675ee9.jpg",
+    "imgi_37_bf9bab83cd7f295390a1d318fceb7dfc.jpg"
+  ],
   "古早味蜜地瓜🍠🔥": [
     "imgi_34_07f5b4560c32e07345e7c8a93e77fe6f.jpg",
     "imgi_35_ecebb7d5fd5d1de286050fe65b633f8d.jpg",
     "imgi_36_3d207f092197f2c27fa9c86a426990e4.jpg",
     "imgi_37_7bd5ce993178667cf70e3473c9267519.jpg",
     "imgi_38_654c6973c36b1e80b72bf2a169d448e8.jpg"
+  ],
+  "去刺虱目魚肚🔥🔥": [
+    "imgi_34_9739cea8c61226b14efaeea25f6e4f87.jpg",
+    "imgi_35_e387f3fd15a60d49891e12514b9c596a.jpg",
+    "imgi_36_e6b35d15af1f9f7dca519e4f56751255.jpg",
+    "imgi_37_4b39962e90e95920dd3efe3eb05fb8a4.jpg"
   ],
   "厚磅飯店級純棉腳踏墊-冷霧灰": [
     "imgi_10_52713679-5o.jpg",
@@ -4253,6 +4381,13 @@ const IMG_DB = {
     "imgi_7_52713679-2o.jpg",
     "imgi_8_52713679-3o.jpg",
     "imgi_9_52713679-4o.jpg"
+  ],
+  "厚呷五大天王厚片・吐司界神隊友 🌟": [
+    "imgi_34_0042bc6db877622698c54887ea81dfe0.jpg",
+    "imgi_35_147c05d26c2eaf850df4a0f503686c1a.jpg",
+    "imgi_36_d2a2ac57cf40c0957e77368012782189.jpg",
+    "imgi_37_895a299e36c8a50d60dc470c956ad15a.jpg",
+    "imgi_38_e4bb0508b675d89d3f4b75e099c7c4e4.jpg"
   ],
   "即期優惠✨💎 LA MER-創世紀原晶逆時金萃 7ML 💎✨": [
     "imgi_5_59084868-1o.jpg",
@@ -4302,6 +4437,12 @@ const IMG_DB = {
     "imgi_46_49702a4231712c93bfbfcc99473dec1d.jpg",
     "imgi_47_f0db5bb9302e9172b9fa81527a62a7fd.jpg"
   ],
+  "卜蜂 卡啦脆腿條1000g": [
+    "imgi_33_a63f09ea589d536968956a0b9d4bbcf2.jpg",
+    "imgi_34_37f86228c517181902f9d1fd58c8d0d0.jpg",
+    "imgi_35_ee705901d1412520e0e72fa92921b397.jpg",
+    "imgi_36_1c62cf9229c86ffd98853af016339ead.jpg"
+  ],
   "升級大容量便攜洗漱化妝包 (4色)": [
     "imgi_10_59101368-5o.jpg",
     "imgi_11_59101368-6o.jpg",
@@ -4350,6 +4491,11 @@ const IMG_DB = {
     "imgi_7_43300577-3o.jpg",
     "imgi_8_43300577-4o.jpg",
     "imgi_9_43300577-5o.jpg"
+  ],
+  "北京豬肉餡餅 - 預煎全熟(10片)": [
+    "imgi_34_d7517a143db67262935abb80a759c851.jpg",
+    "imgi_35_2b27a80b82457ecebe2e7a8ba5dc244d.jpg",
+    "imgi_36_fc93a2a82949f04e54bbb4c9a4a02d38.jpg"
   ],
   "分隔便攜半透明藥盒": [
     "imgi_10_59007561-5o.jpg",
@@ -4452,6 +4598,11 @@ const IMG_DB = {
     "imgi_5_59073972-1o.jpg",
     "imgi_6_59073972-2o.jpg"
   ],
+  "五層超費工提拉米蘇😋": [
+    "imgi_37_f91c6db308b858412644ce6fc97027fe.jpg",
+    "imgi_38_38fa3759e2c7ab855db250ab3931e96e.jpg",
+    "imgi_39_1d5fe2d650f5e951b52f49456360f75d.jpg"
+  ],
   "丹参刺五加茶包3.5g_18包": [
     "imgi_6_59128608-1o.jpg",
     "imgi_7_59128608-2o.jpg",
@@ -4479,8 +4630,21 @@ const IMG_DB = {
     "imgi_6_58973579-2o.jpg",
     "imgi_7_58973579-3o.jpg"
   ],
+  "三杯煙燻雞肉絲": [
+    "imgi_29_a32fb7f298f7397f4b89cf1b43a2e92b.jpg",
+    "imgi_30_e3fef686c93be1393bee068e789603cd.jpg",
+    "imgi_31_422bd696bd369bf6256b34bb54b3e4ef.jpg",
+    "imgi_32_0925d253f43e7d485c0623864981c392.jpg",
+    "imgi_33_6480bdc9d6af5ee64e75a36cb590eb7b.jpg"
+  ],
   "三星蔥沙琪瑪 480g": [
     "imgi_5_59094528-1o.jpg"
+  ],
+  "三兄弟青蔥芝麻蛋餅皮（一包10片）": [
+    "imgi_36_9a2e4e8d378b166af483cf80cbd83175.jpg",
+    "imgi_37_f889c588d9fbe521abd9210cc22a1202.jpg",
+    "imgi_38_1e625290088e4c7ec4d8eadef9f66881.jpg",
+    "imgi_39_1a1364a7184ccf22dbdedd2a08ae31ca.jpg"
   ],
   "七合一多功能旅行收納袋😍": [
     "imgi_32_82665378312077564fafa00a1f1a82f2.jpg",
@@ -4723,6 +4887,13 @@ const IMG_DB = {
     "imgi_8_59006888-4o.jpg",
     "imgi_9_59006888-5o.jpg"
   ],
+  "【帝王蟹味棒】": [
+    "imgi_38_b697a55f8aa58227306f580ae2486b5a.jpg",
+    "imgi_39_41d682407f0b55bb8cf9ab7470c0c561.jpg",
+    "imgi_40_3fa802699913cf4a19fca121fb98e00f.jpg",
+    "imgi_41_6b23f1223dc0ed05015e02d3d93c4567.jpg",
+    "imgi_42_5ded4a2ccdff08cbf34f92d421f71477.jpg"
+  ],
   "【Narciso Rodriguez】裸時尚粉女性淡香精90ml(TESTER)": [
     "imgi_5_58976267-1o.jpg",
     "imgi_6_58976267-2o.jpg",
@@ -4742,11 +4913,25 @@ const IMG_DB = {
     "imgi_8_59074108-3o.jpg",
     "imgi_9_59074108-4o.jpg"
   ],
+  "《醬燒鐵路大排骨｜單片獨立包裝》": [
+    "imgi_37_6a2098d04c0ad25f929f9fa586d6c918.jpg",
+    "imgi_38_c22ff19adbac99c360224ffa7e1f5e4d.jpg",
+    "imgi_39_ec6e3cf7eb6e5025d8db9dc236a1bc97.jpg",
+    "imgi_40_e1030bfb2171ae2e677d8e94caeb70b0.jpg",
+    "imgi_41_bd12b5fe18eea75dc71ccc980a809afe.jpg"
+  ],
   "《照燒雞柳》": [
     "imgi_39_c57d741d8dd3bbb54eaf3aff33295d3b.jpg",
     "imgi_40_824ef83d011db426c3fd2cde416ea211.jpg",
     "imgi_41_6791a17f77ce9bf867e384fe6fe0804a.jpg",
     "imgi_42_361fdc09b202a2b48d4056b93cfae8f7.jpg"
+  ],
+  "《無敵肉多多牛肉爐》": [
+    "imgi_38_ec1df645abefe13a79727eab47da7535.jpg",
+    "imgi_39_cd34481ccb6c6d4baf9f958ddd249fe2.jpg",
+    "imgi_40_068e4fdc362e02f897044522695bff06.jpg",
+    "imgi_41_5442f079af9f4be7bd246c54100b9f8f.jpg",
+    "imgi_42_6632c55638eacbab8cb1abc0285e1da3.jpg"
   ],
   "《梅花烤排》": [
     "imgi_31_24ad42e05653758df19278bf5d6804e2.jpg",
@@ -5101,6 +5286,13 @@ const IMG_DB = {
     "imgi_7_59069278-3o.jpg",
     "imgi_8_59069278-4o.jpg",
     "imgi_9_59069278-5o.jpg"
+  ],
+  "Premium頂級紅鑽鮭魚（智利鮭魚）": [
+    "imgi_30_33ea92e716dfa6443267abe8281976a2.jpg",
+    "imgi_31_d5a4f297efe6fdfb834bee5c9d326d9e.jpg",
+    "imgi_32_b9d8099493f12edb254f9f05372357c7.jpg",
+    "imgi_33_65c3549a15b5f6264e62f9feea8c2ab0.jpg",
+    "imgi_34_f2935eced35d449215e5087779b0e092.jpg"
   ],
   "Pokka Sapporo 檸檬酸能量飲2700 155ml": [
     "imgi_5_57708940-1o.jpg",
