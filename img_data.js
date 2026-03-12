@@ -422,6 +422,12 @@ const IMG_DB = {
     "imgi_5_58453620-2o.jpg",
     "imgi_6_58453620-1o.jpg"
   ],
+  "🇨🇱超巨大XXL智利鮭魚-真空裝": [
+    "LINE_NOTE_260312_1.jpg",
+    "LINE_NOTE_260312_2.jpg",
+    "LINE_NOTE_260312_3.jpg",
+    "LINE_NOTE_260312_6.jpg"
+  ],
   "🇦🇺澳洲尤加利 高濃度精油噴霧 500ml": [
     "imgi_10_51446135-6o.jpg",
     "imgi_5_51446135-1o.jpg",
@@ -941,6 +947,13 @@ const IMG_DB = {
     "imgi_8_59212760-3o.jpg",
     "imgi_9_59212760-4o.jpg"
   ],
+  "蝦界的愛馬仕-泰蝦仁量販包（大）": [
+    "LINE_NOTE_260312_1.jpg",
+    "LINE_NOTE_260312_2.jpg",
+    "LINE_NOTE_260312_3.jpg",
+    "LINE_NOTE_260312_4.jpg",
+    "LINE_NOTE_260312_5.jpg"
+  ],
   "蘭蔻 超極限肌因賦活露5ml 1組2條": [
     "imgi_10_59255686-5o.jpg",
     "imgi_11_59255686-6o.jpg",
@@ -1196,6 +1209,13 @@ const IMG_DB = {
   "石龍宮拌麵禮盒": [
     "imgi_5_59140130-1o.jpg",
     "imgi_6_59140130-2o.jpg"
+  ],
+  "石頭火鍋湯底": [
+    "LINE_NOTE_260311_1.jpg",
+    "LINE_NOTE_260311_2.jpg",
+    "LINE_NOTE_260311_3.jpg",
+    "LINE_NOTE_260311_4.jpg",
+    "LINE_NOTE_260311_6.jpg"
   ],
   "短效期🎉PERFECT液態音波緊緻精華❤️《買𝟏送𝟏》": [
     "imgi_10_59104439-6o.jpg",
@@ -2089,6 +2109,13 @@ const IMG_DB = {
     "imgi_32_ecc1ddacc15862d3c5fe174b220390eb.jpg",
     "imgi_33_b2abd09f7b5ee2d543ebb0f1ce1de632.jpg",
     "imgi_34_4b00df327e23b5ef83ae9d52fcfa3fde.jpg"
+  ],
+  "山羊城「靈魂豆瓣醬」": [
+    "LINE_NOTE_260311_1.jpg",
+    "LINE_NOTE_260311_2.jpg",
+    "LINE_NOTE_260311_3.jpg",
+    "LINE_NOTE_260311_4.jpg",
+    "LINE_NOTE_260311_5.jpg"
   ],
   "居家必備連體帶蓋 條紋拉鍊大收納箱": [
     "imgi_10_59167070-5o.jpg",
