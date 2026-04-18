@@ -444,6 +444,12 @@ const IMG_DB = {
     "imgi_8_59599369-4o.jpg",
     "imgi_9_59599369-5o.jpg"
   ],
+  "🇨🇱超巨大XXL智利鮭魚-真空裝": [
+    "LINE_NOTE_260418_1.jpg",
+    "LINE_NOTE_260418_2.jpg",
+    "LINE_NOTE_260418_3.jpg",
+    "LINE_NOTE_260418_4.jpg"
+  ],
   "麻油雞麵線290g": [
     "imgi_6_59702458-1o.jpg",
     "imgi_7_59702458-2o.jpg",
@@ -523,6 +529,12 @@ const IMG_DB = {
     "imgi_7_59621808-3o.jpg",
     "imgi_8_59621808-4o.jpg",
     "imgi_9_59621808-5o.jpg"
+  ],
+  "韓國🇰🇷FLOISTAR透亮無酸膠原面膜25g10片盒": [
+    "LINE_NOTE_260418_1.jpg",
+    "LINE_NOTE_260418_2.jpg",
+    "LINE_NOTE_260418_3.jpg",
+    "LINE_NOTE_260418_4.jpg"
   ],
   "韓國松月 強度70 黑鑽搓澡巾 單片": [
     "imgi_10_59680794-5o.jpg",
@@ -1540,6 +1552,11 @@ const IMG_DB = {
     "imgi_8_57855369-3o.jpg",
     "imgi_9_57855369-4o.jpg"
   ],
+  "正統泰國芒果乾200克": [
+    "LINE_NOTE_260418_1.jpg",
+    "LINE_NOTE_260418_2.jpg",
+    "LINE_NOTE_260418_5.jpg"
+  ],
   "歐拉公主 超透氣甲殼素抑菌衛生棉系列《一組2件》": [
     "imgi_10_57618922-6o.jpg",
     "imgi_5_57618922-1o.jpg",
@@ -1621,12 +1638,28 @@ const IMG_DB = {
     "imgi_8_59613814-4o.jpg",
     "imgi_9_59613814-5o.jpg"
   ],
+  "日本🇯🇵SERIA冰箱迷你調味醬包收納盒": [
+    "LINE_NOTE_260418_2.jpg"
+  ],
+  "日本🇯🇵ROCKET洗碗機專用除菌消臭清潔粉1kg": [
+    "LINE_NOTE_260418_1.jpg"
+  ],
   "日本🇯🇵OBORO 洗臉專用毛巾1入裝(4色)": [
     "imgi_10_59718899-5o.jpg",
     "imgi_6_59718899-1o.jpg",
     "imgi_7_59718899-2o.jpg",
     "imgi_8_59718899-3o.jpg",
     "imgi_9_59718899-4o.jpg"
+  ],
+  "日本🇯🇵MIYOSHI高純度強力洗衣皂190g個": [
+    "LINE_NOTE_260418_2.jpg"
+  ],
+  "日本🇯🇵KAO 家用萬用清潔劑400ml": [
+    "LINE_NOTE_260418_1.jpg",
+    "LINE_NOTE_260418_2.jpg"
+  ],
+  "日本🇯🇵ICE AW 極涼泡沫沐浴露 500ml": [
+    "LINE_NOTE_260418_1.jpg"
   ],
   "日本🇯🇵Daisho大昌胡椒鹽225g": [
     "imgi_6_59698268-2o.jpg"
@@ -1715,6 +1748,9 @@ const IMG_DB = {
     "imgi_8_59606907-2o.jpg",
     "imgi_9_59606907-4o.jpg"
   ],
+  "日本小久保可調節濕巾蓋": [
+    "LINE_NOTE_260418_2.jpg"
+  ],
   "日本富士山限定 Jellycat風格 超可愛 櫻花富士山娃娃": [
     "imgi_10_59737947-5o.jpg",
     "imgi_11_59737947-6o.jpg",
@@ -1790,6 +1826,9 @@ const IMG_DB = {
     "imgi_8_59708151-3o.jpg",
     "imgi_9_59708151-4o.jpg"
   ],
+  "日本UYEKI車用空調強力清潔去味噴霧80ml": [
+    "LINE_NOTE_260418_1.jpg"
+  ],
   "日本unlabel LAB V 亮白維他命C潤色UV防曬乳 50ml": [
     "imgi_10_59671621-5o.jpg",
     "imgi_11_59671621-6o.jpg",
@@ -1829,6 +1868,9 @@ const IMG_DB = {
   "日本MIYOSHI高純度強力洗衣皂190g_個": [
     "imgi_6_59733326-1o.jpg"
   ],
+  "日本MAX胚芽米糠潤膚皂100g3包": [
+    "LINE_NOTE_260418_1.jpg"
+  ],
   "日本LEC廚房排水口防菌錠2入_片": [
     "imgi_6_56045066-1o.jpg",
     "imgi_7_56045066-2o.jpg",
@@ -1867,7 +1909,13 @@ const IMG_DB = {
     "imgi_9_50322081-9o.jpg"
   ],
   "日本IMOTANI 微波爐專用雙耳調理鍋1.5L": [
-    "imgi_6_59733206-1o.jpg"
+    "imgi_6_59733206-1o.jpg",
+    "LINE_NOTE_260418_1.jpg",
+    "LINE_NOTE_260418_2.jpg",
+    "LINE_NOTE_260418_5.jpg"
+  ],
+  "日本IKEMOTO雜毛專用平整順髮尖尾梳": [
+    "LINE_NOTE_260418_3.jpg"
   ],
   "日本COCA聯名威士忌Highball 350ml": [
     "imgi_5_59621519-1o.jpg",
