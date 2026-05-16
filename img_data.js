@@ -4804,6 +4804,11 @@ const IMG_DB = {
     "imgi_8_59148133-4o.jpg",
     "imgi_9_59148133-5o.jpg"
   ],
+  "日本🇯🇵熊野CYCLEAR酵素身體乳400ml": [
+    "LINE_NOTE_260516_1.jpg",
+    "LINE_NOTE_260516_2.jpg",
+    "LINE_NOTE_260516_3.jpg"
+  ],
   "日本🇯🇵正品 池 田MUHI止 癢液 50ml": [
     "imgi_10_39253354-6o.jpg",
     "imgi_5_39253354-1o.jpg",
@@ -4848,6 +4853,9 @@ const IMG_DB = {
   "日本🇯🇵PT 積雪草牛奶保濕乳液300ml": [
     "LINE_NOTE_260423_3.jpg"
   ],
+  "日本🇯🇵PONYKASEI 日本製曬衣夾（18入）": [
+    "LINE_NOTE_260516_2.jpg"
+  ],
   "日本🇯🇵PELICAN 全米麥芽潔面皂75g": [
     "imgi_6_59835220-1o.jpg",
     "imgi_7_59835220-2o.jpg",
@@ -4856,6 +4864,15 @@ const IMG_DB = {
   ],
   "日本🇯🇵PEARL深底不沾單柄鍋1.9L": [
     "LINE_NOTE_260514_2.jpg"
+  ],
+  "日本🇯🇵P&G 風倍清玄關用除臭芳香劑7ml(一般款)": [
+    "LINE_NOTE_260516_1.jpg"
+  ],
+  "日本🇯🇵MARNA除水垢雙面菜瓜布": [
+    "LINE_NOTE_260516_1.jpg",
+    "LINE_NOTE_260516_2.jpg",
+    "LINE_NOTE_260516_3.jpg",
+    "LINE_NOTE_260516_4.jpg"
   ],
   "日本🇯🇵KRACIE 哆啦A夢泡沫🫧慕斯補充包480ml+空瓶組": [
     "LINE_NOTE_260423_1.jpg",
@@ -4953,6 +4970,9 @@ const IMG_DB = {
     "imgi_5_58427893-10o.jpg",
     "imgi_6_58427893-8o.jpg",
     "imgi_7_58427893-9o.jpg"
+  ],
+  "日本製🇯🇵LIFE-do. Plus 積雪草嬰兒濕紙巾 100抽 × 3包／組": [
+    "LINE_NOTE_260516_5.jpg"
   ],
   "日本製【Kanebo】機能舒適內搭褲": [
     "imgi_5_59913821-1o.jpg",
@@ -6329,6 +6349,9 @@ const IMG_DB = {
     "imgi_6_59739499-2o.jpg",
     "imgi_7_59739499-3o.jpg",
     "imgi_8_59739499-4o.jpg"
+  ],
+  "寵幸福 木薯混合貓砂 2kg": [
+    "LINE_NOTE_260516_1.jpg"
   ],
   "實力派美型🎀七彩都會輕旅鞋(F128)": [
     "imgi_10_59948014-6o.jpg",
