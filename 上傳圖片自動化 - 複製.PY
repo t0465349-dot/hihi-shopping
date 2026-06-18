@@ -99,36 +99,3 @@ if not github_windows:
     
     time.sleep(5)  # 等待程式開門載入
     github_windows = gw.getWindowsWithTitle("GitHub Desktop")
-
-if github_windows:
-    # 2. 強制把 GitHub Desktop 視窗拉到最前面放大
-    win = github_windows[0]
-    if win.isMinimized:
-        win.restore()
-    win.activate()
-    time.sleep(1)
-    
-    print("✍️ 正在自動定位到 Summary 欄位並填寫 '1'...")
-    # 3. 利用快速鍵精準切換到 Summary 欄位
-    pyautogui.hotkey('ctrl', '1') # GitHub Desktop 快速鍵：直接切換到 Changes 列表
-    time.sleep(0.5)
-    
-    # 重新整理一下變更列表
-    pyautogui.hotkey('ctrl', 'r')
-    time.sleep(1.5)
-    
-    # 用快速鍵直接定位到 Summary 輸入框
-    pyautogui.press('tab') 
-    time.sleep(0.2)
-    pyautogui.hotkey('ctrl', 'a')
-    pyautogui.press('backspace')
-    pyautogui.write('1')
-    time.sleep(0.5)
-    
-    print("🚀 正在按下【Commit to main】按鈕...")
-    # 4. 在 GitHub Desktop 中，填完 Summary 後，直接按「Ctrl + Enter」就是 Commit 的超級捷徑！
-    pyautogui.hotkey('ctrl', 'enter')
-    
-    print("🏆 【整筆自動化大功告成】！已經成功 Commit 囉！")
-else:
-    print("❌ 錯誤：無法順利取得 GitHub Desktop 視窗，請確認程式是否有正常開啟！")
