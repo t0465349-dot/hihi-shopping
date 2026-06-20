@@ -1,5 +1,8 @@
 import os
 import time
+import subprocess
+import pyautogui
+import pygetwindow as gw
 from selenium import webdriver
 from selenium.webdriver.edge.options import Options
 from selenium.webdriver.common.by import By
@@ -11,16 +14,16 @@ SCAN_HTML_PATH = r"D:\GitHub\hihi-shopping\scan.html"
 IMAGES_DIR = r"D:\GitHub\hihi-shopping\images"
 TARGET_DIR = r"D:\GitHub\hihi-shopping"
 TARGET_FILE_PATH = os.path.join(TARGET_DIR, "img_data.js")
+GITHUB_DESKTOP_PATH = r"C:\Users\admin\AppData\Local\GitHubDesktop\GitHubDesktop.exe"
 
 # 🛑 關鍵心法：先斬後奏！如果目標資料夾已有舊的索引檔，先刪掉它
-# 這樣 Edge 下載新檔時，才會直接命名為 img_data.js，不會變成 img_data (1).js
 if os.path.exists(TARGET_FILE_PATH):
     print("🗑️ 偵測到舊的索引檔，正在執行預先刪除...")
     os.remove(TARGET_FILE_PATH)
 
 print("🚀 正在啟動 Edge 瀏覽器並將下載路徑直接鎖定專案目錄...")
 
-# ⚙️ 2. 設定 Edge 瀏覽器參數（下載點直接設為終點資料夾）
+# ⚙️ 2. 設定 Edge 瀏覽器參數
 edge_options = Options()
 edge_prefs = {
     "download.default_directory": TARGET_DIR,          # 💡 直接下放到 D:\GitHub\hihi-shopping
@@ -53,23 +56,46 @@ try:
     print("⏳ 正在等待系統掃描圖片並產生索引...（請稍候）")
     download_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(., '下載 img_data.js')]")))
     
-    # 💾 5. 點擊下載（直接落入 D:\GitHub\hihi-shopping）
+    # 💾 5. 點擊下載
     print("💾 掃描成功！正在直接下載至專案目錄...")
     download_btn.click()
     
-    # ⏳ 6. 監控下載狀態
+    # 📢 6. 提示使用者手動介入
+    print("\n🌟 【請注意】請在瀏覽器畫面上手動點擊「保留」接受危險檔案下載！")
+    print("⏳ 程式正在密切監控專案目錄，只要偵測到手動確認落地的新檔案就會繼續...")
+    
+    # ⏳ 7. 監控下載狀態（改為無限循環等待妳按保留，不限時更防呆）
     downloaded = False
-    for _ in range(30):  # 最多等待 30 秒
+    while True:
         if os.path.exists(TARGET_FILE_PATH) and os.path.getsize(TARGET_FILE_PATH) > 0:
+            time.sleep(1) # 穩健等檔案完全寫入
             downloaded = True
             break
         time.sleep(1)
         
     if downloaded:
-        print("🏆 【自動化結帳成功】！新索引檔已直接覆蓋進 D 槽專案目錄，大功告成！")
+        print("🏆 【下載對帳成功】！新索引檔已成功落入目標資料夾。")
     else:
         print("❌ 下載好像出了點問題，沒能在專案目錄看到新檔案。")
         
 finally:
     # 關閉瀏覽器
     driver.quit()
+
+# ➔➔➔➔➔ 🤖 【自動化第二階段：GitHub Desktop 提交流程】 ➔➔➔➔➔
+
+print("\n⚙️ 正在啟動 GitHub Desktop 自動化...")
+
+# 1. 嘗試尋找是否已經打開 GitHub Desktop
+github_windows = gw.getWindowsWithTitle("GitHub Desktop")
+
+if not github_windows:
+    print("📂 偵測到 GitHub Desktop 尚未開啟，正在自動幫妳叫醒它...")
+    if os.path.exists(GITHUB_DESKTOP_PATH):
+        subprocess.Popen(GITHUB_DESKTOP_PATH)
+    else:
+        # 如果路徑有意外的防呆備用方案
+        os.system("start GitHubDesktop")
+    
+    time.sleep(5)  # 等待程式開門載入
+    github_windows = gw.getWindowsWithTitle("GitHub Desktop")
