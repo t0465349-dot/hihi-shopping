@@ -256,6 +256,14 @@ const IMG_DB = {
     "imgi_5_52812751-4o.jpg",
     "imgi_6_52812751-5o.jpg"
   ],
+  "💥果肉100％ 鮮芒果冰棒×6支 💥": [
+    "LINE_NOTE_260625_1.jpg",
+    "LINE_NOTE_260625_2.jpg",
+    "LINE_NOTE_260625_3.jpg",
+    "LINE_NOTE_260625_4.jpg",
+    "LINE_NOTE_260625_5.jpg",
+    "LINE_NOTE_260625_6.jpg"
+  ],
   "💥日本大特價💥日本萬代 麵包超人澆花組裝玩具 640g": [
     "imgi_5_51431520-1o.jpg",
     "imgi_6_51431520-2o.jpg",
@@ -412,6 +420,11 @@ const IMG_DB = {
     "imgi_8_59599120-4o.jpg",
     "imgi_9_59599120-5o.jpg"
   ],
+  "🏅️熱銷款-椒麻脆花生（可素食）": [
+    "LINE_NOTE_260625_1.jpg",
+    "LINE_NOTE_260625_2.jpg",
+    "LINE_NOTE_260625_4.jpg"
+  ],
   "🎭60年古早味極品蜜餞🎭手工甘草李子 200g": [
     "imgi_5_44215528-2o.jpg",
     "imgi_6_44215528-1o.jpg",
@@ -511,6 +524,12 @@ const IMG_DB = {
   ],
   "🍊🍓🍏 酸甜Q彈停不下來！VC水果軟糖 1KG 🍏🍓🍊": [
     "imgi_5_60459413-2o.jpg"
+  ],
+  "🍊🌿 濟州島橘子冰茶 🌿🍊": [
+    "LINE_NOTE_260625_1.jpg",
+    "LINE_NOTE_260625_2.jpg",
+    "LINE_NOTE_260625_3.jpg",
+    "LINE_NOTE_260625_7.jpg"
   ],
   "🍇 鮮Q葡萄果凍系列 600g 🍇": [
     "imgi_5_60522342-1o.jpg",
@@ -3544,6 +3563,12 @@ const IMG_DB = {
     "imgi_8_60471195-4o.jpg",
     "imgi_9_60471195-5o.jpg"
   ],
+  "日本🇯🇵熊野 cyclear 酵素洗顏泡沫洗面乳300ml": [
+    "LINE_NOTE_260625_1.jpg",
+    "LINE_NOTE_260625_2.jpg",
+    "LINE_NOTE_260625_3.jpg",
+    "LINE_NOTE_260625_4.jpg"
+  ],
   "日本🇯🇵小久保寬型橘色鍋鏟": [
     "LINE_NOTE_260617_1.jpg"
   ],
@@ -3562,6 +3587,9 @@ const IMG_DB = {
     "LINE_NOTE_260617_3.jpg",
     "LINE_NOTE_260617_4.jpg",
     "LINE_NOTE_260617_5.jpg"
+  ],
+  "日本🇯🇵LIV PLUS三合一分格平底鍋26cm": [
+    "LINE_NOTE_260625_3.jpg"
   ],
   "日本🇯🇵KAKUSEE 不鏽鋼露營鍋具6件組": [
     "imgi_6_60589971-1o.jpg",
@@ -3582,6 +3610,18 @@ const IMG_DB = {
     "LINE_NOTE_260617_2.jpg",
     "LINE_NOTE_260617_3.jpg",
     "LINE_NOTE_260617_6.jpg"
+  ],
+  "日本🇯🇵EARTH排水管泡沫清潔劑 200ml": [
+    "LINE_NOTE_260625_1.jpg",
+    "LINE_NOTE_260625_2.jpg",
+    "LINE_NOTE_260625_5.jpg"
+  ],
+  "日本🇯🇵AIMEDIA 衣物去污劑70g": [
+    "LINE_NOTE_260625_1.jpg",
+    "LINE_NOTE_260625_2.jpg",
+    "LINE_NOTE_260625_3.jpg",
+    "LINE_NOTE_260625_4.jpg",
+    "LINE_NOTE_260625_5.jpg"
   ],
   "日本野村 美樂圓餅-桶裝家庭號 470g": [
     "imgi_5_54137886-1o.jpg"
