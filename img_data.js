@@ -644,6 +644,14 @@ const IMG_DB = {
     "imgi_8_60635004-4o.jpg",
     "imgi_9_60635004-5o.jpg"
   ],
+  "🎉 媽祖賜福開運祈福箱 🎉": [
+    "LINE_NOTE_260704_1.jpg",
+    "LINE_NOTE_260704_2.jpg",
+    "LINE_NOTE_260704_3.jpg",
+    "LINE_NOTE_260704_4.jpg",
+    "LINE_NOTE_260704_5.jpg",
+    "LINE_NOTE_260704_6.jpg"
+  ],
   "🍹聖沛黎洛低熱量氣泡水果飲料系列 330ml《同口味一組2罐》": [
     "imgi_10_60497671-6o.jpg",
     "imgi_11_60497671-7o.jpg",
@@ -1420,8 +1428,26 @@ const IMG_DB = {
     "imgi_8_60623578-3o.jpg",
     "imgi_9_60623578-4o.jpg"
   ],
+  "黑糖冬瓜海燕窩 225g(全素)": [
+    "LINE_NOTE_260704_1.jpg",
+    "LINE_NOTE_260704_2.jpg",
+    "LINE_NOTE_260704_3.jpg",
+    "LINE_NOTE_260704_4.jpg",
+    "LINE_NOTE_260704_5.jpg",
+    "LINE_NOTE_260704_6.jpg"
+  ],
   "黑瑪卡醬油 410ML": [
     "imgi_5_60637000-1o.jpg"
+  ],
+  "黑手黨油污剋星洗手劑（1000cc)": [
+    "LINE_NOTE_260704_1.jpg",
+    "LINE_NOTE_260704_2.jpg",
+    "LINE_NOTE_260704_3.jpg",
+    "LINE_NOTE_260704_4.jpg",
+    "LINE_NOTE_260704_5.jpg",
+    "LINE_NOTE_260704_6.jpg",
+    "LINE_NOTE_260704_7.jpg",
+    "LINE_NOTE_260704_8.jpg"
   ],
   "黃魚酥200g": [
     "imgi_6_60517668-1o.jpg",
@@ -4424,6 +4450,12 @@ const IMG_DB = {
     "imgi_8_60517298-5o.jpg",
     "imgi_9_60517298-6o.jpg"
   ],
+  "梅子夢工廠-夢の梅糖100G(全素)": [
+    "LINE_NOTE_260704_1.jpg",
+    "LINE_NOTE_260704_2.jpg",
+    "LINE_NOTE_260704_3.jpg",
+    "LINE_NOTE_260704_9.jpg"
+  ],
   "柳屋 FACIAL深層淨化抗痘洗面乳": [
     "imgi_6_58837843-1o.jpg",
     "imgi_7_58837843-2o.jpg",
@@ -6385,6 +6417,12 @@ const IMG_DB = {
     "imgi_8_60667225-3o.jpg",
     "imgi_9_60667225-4o.jpg"
   ],
+  "台灣尋味錄-珍珠軟糖（黑糖風味）60g": [
+    "LINE_NOTE_260704_1.jpg",
+    "LINE_NOTE_260704_2.jpg",
+    "LINE_NOTE_260704_3.jpg",
+    "LINE_NOTE_260704_4.jpg"
+  ],
   "台灣之光～三心科技軟牙間刷【96入】": [
     "imgi_10_34498464-13o.jpg",
     "imgi_5_34498464-14o.jpg",
@@ -6690,6 +6728,12 @@ const IMG_DB = {
     "imgi_7_60704215-2o.jpg",
     "imgi_8_60704215-3o.jpg",
     "imgi_9_60704215-4o.jpg"
+  ],
+  "冬瓜黑糖海燕窩280G純素": [
+    "LINE_NOTE_260704_1.jpg",
+    "LINE_NOTE_260704_2.jpg",
+    "LINE_NOTE_260704_3.jpg",
+    "LINE_NOTE_260704_7.jpg"
   ],
   "冬季限定 金碗燉烤梨(紅棗枸杞)335g《一組2件》": [
     "imgi_5_58870828-1o.jpg",
