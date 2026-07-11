@@ -198,6 +198,12 @@ const IMG_DB = {
     "imgi_8_60559929-3o.jpg",
     "imgi_9_60559929-4o.jpg"
   ],
+  "🥜焦糖花生泡芙餅乾": [
+    "LINE_NOTE_260709_1.jpg",
+    "LINE_NOTE_260709_2.jpg",
+    "LINE_NOTE_260709_3.jpg",
+    "LINE_NOTE_260709_4.jpg"
+  ],
   "🥕🍇 野菜生活100 胡蘿蔔與葡萄綜合果汁 200ml 🍇🥕《一組6罐》": [
     "imgi_5_60594157-1o.jpg"
   ],
@@ -6632,6 +6638,13 @@ const IMG_DB = {
   "日本🇯🇵境內版NEO EX合力他命加強版120錠": [
     "imgi_5_40548840-1o.jpg"
   ],
+  "日本🇯🇵丸辰 多功能剪刀(二合一)": [
+    "LINE_NOTE_260709_1.jpg",
+    "LINE_NOTE_260709_2.jpg",
+    "LINE_NOTE_260709_3.jpg",
+    "LINE_NOTE_260709_4.jpg",
+    "LINE_NOTE_260709_5.jpg"
+  ],
   "日本🇯🇵UFC寬頭極細刷毛潔牙刷(2款)": [
     "imgi_6_60763467-1o.jpg",
     "imgi_7_60763467-2o.jpg",
@@ -6643,6 +6656,13 @@ const IMG_DB = {
     "imgi_7_60589756-2o.jpg",
     "imgi_8_60589756-3o.jpg",
     "imgi_9_60589756-4o.jpg"
+  ],
+  "日本🇯🇵SANBELM 洗碗海綿刷": [
+    "LINE_NOTE_260709_1.jpg",
+    "LINE_NOTE_260709_2.jpg",
+    "LINE_NOTE_260709_3.jpg",
+    "LINE_NOTE_260709_4.jpg",
+    "LINE_NOTE_260709_5.jpg"
   ],
   "日本🇯🇵SANADA 半開蓋式保鮮盒系列(3款)【收單日07_14】S14SAK0708-預計08月上旬到貨": [
     "imgi_10_60819238-5o.jpg",
@@ -6674,6 +6694,12 @@ const IMG_DB = {
   "日本🇯🇵INOMATA 可掛式收納圓弧吊籃": [
     "LINE_NOTE_260617_1.jpg",
     "LINE_NOTE_260617_2.jpg"
+  ],
+  "日本🇯🇵INOMATA  懸掛式收納籃": [
+    "LINE_NOTE_260709_1.jpg",
+    "LINE_NOTE_260709_2.jpg",
+    "LINE_NOTE_260709_3.jpg",
+    "LINE_NOTE_260709_4.jpg"
   ],
   "日本🇯🇵GATSBY 海洋瞬間冰體噴霧170ml": [
     "LINE_NOTE_260705_1.jpg"
@@ -9341,6 +9367,12 @@ const IMG_DB = {
     "imgi_8_60637215-3o.jpg",
     "imgi_9_60637215-4o.jpg"
   ],
+  "可微波收納保鮮盒": [
+    "LINE_NOTE_260709_1.jpg",
+    "LINE_NOTE_260709_2.jpg",
+    "LINE_NOTE_260709_3.jpg",
+    "LINE_NOTE_260709_6.jpg"
+  ],
   "可彎折矽膠杯刷 【收單日07_14】SC09SAY0708-預計08月上旬到貨": [
     "imgi_10_60823995-5o.jpg",
     "imgi_11_60823995-6o.jpg",
@@ -11544,6 +11576,10 @@ const IMG_DB = {
     "imgi_13_60619832-8o.jpg",
     "imgi_15_60619832-10o.jpg",
     "imgi_6_60619832-1o.jpg"
+  ],
+  "MP低背椅 露營外出超實用": [
+    "LINE_NOTE_260709_1.jpg",
+    "LINE_NOTE_260709_6.jpg"
   ],
   "MOLN 左手香水光沁潤香皂 100G《一組2件》": [
     "imgi_5_60589012-1o.jpg",
