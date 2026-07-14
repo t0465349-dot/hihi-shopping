@@ -139,6 +139,13 @@ const IMG_DB = {
     "imgi_8_36093522-7o.jpg",
     "imgi_9_36093522-8o.jpg"
   ],
+  "🧀️🧀️🧀️特濃雙色乳酪絲": [
+    "LINE_NOTE_260713_1.jpg",
+    "LINE_NOTE_260713_2.jpg",
+    "LINE_NOTE_260713_3.jpg",
+    "LINE_NOTE_260713_4.jpg",
+    "LINE_NOTE_260713_6.jpg"
+  ],
   "🧀🇯🇵 日本 博多明太子起司味米果 100g 🧀": [
     "imgi_5_60649983-1o.jpg"
   ],
@@ -998,6 +1005,12 @@ const IMG_DB = {
     "imgi_8_58664866-9o.jpg",
     "imgi_9_58664866-10o.jpg"
   ],
+  "🎉鮮肉大餛飩": [
+    "LINE_NOTE_260713_1.jpg",
+    "LINE_NOTE_260713_2.jpg",
+    "LINE_NOTE_260713_3.jpg",
+    "LINE_NOTE_260713_4.jpg"
+  ],
   "🎉熱銷首選 🇹🇼濃郁芝麻醬糙米酥🎉190g《一組2袋》": [
     "imgi_5_46606494-1o.jpg",
     "imgi_6_46606494-2o.jpg",
@@ -1047,6 +1060,12 @@ const IMG_DB = {
     "imgi_6_60581524-2o.jpg",
     "imgi_7_60581524-3o.jpg",
     "imgi_8_60581524-4o.jpg"
+  ],
+  "🍳職人手工奶油曲奇餅🧈": [
+    "LINE_NOTE_260712_1.jpg",
+    "LINE_NOTE_260712_2.jpg",
+    "LINE_NOTE_260712_3.jpg",
+    "LINE_NOTE_260712_4.jpg"
   ],
   "🍳【KUKKAR 韓國家】聚熱導油不沾烤盤 32cm｜附提袋(KUK-32GP)": [
     "imgi_10_60563824-6o.jpg",
@@ -1105,6 +1124,15 @@ const IMG_DB = {
   "🍬 酸梅糖 大容量包裝 500g": [
     "imgi_5_57268431-1o.jpg",
     "imgi_6_57268431-2o.jpg"
+  ],
+  "🍦🍦杜老爺 麻糬冰🌟🌟🌟": [
+    "LINE_NOTE_260713_1.jpg",
+    "LINE_NOTE_260713_2.jpg",
+    "LINE_NOTE_260713_3.jpg",
+    "LINE_NOTE_260713_4.jpg",
+    "LINE_NOTE_260713_5.jpg",
+    "LINE_NOTE_260713_6.jpg",
+    "LINE_NOTE_260713_7.jpg"
   ],
   "🍠真空低糖養生蜜地瓜🍠200g": [
     "imgi_5_60662586-1o.jpg",
@@ -6992,6 +7020,11 @@ const IMG_DB = {
     "60792352-8o.jpg",
     "60792352-9o.jpg"
   ],
+  "樂客思 香草巧克力甜筒": [
+    "LINE_NOTE_260713_1.jpg",
+    "LINE_NOTE_260713_2.jpg",
+    "LINE_NOTE_260713_5.jpg"
+  ],
   "極輕無框 老花眼鏡｜清晰舒適好配戴 (7款)": [
     "imgi_10_60574494-5o.jpg",
     "imgi_11_60574494-6o.jpg",
@@ -9531,6 +9564,18 @@ const IMG_DB = {
     "imgi_8_60832422-2o.jpg",
     "imgi_9_60832422-3o.jpg"
   ],
+  "小美紅豆粉粿雪糕 每盒4支": [
+    "LINE_NOTE_260713_1.jpg",
+    "LINE_NOTE_260713_4.jpg"
+  ],
+  "小美冰棒雪糕": [
+    "LINE_NOTE_260713_1.jpg",
+    "LINE_NOTE_260713_2.jpg",
+    "LINE_NOTE_260713_3.jpg",
+    "LINE_NOTE_260713_4.jpg",
+    "LINE_NOTE_260713_5.jpg",
+    "LINE_NOTE_260713_6.jpg"
+  ],
   "小熊迷你三格 桌面收納盒": [
     "imgi_10_60545430-5o.jpg",
     "imgi_11_60545430-6o.jpg",
@@ -11090,6 +11135,11 @@ const IMG_DB = {
     "imgi_8_60517820-2o.jpg",
     "imgi_9_60517820-3o.jpg"
   ],
+  "不鏽鋼茶盤": [
+    "LINE_NOTE_260713_1.jpg",
+    "LINE_NOTE_260713_2.jpg",
+    "LINE_NOTE_260713_3.jpg"
+  ],
   "不鏽鋼波浪肥皂正反瀝【一組3套】": [
     "imgi_10_60410972-6o.jpg",
     "imgi_11_60410972-7o.jpg",
@@ -12055,6 +12105,12 @@ const IMG_DB = {
   "✈️德國 🇩🇪 聖伯納德 Sanct Bernhard 關節軟骨強健膠囊 240粒 #1790✈️": [
     "60811671-1o.jpg"
   ],
+  "✈️ 航空版米果🍘 機上必吃人氣零食": [
+    "LINE_NOTE_260712_1.jpg",
+    "LINE_NOTE_260712_2.jpg",
+    "LINE_NOTE_260712_3.jpg",
+    "photo_2026-02-07_14-42-37 (1).jpg"
+  ],
   "⛰️梨山茶王✨ 💚增量包(2.5g×60包)": [
     "imgi_5_59448688-1o.jpg",
     "imgi_6_59448688-2o.jpg",
@@ -12878,6 +12934,13 @@ const IMG_DB = {
     "imgi_7_60764672-2o.jpg",
     "imgi_8_60764672-3o.jpg",
     "imgi_9_60764672-4o.jpg"
+  ],
+  "Niseko 北海道雪糕🍦": [
+    "LINE_NOTE_260713_1.jpg",
+    "LINE_NOTE_260713_2.jpg",
+    "LINE_NOTE_260713_3.jpg",
+    "LINE_NOTE_260713_4.jpg",
+    "LINE_NOTE_260713_5.jpg"
   ],
   "NARKA 條碼瀏海救星 髮根瀏海控油定型組": [
     "60551310-1o.jpg",
