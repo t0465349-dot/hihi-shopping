@@ -5300,7 +5300,7 @@ const IMG_DB = {
     "56086821-5o.jpg"
   ],
   "養樂多優酪乳": [
-    "LINE_NOTE_260707_1.jpg"
+    "LINE_NOTE_260822_2.jpg"
   ],
   "風味🥚鵪鶉蛋🥚系列 150g": [
     "imgi_10_52319575-12o.jpg",
@@ -12702,6 +12702,15 @@ const IMG_DB = {
     "imgi_8_58579720-5o.jpg",
     "imgi_9_58579720-6o.jpg"
   ],
+  "澎湖灣海味岩燒": [
+    "LINE_NOTE_260822_1.jpg",
+    "LINE_NOTE_260822_2.jpg",
+    "LINE_NOTE_260822_3.jpg",
+    "LINE_NOTE_260822_4.jpg",
+    "LINE_NOTE_260822_5.jpg",
+    "LINE_NOTE_260822_6.jpg",
+    "LINE_NOTE_260822_7.jpg"
+  ],
   "澎湖日曬小卷干40g 真空包裝": [
     "imgi_6_60749204-1o.jpg",
     "imgi_7_60749204-2o.jpg",
@@ -17499,7 +17508,7 @@ const IMG_DB = {
     "here.png"
   ],
   "新養樂多活動組": [
-    "LINE_NOTE_260707_2.jpg"
+    "LINE_NOTE_260822_1.jpg"
   ],
   "新鋁管加厚棍 台南豪華版加大－好愛拖🧹 一布一桶一手壓棍組《不入倉》": [
     "imgi_5_60748076-1o.jpg",
@@ -19057,6 +19066,12 @@ const IMG_DB = {
     "imgi_7_60637308-3o.jpg",
     "imgi_8_60637308-2o.jpg",
     "imgi_9_60637308-4o.jpg"
+  ],
+  "安心味覺-乳球蛋酥(袋裝)90g": [
+    "LINE_NOTE_260822_1.jpg",
+    "LINE_NOTE_260822_2.jpg",
+    "LINE_NOTE_260822_3.jpg",
+    "LINE_NOTE_260822_8.jpg"
   ],
   "安德森 保羅 海鹽小蘇打雙效亮白牙膏200g": [
     "imgi_10_60517751-5o.jpg",
@@ -26035,6 +26050,11 @@ const IMG_DB = {
     "60721123-3o.jpg",
     "60721123-4o.jpg",
     "60721123-5o.jpg"
+  ],
+  "JoJo蛋糕餅 110G": [
+    "LINE_NOTE_260822_1.jpg",
+    "LINE_NOTE_260822_2.jpg",
+    "LINE_NOTE_260822_4.jpg"
   ],
   "JOJO 石墨烯吸水浴巾": [
     "imgi_5_60721387-1o.jpg",
